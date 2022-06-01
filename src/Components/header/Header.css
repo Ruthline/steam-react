@@ -25,14 +25,12 @@ h1{
     width:100% ;
     display: grid;
     grid-template-areas: 
-    "headerindex"
-    "banner-index"
-    "slider-index"
-    "social-networking"
-    "footer";
+    "headerindex";
 }
 .header-index{
-    overflow: hidden;
+    padding: 0.2rem 0px;
+    z-index: 0;
+    max-height: 100%;
     background-color: rgba(69, 45, 128, 0.11);
 } 
 
@@ -91,6 +89,7 @@ h1{
     width: 180px;
 }
 .two-nav{
+   
     color: var(--purple-color);
     grid-area: two-nav;
     font-size: 30px;
@@ -194,14 +193,7 @@ h1{
   }
   
 
-      .banner-index {
-        display: flex;
-        z-index: 0;
-        align-items: flex-end;
-        height: 200px;
-        min-width: 320px;
-        background-image: url(../header/bannerhome.png);
-    }
+      
       
 @media screen and (min-width:768px){
     .contenedor-index{

@@ -46,8 +46,7 @@ function Header(){
                     
                     </div>
                 </div>
-                <div  className="banner-index ">
-            </div>
+                
             </div>
 
             
