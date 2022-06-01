@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/steam-react/static/css/main.61c76df9.css",
+    "main.js": "/steam-react/static/js/main.7a5ed964.js",
+    "static/media/bannerhome.png": "/steam-react/static/media/bannerhome.611515e15d9acf67525c.png",
+    "static/media/bannermasinfo.png": "/steam-react/static/media/bannermasinfo.0614c2f109e7ed5a5f63.png",
+    "static/media/bannerhazparte.png": "/steam-react/static/media/bannerhazparte.b4ee50d627a06ddc7e7d.png",
+    "static/media/galery2.png": "/steam-react/static/media/galery2.64f3481bada87c994e02.png",
+    "static/media/slide5.png": "/steam-react/static/media/slide5.64f3481bada87c994e02.png",
+    "static/media/galery3.png": "/steam-react/static/media/galery3.56c0513340c623719c2c.png",
+    "static/media/slide3.png": "/steam-react/static/media/slide3.56c0513340c623719c2c.png",
+    "static/media/galery4.png": "/steam-react/static/media/galery4.98d5d0c2ea6a1d85ac0b.png",
+    "static/media/slide4.png": "/steam-react/static/media/slide4.98d5d0c2ea6a1d85ac0b.png",
+    "static/media/slide2.jpg": "/steam-react/static/media/slide2.8d844f8c91d224f49088.jpg",
+    "static/media/slide1.png": "/steam-react/static/media/slide1.f3cb26405ab5e6470fd5.png",
+    "static/media/slide3.jpg": "/steam-react/static/media/slide3.2764f6c8326c1e1f02be.jpg",
+    "static/media/galery1.png": "/steam-react/static/media/galery1.dfd12e4252cdc4a6133b.png",
+    "static/media/slide2.png": "/steam-react/static/media/slide2.dfd12e4252cdc4a6133b.png",
+    "static/media/galery5.png": "/steam-react/static/media/galery5.7718d35644ab0ad65520.png",
+    "static/media/logo.png": "/steam-react/static/media/logo.6ffae441a59eac3de5aa.png",
+    "static/media/lema.png": "/steam-react/static/media/lema.301f886c6a25bfcb2c14.png",
+    "index.html": "/steam-react/index.html",
+    "main.61c76df9.css.map": "/steam-react/static/css/main.61c76df9.css.map",
+    "main.7a5ed964.js.map": "/steam-react/static/js/main.7a5ed964.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61c76df9.css",
+    "static/js/main.7a5ed964.js"
+  ]
+}
