@@ -1,5 +1,7 @@
 import Opinion from '../sectionOpinion/useropinion.png';
 import '../sectionOpinion/SectionOpinion.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQuoteLeft} from '@fortawesome/free-solid-svg-icons';
 function SectionOpinion(){
     return(
         <section>
@@ -11,7 +13,7 @@ function SectionOpinion(){
                     <p>" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione et, earum quia tempora provident cumque."</p> 
 
                     <div class="quotes">
-                        <i class="fa-solid fa-quote-right"></i>
+                        <FontAwesomeIcon icon={faQuoteLeft}/>
                     </div>
                     
                     </div>
@@ -27,7 +29,7 @@ function SectionOpinion(){
                     <p>" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione et, earum quia tempora provident cumque."</p> 
 
                     <div class="quotes">
-                        <i class="fa-solid fa-quote-right"></i>
+                        <FontAwesomeIcon icon={faQuoteLeft}/>
                     </div>
                     
                     </div>
@@ -43,7 +45,7 @@ function SectionOpinion(){
                     <p>" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione et, earum quia tempora provident cumque."</p> 
 
                     <div class="quotes">
-                        <i class="fa-solid fa-quote-right"></i>
+                        <FontAwesomeIcon icon={faQuoteLeft}/>
                     </div>
                     
                     </div>
