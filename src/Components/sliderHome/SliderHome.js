@@ -66,11 +66,11 @@ function SliderHome(){
             </div>
 
             <div className="bullets">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-                <label for="slide4"></label>
-                <label for="slide5"></label>
+                <label for="slide1">1</label>
+                <label for="slide2">2</label>
+                <label for="slide3">3</label>
+                <label for="slide4">4</label>
+                <label for="slide5">5</label>
             </div>
         </section>
     </div>
