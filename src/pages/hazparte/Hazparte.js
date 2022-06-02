@@ -6,7 +6,7 @@ import Footer from "../../Components/footer/Footer";
 import '../hazparte/Hazparte.css'
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBellConcierge} from '@fortawesome/free-solid-svg-icons';
+import { faBell} from '@fortawesome/free-solid-svg-icons';
 function Hazparte(){
     return(
         <body>
@@ -14,7 +14,7 @@ function Hazparte(){
         <BannerHazParte/>
             <div>
             <div class="bell">
-                <Link to="/mas-info"><FontAwesomeIcon icon={faBellConcierge}/></Link>
+                <Link to="/mas-info"><FontAwesomeIcon icon={faBell}/></Link>
             </div>
             <SectionOpinion/>
             <GaleryHazParte/>

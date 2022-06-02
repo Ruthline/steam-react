@@ -6,13 +6,52 @@
 }
 .bell{
     cursor: pointer;
-    left: 87%;
+    left: 85%;
     top: 51%;
     position: fixed;
     font-size: 50px;
     color: var(--amarillo);
+    animation: ring 20s linear infinite;
 }
+@keyframes ring {
 
+	0% {
+		transform: rotate(0deg);
+	}
+
+	1.5% {
+		transform: rotate(30deg);
+	}
+
+	2.5% {
+		transform: rotate(-25deg);
+	}
+
+	3.75% {
+		transform: rotate(20deg);
+	}
+
+	5.15% {
+		transform: rotate(-10deg);
+	}
+
+	6.65% {
+		transform: rotate(5deg);
+	}
+
+	8.0% {
+		transform: rotate(-2deg);
+	}
+
+	10.0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+
+}
 
 @media screen and (min-width:1024px){
     .bell{

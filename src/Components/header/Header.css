@@ -63,6 +63,7 @@ h1{
 
 .item{
     padding: 0.5rem;
+    
     text-decoration: none;
     color: white;
 }
@@ -83,6 +84,34 @@ h1{
     grid-template-areas:
     "one-nav two-nav three-nav"
     "items items items";
+}
+
+.search-o{
+    display: flex;
+    justify-content: flex-start;
+}
+.search-o input{
+    position: relative;
+    left: 20px;
+    width: 150%;
+    padding: 0.5rem 1.3rem;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.377);
+}
+.search-o input[placeholder]{
+    font-weight: 600;
+}
+.search-o label{
+    position: relative;
+    right: 26px;
+    top: 4px;
+    height: 25px;
+    border-radius: 20px;
+    color:var(--dark-blue);
+    background-color: rgba(69, 45, 128, 0.11);
+}
+.s-s{
+    display: none;
 }
 .one-nav, .one-nav img{
     grid-area: one-nav;
@@ -265,6 +294,29 @@ h1{
     .dropdown:hover .dropdown-content {
         margin-top: 0.8rem;
     }
+    .search-o{
+        width: 100px;
+        display: none;
+    }
+    .search-o input{
+        top: 1px;
+        left: 0;
+        width: 80%;
+        padding: 0.13rem 1rem;
+    }
+    .search-o label{
+        right: 0px;
+        top:0px;
+    }
+    .s-s{
+        display: unset;
+    }
+    .s-s label{
+        color: black;
+        
+        background-color:rgba(69, 45, 128, 0.11);
+    }
+
 }
 
 @media screen and (min-width:1024px){
@@ -274,6 +326,6 @@ h1{
         .six-nav,
         .seven-nav,
         .eight-nav{
-            width: 120px;
+            width: 150px;
         }
     }

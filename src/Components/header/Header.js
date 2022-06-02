@@ -29,11 +29,19 @@ function Header(){
 
                     
                     <div className="items" >
+                        <div className='eight-nav item search-o'>
+                            <input  type='text' placeholder='__' name='buscar' id='buscar'></input>
+                            <label for='buscar'><FontAwesomeIcon icon={faMagnifyingGlass}/></label>
+                        </div>
+                    
                     <Link to="/home" className="four-nav item" >Home</Link>
                     <Link to="/steam"  className="five-nav item">STEAM</Link>
                     <Link to="/ferias" className="six-nav item">Ferias</Link>
                     <Link to="/haz-parte" className="seven-nav item">¡Haz parte!</Link>
-                    <button className="eight-nav item"><FontAwesomeIcon icon={faMagnifyingGlass}/></button>
+                    <div className='eight-nav item search-o s-s'>
+                            <input  type='text' placeholder='__' name='buscar' id='buscar'></input>
+                            <label for='buscar'><FontAwesomeIcon icon={faMagnifyingGlass}/></label>
+                    </div>
 
                    <div class="dropdown">
                    <div class="dropbtn two-nav item sin-login"><FontAwesomeIcon icon={faCircleUser} /></div>
