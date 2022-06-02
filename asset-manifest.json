@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/steam-react/static/css/main.fb5268f1.css",
-    "main.js": "/steam-react/static/js/main.2030da1a.js",
+    "main.css": "/steam-react/static/css/main.710b8d7a.css",
+    "main.js": "/steam-react/static/js/main.649f4cd2.js",
     "static/media/bannerhome.png": "/steam-react/static/media/bannerhome.611515e15d9acf67525c.png",
     "static/media/bannermasinfo.png": "/steam-react/static/media/bannermasinfo.0614c2f109e7ed5a5f63.png",
     "static/media/bannerhazparte.png": "/steam-react/static/media/bannerhazparte.b4ee50d627a06ddc7e7d.png",
@@ -20,11 +20,11 @@
     "static/media/logo.png": "/steam-react/static/media/logo.6ffae441a59eac3de5aa.png",
     "static/media/lema.png": "/steam-react/static/media/lema.301f886c6a25bfcb2c14.png",
     "index.html": "/steam-react/index.html",
-    "main.fb5268f1.css.map": "/steam-react/static/css/main.fb5268f1.css.map",
-    "main.2030da1a.js.map": "/steam-react/static/js/main.2030da1a.js.map"
+    "main.710b8d7a.css.map": "/steam-react/static/css/main.710b8d7a.css.map",
+    "main.649f4cd2.js.map": "/steam-react/static/js/main.649f4cd2.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb5268f1.css",
-    "static/js/main.2030da1a.js"
+    "static/css/main.710b8d7a.css",
+    "static/js/main.649f4cd2.js"
   ]
 }
