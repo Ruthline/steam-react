@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --dark-color:black;
+    --white-color:white;
+    --violet: rgb(69,45,128);
+    --green-principal:rgb(76,137,42);
+    --green-secundario: rgb(146,204,2);
+    --yellow: rgb(255,185,0);
+    --blue-dark: rgb(38,39,59);
+    --grey-color: rgb(196,196,196); 
+   
+    
+}
+
+/*---------LOGIN STUDENTS------------*/
+.fondo-login{
+    background-image: url(./fondo-profesores.jpg);
+    background-size: 100%;
+
+}
+.fondo-login-secondary{
+    background-image: url(./fondo-student.jpg);
+}
+#login{
+    display: grid;
+    grid-template-areas: 
+    "images-login" 
+    "login-user";
+    margin: 23% 5%  0;
+    background-image: url(./V-celular.png);
+    background-position-y:-40px ;
+    background-position-x: -60px;
+
+}
+.images-login{
+    grid-area: images-login;
+    display: grid;
+ 
+}
+.logo{
+    justify-self: center;
+    margin-bottom: 8rem;
+}
+.logo img{
+    max-width: 180%;
+
+}
+
+.form-login{
+    grid-area: login-user;
+    display: grid;
+}
+
+.form-login h2{
+    text-align:center;
+    color: var(--white-color);
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+.form-group{
+    margin: 8px;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+     
+    
+}
+.form-label{
+    margin: 12px;
+    font-size: 1em;
+    font-weight: 500;
+    justify-content: center;
+    color: var(--white-color);
+    text-align: center;
+    padding: 2px10px;
+
+}
+.form-input{
+    background-color:rgba(191, 174, 236, 0.561) ;
+    border-radius: 10px;
+    border-width: 0px;
+    outline: none;
+    margin-bottom: 5px;
+    width: 40%;
+    justify-self: center;
+
+
+}
+
+@media screen and (min-width:320px){
+    #login{
+        margin: 23% 5% ;
+        background-position-y:-40px ;
+        background-position-x: -118px;
+    }
+}
+@media screen and (min-width:700px) {
+    
+    #login{ 
+        background-image: url(./V-tablet.png);
+        margin: 9% 18% 0 ;
+        background-position-y:-40px ;
+        background-position-x:24px ;
+        background-repeat: no-repeat;
+        
+    }
+
+    .logo{
+        max-width: 80%;
+        justify-self: center;
+        
+    }
+    .treboles{
+        max-width: 30%;
+    }
+    .form-input{
+        justify-self: center;
+        width: 120%;
+       
+    }
+    .form-login{
+        margin: 40px ;
+        align-self: center;
+        justify-self: center;
+    }
+    .form-login h2{
+        font-size: 2em;
+    
+    }
+}
+
+@media screen and (min-width:1024px) {
+    #login{
+
+        grid-template-areas: 
+        "images-login login-user";
+        grid-template-columns: 50% 50%;
+        margin: 23% 10%;
+        background-image: url(./V-computer.png);
+        background-size: 100%;
+        height: 500px;
+    
+    }
+    .logo{
+        max-width: 95%;
+        position: relative;
+        top: 150px;
+       
+       
+    }
+   
+   
+    .form-input{
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (min-width:1440px) {
+    #login{
+        height: 800px;
+        margin: 5% 10% 0;
+    }
+    .logo{
+        position: relative;
+        top: 320px;
+    }
+    .form-login{
+        left:250px;
+        bottom: 0px;
+    }
+
+} 

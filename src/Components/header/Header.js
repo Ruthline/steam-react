@@ -13,7 +13,7 @@ function Header(){
                     
                 <div className="nav-group">
                     
-                    <Link to="/home" className="one-nav"><img src={Logo}></img></Link>
+                    <Link to="/home" className="one-nav"><img src={Logo} alt="logo"></img></Link>
 
                     <div class="dropdown ">
                         <div class="dropbtn two-nav item sin-login2"><FontAwesomeIcon icon={faCircleUser} /></div>
