@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/steam-react/static/css/main.710b8d7a.css",
-    "main.js": "/steam-react/static/js/main.649f4cd2.js",
+    "main.css": "/steam-react/static/css/main.be3bcce2.css",
+    "main.js": "/steam-react/static/js/main.81671728.js",
     "static/media/bannerhome.png": "/steam-react/static/media/bannerhome.611515e15d9acf67525c.png",
+    "static/media/fondo-profesores.jpg": "/steam-react/static/media/fondo-profesores.9afc6d079f934f704c31.jpg",
     "static/media/bannermasinfo.png": "/steam-react/static/media/bannermasinfo.0614c2f109e7ed5a5f63.png",
     "static/media/bannerhazparte.png": "/steam-react/static/media/bannerhazparte.b4ee50d627a06ddc7e7d.png",
+    "static/media/fondo-student.jpg": "/steam-react/static/media/fondo-student.d882412e5be97e872129.jpg",
     "static/media/galery2.png": "/steam-react/static/media/galery2.64f3481bada87c994e02.png",
     "static/media/slide5.png": "/steam-react/static/media/slide5.64f3481bada87c994e02.png",
     "static/media/galery3.png": "/steam-react/static/media/galery3.56c0513340c623719c2c.png",
@@ -14,17 +16,21 @@
     "static/media/slide2.jpg": "/steam-react/static/media/slide2.8d844f8c91d224f49088.jpg",
     "static/media/slide1.png": "/steam-react/static/media/slide1.f3cb26405ab5e6470fd5.png",
     "static/media/slide3.jpg": "/steam-react/static/media/slide3.2764f6c8326c1e1f02be.jpg",
+    "static/media/V-celular.png": "/steam-react/static/media/V-celular.41e2a7f2cb0f8324a174.png",
+    "static/media/V-tablet.png": "/steam-react/static/media/V-tablet.ce12bc4a9ee7d0a14abc.png",
     "static/media/galery1.png": "/steam-react/static/media/galery1.dfd12e4252cdc4a6133b.png",
     "static/media/slide2.png": "/steam-react/static/media/slide2.dfd12e4252cdc4a6133b.png",
     "static/media/galery5.png": "/steam-react/static/media/galery5.7718d35644ab0ad65520.png",
+    "static/media/logotipo.svg": "/steam-react/static/media/logotipo.4bb424b58e7b30ff05692a50a7f63a2d.svg",
+    "static/media/V-computer.png": "/steam-react/static/media/V-computer.d526db8899100defad35.png",
     "static/media/logo.png": "/steam-react/static/media/logo.6ffae441a59eac3de5aa.png",
     "static/media/lema.png": "/steam-react/static/media/lema.301f886c6a25bfcb2c14.png",
     "index.html": "/steam-react/index.html",
-    "main.710b8d7a.css.map": "/steam-react/static/css/main.710b8d7a.css.map",
-    "main.649f4cd2.js.map": "/steam-react/static/js/main.649f4cd2.js.map"
+    "main.be3bcce2.css.map": "/steam-react/static/css/main.be3bcce2.css.map",
+    "main.81671728.js.map": "/steam-react/static/js/main.81671728.js.map"
   },
   "entrypoints": [
-    "static/css/main.710b8d7a.css",
-    "static/js/main.649f4cd2.js"
+    "static/css/main.be3bcce2.css",
+    "static/js/main.81671728.js"
   ]
 }
