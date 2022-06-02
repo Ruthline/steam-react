@@ -70,6 +70,7 @@ h6{
 }
 
 .img-footer{
+    height: 110px;
     grid-area: numeral;
     text-align: center;
 }
