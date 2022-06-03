@@ -1,3 +1,4 @@
+import Calendar from "../../Components/calendar/Calendar"
 import FooterLogin from "../../Components/footerLogin/FooterLogin"
 import HeaderLogin from "../../Components/headerLogin/HeaderLogin"
 
@@ -8,6 +9,7 @@ function Calendar2(){
     return(
         <div>
                <HeaderLogin />
+               <Calendar />
             <FooterLogin />
         </div>
     )
