@@ -7,9 +7,11 @@ import Ferias from './pages/ferias/Ferias';
 import Steam from './pages/steam/Steam';
 import Login from './pages/login/Login';
 import MasInfo from './pages/masinfo/MasInfo';
+import Error404 from './pages/login/Error404';
 
 import Dashboard from './pages/login/Dashboard';
 import Calendar2 from './pages/login/Calen';
+import Courses from './pages/login/Courses';
 
 
 
@@ -23,11 +25,13 @@ root.render(
     <Route path='/ferias' element={<Ferias />}></Route>
     <Route path='/steam' element={<Steam />}></Route>
     <Route path='/mas-info' element={<MasInfo />}></Route>
+    <Route path='*' element={<Error404 />}></Route>
 
     <Route path='/profesores' element={<Login />}></Route>
     <Route path='/estudiantes' element={<Login />}></Route>
     <Route path='/dashboard' element={<Dashboard />}></Route>
     <Route path='/calendar' element={<Calendar2 />}></Route>
+    <Route path='/courses' element={<Courses />}></Route>
   </Routes>
   </BrowserRouter>
 );

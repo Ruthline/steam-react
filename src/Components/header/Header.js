@@ -1,6 +1,6 @@
 import '../header/Header.css';
 import {Link} from 'react-router-dom';
-import Logo from '../header/logo.png';
+import Logo from './logotipo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleUser, faMagnifyingGlass,faBars} from '@fortawesome/free-solid-svg-icons';
 function Header(){
@@ -28,12 +28,12 @@ function Header(){
                     
 
                     
-                    <div className="items" >
-                    <Link to="/home" className="four-nav item" >Home</Link>
-                    <Link to="/steam"  className="five-nav item">STEAM</Link>
-                    <Link to="/ferias" className="six-nav item">Ferias</Link>
-                    <Link to="/haz-parte" className="seven-nav item">¡Haz parte!</Link>
-                    <button className="eight-nav item"><FontAwesomeIcon icon={faMagnifyingGlass}/></button>
+                    <div className="items-home" >
+                    <Link to="/home" className="four-nav item-home" >Home</Link>
+                    <Link to="/steam"  className="five-nav item-home">STEAM</Link>
+                    <Link to="/ferias" className="six-nav item-home">Ferias</Link>
+                    <Link to="/haz-parte" className="seven-nav item-home">¡Haz parte!</Link>
+                    <button className="eight-nav item-home"><FontAwesomeIcon icon={faMagnifyingGlass}/></button>
 
                    <div class="dropdown">
                    <div class="dropbtn two-nav item sin-login"><FontAwesomeIcon icon={faCircleUser} /></div>

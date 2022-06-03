@@ -38,7 +38,7 @@ h1{
     display: none;
 }
 
-#clic-menu:checked ~ .items{
+#clic-menu:checked ~ .items-home{
     display: block;
     display: flex;
     flex-direction: column;
@@ -55,18 +55,18 @@ h1{
     color:white;
 }
 
-.items{
+.items-home{
     margin-top: 1rem;
     grid-area: items;
     display: none;
 }
 
-.item{
+.item-home{
     padding: 0.5rem;
     text-decoration: none;
     color: white;
 }
-.item:hover{
+.item-home:hover{
     color: rgba(241, 18, 241, 0.5);
 }
 
@@ -210,7 +210,7 @@ h1{
         align-items: center;
         flex-direction: row;
     }
-    .items{
+    .items-home{
         display: block;
         display: flex;
         justify-content: flex-end;
