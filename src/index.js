@@ -13,6 +13,8 @@ import Dashboard from './pages/login/Dashboard';
 import Calendar2 from './pages/login/Calen';
 import Courses from './pages/login/Courses';
 import Course from './pages/login/Course';
+import Recursos from './pages/login/Recursos';
+
 
 
 
@@ -34,6 +36,8 @@ root.render(
     <Route path='/calendar' element={<Calendar2 />}></Route>
     <Route path='/courses' element={<Courses />}></Route>
     <Route path='/courses/:id' element={<Course />}></Route>
+
+    <Route path='/resources' element={<Recursos/>}></Route>
   </Routes>
   </BrowserRouter>
 );
