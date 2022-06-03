@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom';
 import logotipo from '../../Components/header/logotipo.svg'
-import BotonV from '../../Components/BotonV/BotonV';
+import BotonV from '../../Components/login/BotonV/BotonV';
 import './Login.css'
 function Login(){
     return(
@@ -22,7 +22,7 @@ function Login(){
                 <input  class="form-input" type="password" name="password" id="password" required />
             </div>
             <div class="botons">
-                <Link to="/login-STEAM">
+                <Link to="/dashboard">
                 <BotonV />
                 </Link>
                 

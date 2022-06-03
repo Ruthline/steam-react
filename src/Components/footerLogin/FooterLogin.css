@@ -1,0 +1,7 @@
+.footer p{
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--violet);
+    color: var(--white-color);
+    text-align: center;
+}

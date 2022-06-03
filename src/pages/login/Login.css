@@ -13,14 +13,7 @@
 }
 
 /*---------LOGIN STUDENTS------------*/
-.fondo-login{
-    background-image: url(./fondo-profesores.jpg);
-    background-size: 100%;
 
-}
-.fondo-login-secondary{
-    background-image: url(./fondo-student.jpg);
-}
 #login{
     display: grid;
     grid-template-areas: 
