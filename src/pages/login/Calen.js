@@ -7,7 +7,7 @@ import '../../index.css'
 function Calendar2(){
     return(
         <div>
-            <HeaderLogin />
+               <HeaderLogin />
             <FooterLogin />
         </div>
     )

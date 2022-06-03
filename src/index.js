@@ -12,6 +12,7 @@ import Error404 from './pages/login/Error404';
 import Dashboard from './pages/login/Dashboard';
 import Calendar2 from './pages/login/Calen';
 import Courses from './pages/login/Courses';
+import Course from './pages/login/Course';
 
 
 
@@ -32,6 +33,7 @@ root.render(
     <Route path='/dashboard' element={<Dashboard />}></Route>
     <Route path='/calendar' element={<Calendar2 />}></Route>
     <Route path='/courses' element={<Courses />}></Route>
+    <Route path='/courses/:id' element={<Course />}></Route>
   </Routes>
   </BrowserRouter>
 );

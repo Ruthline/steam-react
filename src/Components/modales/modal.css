@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --dark-color:black;
+    --white-color:white;
+    --violet: rgb(69,45,128);
+    --green-principal:rgb(76,137,42);
+    --green-secundario: rgb(146,204,2);
+    --yellow: rgb(255,185,0);
+    --blue-dark: rgb(38,39,59);
+    --grey-color: rgb(196,196,196); 
+    --violet-clarito:#752995 ;
+   
+    
+}
+a{
+    text-decoration: none;
+    color: #752995;
+    font-weight: 500;
+}
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor figure{
+    position: relative;
+    height: 350px;
+    max-width: 450px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+.contenedor figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+
+}
+.contenedor figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(169, 40, 178, 0.544);
+    color: white;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contenedor figure:hover>.capa{
+    opacity: 1;
+    visibility: visible;
+}
+.contenedor figure:hover>.capa h1{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.contenedor figure .capa h1{
+    color:deeppink;
+    font-weight: 800;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+}
+.contenedor figure .capa p{
+    color:whitesmoke;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.contenedor figure:hover>img{
+    transform: scale(1.3);
+}
+
+/* MODAL*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.cta{
+    margin: auto;
+    text-decoration: none;
+    padding: 1.2em 3em;
+    border-radius: 4em;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(117, 41, 149, 0.674);
+    display: flex;
+    --opacity: 0;
+    --pointer: none;
+
+    opacity: var(--opacity);
+    pointer-events: var(--pointer);
+    transition: opacity 0.5s;
+}
+.borde{
+    border: 2px solid var(--green-principal);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px;
+    font-family: sans-serif;
+}
+.modal:target{
+    --opacity: var(--opacity);
+    --pointer: unset;
+}
+
+
+.btn-green h5{
+    padding-left: 10px;
+}
+.modalContainer{
+    margin: auto;
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    overflow: hidden;
+    text-align: center;
+    padding: 2.5em 1.5em;
+    border-radius: 1em;
+}
+
+.modalContainer2{
+    display: grid;
+    grid-template-areas: 
+    "imagen nombre nombre"
+    "imagen grado grado"
+    "imagen lista lista2";
+    margin: auto;
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    overflow: hidden;
+    text-align: center;
+    padding: 2.5em 1.5em;
+    border-radius: 1em;
+}
+.imagenestudiante{
+    grid-area: imagen;
+    font-size: 8em;
+    color: var(--violet);
+
+}
+.nombre{
+    grid-area: nombre;
+}
+.grado{
+    grid-area: grado;
+}
+.lista{
+    grid-area: lista;
+}
+.lista2{
+    grid-area: lista2;
+    list-style: none;
+    cursor: pointer;
+}
+.modalImg{
+    margin: auto;
+    width: 70%;
+    display: block;
+}
+.label-green input{
+    border: 2px dotted var(--green-principal) ;
+}
+
+
+.modal2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(117, 41, 149, 0.674);
+    display: flex;
+    --opacity: 0;
+    --pointer: none;
+    text-decoration: none;
+
+    opacity: var(--opacity);
+    pointer-events: var(--pointer);
+    transition: opacity 0.5s;
+}
+
+.modal2:target{
+    --opacity: var(--opacity);
+    --pointer: unset;
+}
+
+.modal:target .modalContainer{
+    animation: show 1s 0.5s backwards;
+}
+.modalContainer3{
+    margin: auto;
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    overflow: hidden;
+    text-align: center;
+    padding: 2.5em 1.5em;
+    border-radius: 1em;
+}
+.descarga{
+    font-size: 5em;
+}
+.descarga i{
+    color: var(--green-secundario);
+}
+.modal3{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(117, 41, 149, 0.674);
+    display: flex;
+    --opacity: 0;
+    --pointer: none;
+
+    opacity: var(--opacity);
+    pointer-events: var(--pointer);
+    transition: opacity 0.5s;
+}
+
+.modal3:target{
+    --opacity: var(--opacity);
+    --pointer: unset;
+}
+
+.modalContainer4{
+    margin: auto;
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    overflow: hidden;
+    text-align: center;
+    padding: 2.5em 1.5em;
+    border-radius: 1em;
+}
+
+.fa-check-double{
+    font-size: 5em;
+    color: var(--green-secundario);
+}
+.stage {
+    display: flex;
+    height: 200px;
+    width: 100%;
+}
+.box {
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    height: 100px;
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
+    width: 200px;
+}
+.bounce-6 {
+    animation-name: bounce-6;
+    animation-timing-function: ease;
+}
+@keyframes bounce-6 {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-100px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
+@keyframes show{
+    0%{transform: translateY(-150vh);}
+    100%{transform: translateY(0vh);}
+}
+
+.modalPicture{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-bottom: 2em;
+}
+
+.modal:target .modalPicture{
+    animation: scale 0.5s 1s backwards;
+}
+
+
+@keyframes scale{
+    0%{transform: scale(0);}
+}
+
+.modalTitle{
+    font-size: 2.5rem;
+    font-weight: 500;
+    animation: text-decoration 5s, color 1s, font-weight 5s ease-out 0.1s; 
+    transition: text-decoration 0.8s, color 1s, font-weight 0.5s ease-out 0.1s;
+}
+    
+
+@keyframes text-decoration {
+    0% {color: #ff0;} /*Amarillo*/
+    25% {color: #f80;} /*Naranja*/
+    50% {color: #000;} /*Negro*/
+    75% {color: #f80;} /*Otra vez naranja*/
+   100% {color: #ff0;} /*Otra vez amarillo*/
+ }
+
+.modalTitle--bold{
+    font-weight: 800;
+}
+
+.modalP{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.5
+}
+
+.modalClose{
+    display: inline-block;
+    border: 1px solid #333;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-weight: 700;
+    color: #333;
+    border-radius: 0.4em;
+}
+
+@media (max-width: 600px){
+    .modalTitle{
+        font-size: 1.7em;
+    }
+}
