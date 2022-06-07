@@ -7,7 +7,7 @@ function Calendar(){
                     <i class="fa-solid fa-arrow-left"></i>
         
                 <div className="date">
-                <h2>June</h2>
+                    <h2>June</h2>
                     <p>Fri June 03, 2022</p>
                 </div>
                 <i class="fa-solid fa-arrow-right"></i>

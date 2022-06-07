@@ -19,7 +19,7 @@ function Dcenter(){
                 <p>ES-EN</p>
             </button>
 
-        <h1>¡Hola, de nuevo!</h1>
+        <h1 className="title-dcenter">¡Hola, de nuevo!</h1>
         <div class="today">
             <h2>PARA HOY:</h2>  
             <img src={hoy} alt="imagenestrabajohoy"></img> 

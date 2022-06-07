@@ -29,7 +29,10 @@
     grid-area: title;
     color: #01613B;
     text-align: center;
- 
+   
+    }
+.title-dcenter{
+    margin: 20%;
 }
 .today{
     text-align: center;
@@ -44,7 +47,9 @@
     
 
 }
-
+.btn-idiom{
+    grid-area: idiom;
+}
     
 .today img{
     max-width: 80%;
@@ -248,7 +253,8 @@
         align-self: center;
         justify-items: center;
         grid-template-areas:
-        "idiom title"
+        "idiom idiom"
+        "title title"
         " today to-do"
         " priority priority";
         gap:1em ;
@@ -256,11 +262,16 @@
       
         
     }
+    .title-dcenter{
+        margin: 40px;
+
+    }
     .PrincipalLogin h1{
         grid-column: 1/3;
     }
     .btn-idiom{
         grid-column: 1/3;
+      
     }
     .to-do{
         grid-column: 1;
