@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/steam-react/static/css/main.be3bcce2.css",
-    "main.js": "/steam-react/static/js/main.81671728.js",
+    "main.css": "/steam-react/static/css/main.58514b4b.css",
+    "main.js": "/steam-react/static/js/main.7669584c.js",
     "static/media/bannerhome.png": "/steam-react/static/media/bannerhome.611515e15d9acf67525c.png",
-    "static/media/fondo-profesores.jpg": "/steam-react/static/media/fondo-profesores.9afc6d079f934f704c31.jpg",
     "static/media/bannermasinfo.png": "/steam-react/static/media/bannermasinfo.0614c2f109e7ed5a5f63.png",
     "static/media/bannerhazparte.png": "/steam-react/static/media/bannerhazparte.b4ee50d627a06ddc7e7d.png",
-    "static/media/fondo-student.jpg": "/steam-react/static/media/fondo-student.d882412e5be97e872129.jpg",
+    "static/media/trabajo1.png": "/steam-react/static/media/trabajo1.e5a72c162b4e49008a77.png",
     "static/media/galery2.png": "/steam-react/static/media/galery2.64f3481bada87c994e02.png",
     "static/media/slide5.png": "/steam-react/static/media/slide5.64f3481bada87c994e02.png",
     "static/media/galery3.png": "/steam-react/static/media/galery3.56c0513340c623719c2c.png",
@@ -23,14 +22,13 @@
     "static/media/galery5.png": "/steam-react/static/media/galery5.7718d35644ab0ad65520.png",
     "static/media/logotipo.svg": "/steam-react/static/media/logotipo.4bb424b58e7b30ff05692a50a7f63a2d.svg",
     "static/media/V-computer.png": "/steam-react/static/media/V-computer.d526db8899100defad35.png",
-    "static/media/logo.png": "/steam-react/static/media/logo.6ffae441a59eac3de5aa.png",
     "static/media/lema.png": "/steam-react/static/media/lema.301f886c6a25bfcb2c14.png",
     "index.html": "/steam-react/index.html",
-    "main.be3bcce2.css.map": "/steam-react/static/css/main.be3bcce2.css.map",
-    "main.81671728.js.map": "/steam-react/static/js/main.81671728.js.map"
+    "main.58514b4b.css.map": "/steam-react/static/css/main.58514b4b.css.map",
+    "main.7669584c.js.map": "/steam-react/static/js/main.7669584c.js.map"
   },
   "entrypoints": [
-    "static/css/main.be3bcce2.css",
-    "static/js/main.81671728.js"
+    "static/css/main.58514b4b.css",
+    "static/js/main.7669584c.js"
   ]
 }
