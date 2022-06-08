@@ -1,14 +1,12 @@
-import Dcenter from "../../Components/Dcenter/Dcenter"
-import FooterLogin from "../../Components/footerLogin/FooterLogin"
-import HeaderLogin from "../../Components/headerLogin/HeaderLogin"
-import Navbar from "../../Components/nav/Nav"
+import ScoreT from "../components/ScoreT/ScoreT"
+import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
+import Navbar from "../components/Navbar/Navbar";
 
-
-
-function Dashboard(){
+function ScoreTeacher(){
     return(
-        <div>
-            <HeaderLogin />
+        <section>
+            <Header />
             <div className="dashboard-nav-center">
             <section className="bar-dropdown">
 
@@ -24,13 +22,12 @@ function Dashboard(){
             <Navbar />
         </div>
 
-</section> <Dcenter />
+</section>
+            <ScoreT />
             </div>
-            <FooterLogin />
+            <Footer />
 
-        </div>
-
+        </section>
     )
 }
-
-export default Dashboard
+export default ScoreTeacher

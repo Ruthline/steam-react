@@ -28,3 +28,8 @@
     transition: all 600ms cubic-bezier(1,0,0,1.01);
   
   }
+  .animated-word:hover {
+    color: rgba(69, 45, 128, 0.851);
+      outline-color: rgba(71, 126, 232, 0);
+      outline-offset: 300px;
+    }

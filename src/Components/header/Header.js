@@ -1,6 +1,6 @@
 import '../header/Header.css';
 import {Link} from 'react-router-dom';
-import Logo from './logotipo.svg';
+import Logo from '../header/logotipo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleUser, faMagnifyingGlass,faBars} from '@fortawesome/free-solid-svg-icons';
 function Header(){

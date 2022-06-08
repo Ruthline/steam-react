@@ -1,16 +1,15 @@
-import Dcenter from "../../Components/Dcenter/Dcenter"
-import FooterLogin from "../../Components/footerLogin/FooterLogin"
-import HeaderLogin from "../../Components/headerLogin/HeaderLogin"
-import Navbar from "../../Components/nav/Nav"
 
+import ScoreS from "../../../Components/scoreS/ScoreS";
+import Navbar from "../../../Components/nav/Nav";
+import HeaderLogin from "../../../Components/headerLogin/HeaderLogin";
+import FooterLogin from "../../../Components/footerLogin/FooterLogin";
 
-
-function Dashboard(){
+function Score(){
     return(
         <div>
-            <HeaderLogin />
+            <HeaderLogin/>
             <div className="dashboard-nav-center">
-            <section className="bar-dropdown">
+            <div className="bar-dropdown">
 
 <input type="checkbox" id="chk-bar"></input>
         <div className="hamburguesa">
@@ -24,13 +23,11 @@ function Dashboard(){
             <Navbar />
         </div>
 
-</section> <Dcenter />
+</div>
+            <ScoreS />
             </div>
             <FooterLogin />
-
         </div>
-
     )
 }
-
-export default Dashboard
+export default Score

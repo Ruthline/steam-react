@@ -1,6 +1,7 @@
 import FooterLogin from "../../Components/footerLogin/FooterLogin"
 import HeaderLogin from "../../Components/headerLogin/HeaderLogin"
 import './Courses.css'
+import Navbar from "../../Components/nav/Nav"
 
 import {getAllCourses} from '../../courses'
 import { Link } from "react-router-dom";
@@ -10,12 +11,29 @@ function Courses(){
     return(
         <div>
             <HeaderLogin />
-            <div className="c-div">
-                    <h1 className="cursos-title">Mis cursos</h1>
+            <div className="dashboard-nav-center">
+            <section className="bar-dropdown">
+
+<input type="checkbox" id="chk-bar"></input>
+        <div className="hamburguesa">
+      <label for="chk-bar" class="btn-menu">
+      <i class="fa-solid fa-bars"></i>
+          </label>
+
+
+        </div>
+        <div className="items-bar">
+            <Navbar />
+        </div>
+
+    </section>
+                <section>
+                <div className="c-div">
+                <h1 className="cursos-title">Mis cursos</h1>
                     <BotonI />
-                    </div>
+                    </div>  
                 <div className="courses">
-        
+                
                 {courses.map(s=>
                     <div className="course" key={s.id}>
                    
@@ -34,6 +52,10 @@ function Courses(){
                 )};
 
                 </div>
+                </section>
+        </div>
+
+
 
 
 

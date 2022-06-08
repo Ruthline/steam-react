@@ -4,14 +4,6 @@ import hoy from "./trabajo1.png"
 import { Link } from "react-router-dom";
 function Dcenter(){
     
-// Add a "checked" symbol when clicking on a list item
-    var list = document.querySelector('ul');
-    list.addEventListener('click', function(ev) {
-    if (ev.target.tagName === 'LI') {
-        ev.target.classList.toggle('checked');
-    }
-    }, false);
-
 
     return(
         <div className="PrincipalLogin">

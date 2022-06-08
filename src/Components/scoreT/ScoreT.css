@@ -1,0 +1,253 @@
+
+/* PROFESORES*/
+
+.rowprincipal-teacher{
+    display: grid;
+    grid-template-areas: 
+    "student1 workshop2"
+    ;
+
+}
+.student-teacher{
+    grid-area: student1;
+}
+.workshop-teacher{
+    grid-area: workshop2;
+}
+.score-teacher{
+    grid-area: score2 ;
+    display: none;
+}
+.email-teacher{
+    grid-area: email1;
+    display: none;
+}
+.average-teacher{
+    grid-area: average2;
+    display: none;
+}
+
+.row-teacher{
+    display: grid;
+    grid-template-areas: 
+    "student workshop score3"
+    "email workshop score3"
+    ;
+    grid-template-columns: auto auto ;
+}
+.student{
+    grid-area: student;
+    font-weight: 500;
+}
+.student i{
+    border-radius: 50%;
+    background-color: var(--morado);
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    margin-right: 20px;
+}
+.email{
+    grid-area: email;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+.workshop{
+    grid-area: workshop;
+   
+}
+.workshop >div{
+    border: 2px solid var(--verde-principal);
+    border-radius: 20px;
+    
+}
+.workshop i{
+    color: var(--morado);
+    margin-right: 30px;
+
+}
+
+.score-students{
+    grid-area: score3;
+
+}
+
+.average{
+    grid-area: average;
+    display: none;
+}
+
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    display: flex;
+    --opacity: 0;
+    --pointer: none;
+
+    opacity: var(--opacity);
+    pointer-events: var(--pointer);
+    transition: opacity 0.5s;
+}
+
+.modal:target{
+    --opacity: var(--opacity);
+    --pointer: unset;
+}
+
+.modalContainer{
+    margin: auto;
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    overflow: hidden;
+    text-align: center;
+    padding: 2.5em 1.5em;
+    border-radius: 1em;
+}
+
+.modalImg{
+    margin: auto;
+    width: 70%;
+    display: block;
+}
+
+
+.modal:target .modalContainer{
+    animation: show 1s 0.5s backwards;
+}
+
+@keyframes show{
+    0%{transform: translateY(-150vh);}
+    100%{transform: translateY(0vh);}
+}
+
+.modal:target .modalPicture{
+    animation: scale 0.5s 1s backwards;
+}
+
+
+@keyframes scale{
+    0%{transform: scale(0);}
+}
+
+.modalTitle{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+
+.modal:target .modalTitle{
+    animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: inherit;
+}
+
+@keyframes slidein {
+    from {
+      margin-top: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-top: 0%;
+      width: 100%;
+    }
+}
+  
+
+
+.modalTitle--bold{
+    font-weight: 800;
+}
+
+.modalP{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.5
+}
+
+.modalClose{
+    display: inline-block;
+    border: 1px solid #333;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-weight: 700;
+    color: #333;
+    border-radius: 0.4em;
+}
+
+@media (max-width: 600px){
+    .modalTitle{
+        font-size: 1.7em;
+    }
+}
+@media screen and (min-width:768px) {
+    /* PROFESORES*/
+    .rowprincipal-teacher{
+        grid-template-areas: 
+        "student1 workshop2 score2"
+        ;
+        
+    }
+    .score-teacher{
+        display: block;
+    }
+    .row-teacher{
+        grid-template-columns: 30% 40% 28% ;
+    }
+
+}
+@media screen and (min-width:1024px) {
+ /* PROFESORES*/
+
+ .rowprincipal-teacher{
+    grid-template-areas: 
+    "student1 email1 workshop2 score2 average2"
+    ;
+    
+}
+
+.email-teacher{
+    display: block;
+}
+.average-teacher{
+    display: block;
+}
+
+.row-teacher{
+    grid-template-areas: 
+    "student email workshop score3 average"
+    ;
+    grid-template-columns:21% 20% 21% 15% 26% ;
+}
+.student{
+    align-self: center;
+}
+.email{
+    display: block;
+    font-size: small;
+    align-self: center;
+}
+.score{
+    margin: none;
+}
+.average{
+    display: block;
+}
+}
+
+@media screen and (min-width:1440px) {
+    .fila{
+        grid-template-areas:
+        "actividad fecha puntaje de"
+        ;
+        grid-template-columns: 24% 32% 23% 21%;
+    }
+}
