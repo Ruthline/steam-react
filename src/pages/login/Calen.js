@@ -15,7 +15,7 @@ function Calendar2(){
 <input type="checkbox" id="chk-bar"></input>
         <div className="hamburguesa">
       <label for="chk-bar" class="btn-menu">
-      <i class="fa-solid fa-bars"></i>
+      <i className="fa-solid fa-bars"></i>
           </label>
 
 

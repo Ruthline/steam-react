@@ -32,11 +32,11 @@ function Login(){
 
     return(
         <section id="login">
-        <div class="images-login">
+        <div className="images-login">
             <img src={logotipo} alt="Logotipo" className="logo"></img>
         </div>
 
-        <div class="form-login">
+        <div className="form-login">
             <h2>Login</h2>
             <Formulario action="" onSubmit={onSubmit}>
        

@@ -17,8 +17,8 @@ import Recursos from './pages/login/Recursos';
 import ScoreS from './pages/login/students/ScoreStudents';
 import ArteRec from './pages/login/resources/ArteRec';
 import ScoreT from './pages/login/teacher/scoreTeacher'
-
-
+import FormScore from './Components/scoreT/FormScore'
+import ListaWork from './Components/scoreT/ListaWork'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -39,7 +39,9 @@ root.render(
     <Route path='/courses' element={<Courses />}></Route>
     <Route path='/courses/:id' element={<Course />}></Route>
     <Route path='/scorestudents' element={<ScoreS />}></Route>
-    <Route path='/scoreteacher' element={<ScoreT />}></Route>
+    <Route path='/scoreTeacher/' element={<ScoreT />}></Route>
+    <Route path='/scoreTeacher/form' element={<FormScore />}></Route>
+    <Route path='/scoreTeacher/editar' element={<ListaWork />}></Route>
 
     <Route path='/resources' element={<ArteRec/>}></Route>
   </Routes>

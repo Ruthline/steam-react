@@ -22,14 +22,14 @@ function Course(){
                 <h1>Detalle de </h1>
                 <h3>{course.trabajo}</h3>
                 <p>{course.descripcion}</p>
-                <div class="icons" >
-                    <a href="#modal" class="cta"><i class="fa-solid fa-paperclip" ></i></a>
-                    <a href="#modal" class="cta"><i class="fa-solid fa-comment"></i></a>
+                <div className="icons" >
+                    <a href="#modal" class="cta"><i className="fa-solid fa-paperclip" ></i></a>
+                    <a href="#modal" class="cta"><i className="fa-solid fa-comment"></i></a>
                 </div>
             </div>
-            <section id="modal" class="modal">
+            <section id="modal" className="modal">
         
-        <div class="modalContainer">
+        <div className="modalContainer">
     
             <form method="post" enctype="multipart/form-data">
                 <div>
@@ -40,7 +40,7 @@ function Course(){
                 <textarea name="textarea" rows="10" cols="50">Hola profesor...
             
                 </textarea>
-                <button class="btn-verde">Enviar</button>
+                <button className="btn-verde">Enviar</button>
                </form>
 
                

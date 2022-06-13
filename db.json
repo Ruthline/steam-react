@@ -1,182 +1,28 @@
 {
-    "estudiantesNotas": [
-      {
-        "id": 1,
-        "estudiante": "Catalina Arias",
-        "correo": "catalinarias@colegiosanpatricion.edu.co",
-        "trabajos": {
-            "trabajo1": "Presentación: Arte dentro de la tecnología",
-            "trabajo2": "Laboratorio: Materiales reciclables",
-            "trabajo3": "Trabajo: Juegos de mátematicas"
-        },
-        "notas": {
-            "nota1": "10",
-            "nota2": "6",
-            "nota3": "5"
-            
-        },
-        "promedio": "95%"
-      },
-      {
-        "id": 2,
-        "estudiante": "Laura Restrepo",
-        "correo": "laurarestrepo@colegiosanpatricion.edu.co",
-        "trabajos": {
-            "trabajo1": "Presentación: Arte dentro de la tecnología",
-            "trabajo2": "Laboratorio: Materiales reciclables",
-            "trabajo3": "Trabajo: Juegos de mátematicas"
-        },
-        "notas": {
-            "nota1": "7",
-            "nota2": "9",
-            "nota3": "10"
-            
-        },
-        "promedio": "90%"
-      },
-      {
-        "id": 3,
-        "estudiante": "Celeste Ruiz",
-        "correo": "celesteruiz@colegiosanpatricion.edu.co",
-        "trabajos": {
-            "trabajo1": "Presentación: Arte dentro de la tecnología",
-            "trabajo2": "Laboratorio: Materiales reciclables",
-            "trabajo3": "Trabajo: Juegos de mátematicas"
-        },
-        "notas": {
-            "nota1": "4",
-            "nota2": "8",
-            "nota3": "10"
-            
-        },
-        "promedio": "92%"
-      },
-      {
-        "id": 4,
-        "estudiante": "Ingrid Castiblanco",
-        "correo": "ingridcastiblanco@colegiosanpatricion.edu.co",
-        "trabajos": {
-            "trabajo1": "Presentación: Arte dentro de la tecnología",
-            "trabajo2": "Laboratorio: Materiales reciclables",
-            "trabajo3": "Trabajo: Juegos de mátematicas"
-        },
-        "notas": {
-            "nota1": "4",
-            "nota2": "5",
-            "nota3": "6"
-            
-        },
-        "promedio": "80%"
-      },
-      {
-        "id": 5,
-        "estudiante": "Tatiana Quiroga",
-        "correo": "tatianaquiroga@colegiosanpatricion.edu.co",
-        "trabajos": {
-            "trabajo1": "Presentación: Arte dentro de la tecnología",
-            "trabajo2": "Laboratorio: Materiales reciclables",
-            "trabajo3": "Trabajo: Juegos de mátematicas"
-        },
-        "notas": {
-            "nota1": "2",
-            "nota2": "10",
-            "nota3": "7"
-            
-        },
-        "promedio": "88%"
-      },
-      {
-        "id": 6,
-        "estudiante": "Luisa Velez",
-        "correo": "luisavelez@colegiosanpatricion.edu.co",
-        "trabajos": {
-            "trabajo1": "Presentación: Arte dentro de la tecnología",
-            "trabajo2": "Laboratorio: Materiales reciclables",
-            "trabajo3": "Trabajo: Juegos de mátematicas"
-        },
-        "notas": {
-            "nota1": "6",
-            "nota2": "3",
-            "nota3": "9"
-            
-        },
-        "promedio": "89%"
-      },
-      {
-        "id": 7,
-        "estudiante": "Mariana Cortes",
-        "correo": "marianacortes@colegiosanpatricion.edu.co",
-        "trabajos": {
-            "trabajo1": "Presentación: Arte dentro de la tecnología",
-            "trabajo2": "Laboratorio: Materiales reciclables",
-            "trabajo3": "Trabajo: Juegos de mátematicas"
-        },
-        "notas": {
-            "nota1": "7",
-            "nota2": "9",
-            "nota3": "10"
-            
-        },
-        "promedio": "98%"
-      },
-      {
-        "id": 8,
-        "estudiante": "Karen Salmon",
-        "correo": "karensalmon@colegiosanpatricion.edu.co",
-        "trabajos": {
-            "trabajo1": "Presentación: Arte dentro de la tecnología",
-            "trabajo2": "Laboratorio: Materiales reciclables",
-            "trabajo3": "Trabajo: Juegos de mátematicas"
-        },
-        "notas": {
-            "nota1": "10",
-            "nota2": "10",
-            "nota3": "10"
-            
-        },
-        "promedio": "100%"
-      },
-      {
-        "id": 9,
-        "estudiante": "Ruth Diaz",
-        "correo": "ruthdiaz@colegiosanpatricion.edu.co",
-        "trabajos": {
-            "trabajo1": "Presentación: Arte dentro de la tecnología",
-            "trabajo2": "Laboratorio: Materiales reciclables",
-            "trabajo3": "Trabajo: Juegos de mátematicas"
-        },
-        "notas": {
-            "nota1": "10",
-            "nota2": "9",
-            "nota3": "8"
-            
-        },
-        "promedio": "98%"
-      }
-    ],
-    "estudiantes": [
-      {
-        "id": 1,
-        "actividad": "Trabajo: Juegos de mátematicas",
-        "nota": "8",
-        "de": "10",
-        "fecha": "10/10/2022"
-      },
-      {
-        "id": 2,
-        "actividad": "Laboratorio: Materiales reciclables",
-        "nota": "10",
-        "de": "10",
-        "fecha": "10/11/2022"
-      },
-      {
-        "id": 3,
-        "actividad": "Presentación: Arte dentro de la tecnología",
-        "nota": "6",
-        "de": "10",
-        "fecha": "10/09/2022"
-      }
-    
-    ]
-  }
- 
+  "trabajos": [
+    {
+      "id": 1,
+      "trabajo": "Trabajo: Juegos de mátematicas",
+      "materia": "Ciencia",
+      "fecha": "10/10/2022",
+      "nota": "10",
+      "promedio": "98%"
+    },
+    {
+      "id": 2,
+      "trabajo": "Laboratorio: Arte en la tencnologia",
+      "materia": "Arte",
+      "fecha": "10/10/2022",
+      "nota": "8",
+      "promedio": "98%"
+    }
+  ],
+  "estudiantes": [
+    {
+      "id": 1,
+      "nombre": "Ruth Velez",
+      "correo": "ruthvelez@colegiosanpatricio.edu.co"
+      
+    }
+  ]
+}

@@ -38,25 +38,10 @@ function CardScore(){
                                 </td>
                                 <td class="email">{es.correo}</td>
                                 <td class="workshop">
-
-                                <div class="worskhop-two">
-                                <a href="#modal2">
-                                <i class="fa-solid fa-paperclip"></i>Trabajo:Lorem ipsum
-                                </a>
-                                </div>
-                                <div class="worskshop-three">
-                                        <a href="#modal2">
-                                            <i class="fa-solid fa-paperclip"></i>Trabajo:Lorem ipsum
-                                            </a>
-                                </div>
-                                <div class="workshop-four">
-                                    <a href="#modal2">
-                                        <i class="fa-solid fa-paperclip"></i>Trabajo:Lorem ipsum
-                                        </a>
-                                </div>
-                            </td>
-                            <td class="score-students">{es.puntaje}</td>
-                            <td class="average">{es.promedio}</td>
+                              {es.trabajos}
+                                </td>
+                                <td class="score-students">{es.puntaje}</td>
+                                <td class="average">{es.promedio}</td>
                             </tr>
 
                         </table>

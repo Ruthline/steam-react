@@ -4,7 +4,7 @@ import { Container, ModalFooter, Row, Modal, Form } from "react-bootstrap";
 import ScoreT from "./ScoreT";
 import Swal from 'sweetalert2';
 function ListScore(){
-    const url="http://localhost:5000/estudiantesNotas"
+    const url="http://localhost:5000/trabajos"
 
     const getData=async()=>{
         const response=axios.get(url);
@@ -86,55 +86,55 @@ function ListScore(){
                         <Form.Control 
                         type="text"
                         placeholder="Ingrese el Nombre del Estudiante"
-                        name="nombre"
-                        value={dataModal.nombre}
+                        name="estudiante"
+                        value={dataModal.estudiante}
                         onChange={handleChangeModal}
                         />
                 </Form.Group>
                 <Form.Group className="mb-3">
-                    <Form.Label>Imagen</Form.Label>
+                    <Form.Label>Correo</Form.Label>
                     <Form.Control 
                     type="text"
-                    placeholder="Ingrese la URL de la imagen"
-                    name="imagen"
-                    value={dataModal.imagen}
+                    placeholder="Ingrese el correo"
+                    name="correo"
+                    value={dataModal.correo}
                     onChange={handleChangeModal}
                     />
                 </Form.Group>
                 <Form.Group className="mb-3">
-        <Form.Label>Pelicula</Form.Label>
+        <Form.Label>Trabajos</Form.Label>
         <Form.Select
         name="pelicula"
-        value={dataModal.pelicula}
+        value={dataModal.trabajos}
         onChange={handleChangeModal}>
-            <option>Seleccione la pelicula</option>
-            <option value="ElViajeDeChihiro">El viaje de Chihiro</option>
-            <option value="MiVecinoTotoro">Mi vecino Totoro</option>
-            <option value="ElCastilloDelVagabundo">El Castillo de Vagabundo</option>
-            <option value="LaPrincesaMononoke">La princesa Mononoke</option>
-            <option value="Kiki">Kiki: Entregas a domicilio</option>
-            <option value="Ponyo">Ponyo y el secreto de la sirenita</option>
-            <option value="ElCastilloCielo">El castillo en el cielo</option>
+            <option>Seleccione la materia</option>
+            <option value="Matematicas">Matematicas</option>
+            <option value="Ciencia">Ciencia</option>
+            <option value="Arte">Arte</option>
+            <option value="Tecnologia">tecnologia</option>
+            <option value="Inegenieria">Ingenieria</option>
+           
         </Form.Select>
         </Form.Group>
         <Form.Group className="mb-3">
-            <Form.Label>Curiosidades</Form.Label>
+            <Form.Label>Notas</Form.Label>
             <Form.Control 
-            type="texttarea"
-            placeholder="Ingrese las curiosidades del personaje"
-            name="curiosidades"
-            value={dataModal.curiosidades}
+            type="number"
+            min="1" max="10"
+            placeholder="Ingrese la nota del (1-10)"
+            name="notas"
+            value={dataModal.notas}
             onChange={handleChangeModal}
             />
         </Form.Group>
                   
         <Form.Group className="mb-3">
-            <Form.Label>Amigos</Form.Label>
+            <Form.Label>Promedio</Form.Label>
             <Form.Control 
-            type="texttarea"
-            placeholder="Ingrese los amigos "
-            name="amigos"
-            value={dataModal.amigos}
+           type="text"
+            placeholder="Ingrese el promedio "
+            name="promedio"
+            value={dataModal.promedio}
             onChange={handleChangeModal}
             />
         </Form.Group>

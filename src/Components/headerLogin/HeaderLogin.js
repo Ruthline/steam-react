@@ -29,7 +29,7 @@ function Header() {
     }
     return (
     <header>
-        <script src="https://kit.fontawesome.com/d5d81529d3.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/d5d81529d3.js" crossOrigin="anonymous"></script>
         <section className="logo-index">
       
             <img src={logotipo} alt="Logotipo" className="logotipo"></img>

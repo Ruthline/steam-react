@@ -6,7 +6,7 @@ import axios from 'axios';
 import BotonV from '../../Components/login/BotonV/BotonV'
 import BotonI from '../../Components/login/BotonI/BotonI'
 function ScoreT({estudiantesNotas}){
-    const url = "http://localhost:5000/estudiantesNotas";
+    const url = "http://localhost:5000/estudiantes";
 
    
     const getData=async()=>{
@@ -27,21 +27,25 @@ function ScoreT({estudiantesNotas}){
     <section>
         <BotonI />
         <div class="botons">
-            <Link to="/score-students">
+           
             <button class="btn-verde ctr">
+            <Link to="/scoreTeacher/form">
                     <i class="fa-solid fa-user"></i>
-                    <h5>Editar todo</h5>
+                   
+                    <h5>Agregar trabajo</h5>
+                </Link>
             </button>
-            </Link>
+          
         </div>
 
         <div id="search">
-            <label for="search">
-            <input type="search" name="search" class="search" required></input>
-            <a href="mis-cursos.html">
-                <i class="fa-solid fa-magnifying-glass buscador fa-1.5x"></i>
-            </a>
-            </label>
+        <button class="btn-verde ctr">
+            <Link to="/scoreTeacher/editar">
+                    <i class="fa-solid fa-user"></i>
+                   
+                    <h5>Editar trabajos</h5>
+                </Link>
+            </button>
         </div>
         {
                     list.map((es)=>(
@@ -63,21 +67,11 @@ function ScoreT({estudiantesNotas}){
 
                                 <div class="worskhop-two">
                                 <a href="#modal2">
-                                <i class="fa-solid fa-paperclip"></i>Trabajo:Lorem ipsum
+                                <i class="fa-solid fa-paperclip"></i>{es.trabajo}
                                 </a>
                                 </div>
-                                <div class="worskshop-three">
-                                        <a href="#modal2">
-                                            <i class="fa-solid fa-paperclip"></i>Trabajo:Lorem ipsum
-                                            </a>
-                                </div>
-                                <div class="workshop-four">
-                                    <a href="#modal2">
-                                        <i class="fa-solid fa-paperclip"></i>Trabajo:Lorem ipsum
-                                        </a>
-                                </div>
                             </td>
-                            <td class="score-students"></td>
+                            <td class="score-students">{es.nota}</td>
                             <td class="average">{es.promedio}</td>
                             </tr>
 
