@@ -1,14 +1,10 @@
-import './ScoreT.css'
-import { Link } from 'react-router-dom';
-import Swal from 'sweetalert2';
 import {useState, useEffect} from "react" 
 import axios from 'axios';
-import BotonV from '../../Components/login/BotonV/BotonV'
-import BotonI from '../../Components/login/BotonI/BotonI'
-function ScoreT({estudiantesNotas}){
-    const url = "http://localhost:5000/estudiantesNotas";
 
-   
+
+function CardScore(){
+    const url="http://localhost:5000/score"
+
     const getData=async()=>{
         const response=axios.get(url);
         return response;
@@ -24,26 +20,8 @@ function ScoreT({estudiantesNotas}){
     },[])
     console.log(list)
     return(
-    <section>
-        <BotonI />
-        <div class="botons">
-            <Link to="/score-students">
-            <button class="btn-verde ctr">
-                    <i class="fa-solid fa-user"></i>
-                    <h5>Editar todo</h5>
-            </button>
-            </Link>
-        </div>
-
-        <div id="search">
-            <label for="search">
-            <input type="search" name="search" class="search" required></input>
-            <a href="mis-cursos.html">
-                <i class="fa-solid fa-magnifying-glass buscador fa-1.5x"></i>
-            </a>
-            </label>
-        </div>
-        {
+        <div>
+                {
                     list.map((es)=>(
                         <table className="table">
                              <tr className="rowprincipal-teacher"> 
@@ -55,7 +33,7 @@ function ScoreT({estudiantesNotas}){
                             </tr>
                             <tr className="row-teacher"> 
                                 <td class="student"> 
-                                    <button class="estudiantenombre"><i class="fa-solid fa-pencil"></i></button>{es.estudiante}
+                                    <a href="#modal" class="estudiantenombre"><i class="fa-solid fa-pencil"></i>{es.nombres}</a>
 
                                 </td>
                                 <td class="email">{es.correo}</td>
@@ -77,7 +55,7 @@ function ScoreT({estudiantesNotas}){
                                         </a>
                                 </div>
                             </td>
-                            <td class="score-students"></td>
+                            <td class="score-students">{es.puntaje}</td>
                             <td class="average">{es.promedio}</td>
                             </tr>
 
@@ -85,10 +63,7 @@ function ScoreT({estudiantesNotas}){
 
                     ))
                 }
-
-                    
-                
-    </section>
-)
+       </div>
+    )
 }
-export default ScoreT
+export default CardScore 

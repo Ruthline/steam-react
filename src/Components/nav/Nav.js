@@ -26,7 +26,7 @@ return(
     </Link>
   </li>
   <li>
-    <Link to="/score">
+    <Link to="/scorestudents">
       <span> <i class="fa-solid fa-medal icons" ></i>
       <h3>Notas</h3>
       </span>

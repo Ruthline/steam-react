@@ -16,7 +16,7 @@ import Course from './pages/login/Course';
 import Recursos from './pages/login/Recursos';
 import ScoreS from './pages/login/students/ScoreStudents';
 import ArteRec from './pages/login/resources/ArteRec';
-
+import ScoreT from './pages/login/teacher/scoreTeacher'
 
 
 
@@ -38,7 +38,8 @@ root.render(
     <Route path='/calendar' element={<Calendar2 />}></Route>
     <Route path='/courses' element={<Courses />}></Route>
     <Route path='/courses/:id' element={<Course />}></Route>
-    <Route path='/scoreStudents' element={<ScoreS />}></Route>
+    <Route path='/scorestudents' element={<ScoreS />}></Route>
+    <Route path='/scoreteacher' element={<ScoreT />}></Route>
 
     <Route path='/resources' element={<ArteRec/>}></Route>
   </Routes>

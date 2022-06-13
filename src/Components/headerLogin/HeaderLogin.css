@@ -1,235 +1,224 @@
 .logo-index{
   
-    display: grid;
-    grid-template-areas:
-    "logotipo user "
-    ;
-    grid-template-columns: 45% 55%;
-   
-  
-   
+  display:  flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+ 
+}
+.logotipo{ 
+  width: 80%;
+ 
   }
-  .logo-index img{ 
-    grid-area: logotipo;
-    width: 90%;
+
+.user{
+display: grid;
+grid-template-columns: 20% 80%;
+justify-self: right;
+align-self: center;
+margin-right: 20px;
+
+
+ 
+}
+.user-icon{
+color: var(--violet);
+font-size: 30px;
+
   
-    }
-  
-  .user{
-  display: grid;
-  grid-template-columns: 20% 80%;
+}
+
+.down-arrow{
+justify-self: baseline;
+grid-column: 2;
+margin-left: 10px;
+
+}
+.down-arrow i{
+color: var(--green-secundario);
+font-size:30px ;
+
+}
+
+#chk-setting{
+display: none;
+}
+#chk-setting:checked ~.items{
+display: block;
+display: grid;
+grid-template-columns: 50px;
+grid-template-rows: repeat(3, 10px);
+gap: 20px;
+animation: swing-in-top-bck 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+
+@keyframes swing-in-top-bck {
+  0% {
+    -webkit-transform: rotateX(70deg);
+            transform: rotateX(70deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 1;
+  }
+}
+
+.arrow{
+  color: var(--green-secundario);
+  font-size: 20px;
+ margin-left: 34px;
+
+}
+
+.btn-dropdown{
+color: white;
+font-size: 1.5rem;
+cursor: pointer;/*Al pasar por encima muestra la manito*/
+}
+.items{
+background-color:rgba(69,45,128,0.8); 
+width: 18vw;
+height: 22vw;
+display: none;
+position: relative;
+z-index:1;
+}
+
+.item{
+padding: 0.7rem;
+text-decoration: none;
+color: white;
+font-weight: 600;
+}
+.item:hover{
+color: var(--green-secundario);
+}
+
+.user p{
+font-size: 0.8em;
+font-weight: 700;
+align-self:center;
+}
+
+.barra{
+background-color: rgba(69,46,128,0.3);
+position: relative;
+z-index: 0;
+width: 25%;
+}
+.hamburguesa{
+    background-color: var(--violet);
+    color: white;
+    width: 35px;
+    margin: 15px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+}
+.hamburguesa i{
+font-size: 20px;
+}
+
+#chk-bar{
+display:none;
+}
+#chk-bar:checked ~.items-bar{
+display: block;
+display: grid;
+
+}
+
+.items-bar{
+display: none;
+position: relative;
+z-index:1;
+}
+.btn-bar{
+color: white;
+font-size: 1.5rem;
+cursor: pointer;/*Al pasar por encima muestra la manito*/
+}
+
+
+@media screen and (min-width:708px) {
+.items{
+  width: 12vw;
+  height: 14vw;
+
+}
+.logo-index{
+  flex-direction: row;
+  justify-content:space-around;
+}
+.logotipo{ 
+  width: 38%;
+  margin: 0px 20px;
+
+ 
+  }
+
+.user{
   justify-self: right;
   align-self: center;
-  margin-right: 20px;
-  
-   
-  }
-  .user-icon{
-  color: var(--violet);
+
+}
+.user-icon{
+  font-size: 40px;
+  margin-right: 13px;
+ 
+}
+.arrow{
   font-size: 30px;
-  
-    
+}
+.user p{
+  font-size: 1em;
+
   }
-  
-  .down-arrow{
-  justify-self: baseline;
-  grid-column: 2;
-  margin-left: 10px;
-  
-  }
-  .down-arrow i{
-  color: var(--green-secundario);
-  font-size:30px ;
-  
-  }
-  
-  #chk-setting{
-  display: none;
-  }
-  #chk-setting:checked ~.items{
-  display: block;
-  display: grid;
-  grid-template-columns: 50px;
-  grid-template-rows: repeat(3, 10px);
-  gap: 20px;
-  
-  }
-  .arrow{
-    color: var(--green-secundario);
-    font-size: 20px;
-   margin-left: 34px;
-  
-  }
-  
-  .btn-dropdown{
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;/*Al pasar por encima muestra la manito*/
-  }
-  .items{
-  background-color:rgba(69,45,128,0.8); 
-  width: 18vw;
-  height: 22vw;
-  display: none;
-  position: relative;
-  z-index:1;
-  }
-  
-  .item{
-  padding: 0.7rem;
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-  }
-  .item:hover{
-  color: var(--green-secundario);
-  }
-  
-  .user p{
-  font-size: 0.8em;
-  font-weight: 700;
-  align-self:center;
-  }
-  
-  .barra{
-  background-color: rgba(69,46,128,0.3);
-  position: relative;
-  z-index: 0;
-  }
-  .hamburguesa{
-      background-color: var(--violet);
-      color: white;
-      width: 35px;
-      margin: 15px;
-      padding: 8px;
-      border: none;
+ 
+    }
+    .hamburguesa{
+      width: 45px;
+      margin: 20px;
+      padding: 12px;
       border-radius: 10px;
   }
   .hamburguesa i{
-  font-size: 20px;
+    font-size: 22px;
   }
-  
-  #chk-bar{
-  display:none;
-  }
-  #chk-bar:checked ~.items-bar{
-  display: block;
-  display: grid;
-  
-  }
-  
-  .items-bar{
-  display: none;
-  position: relative;
-  z-index:1;
-  }
-  .btn-bar{
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;/*Al pasar por encima muestra la manito*/
-  }
-  .linea-proof{
-  width: 486px; 
-  height: 15px; 
-  background: var(--violet);
-  
-  }
-  
-  @media screen and (min-width:708px) {
-  .items{
-    width: 12vw;
-    height: 14vw;
-  
-  }
-  .logo-index{
-    grid-template-columns: 20% 80%;
-  }
-  .logo-index img{ 
-    width: 180%;
-  }
-  .user{
-    justify-self: right;
-    align-self: center;
-  
-  }
-  .user-icon{
-    font-size: 40px;
-    margin-right: 13px;
-   
-  }
-  .arrow{
-    font-size: 30px;
-  }
-  .user p{
-    font-size: 1em;
-  
-    }
-    .logo-index{
-      grid-template-columns: 20% 80%;
-    }
-    .logo-index img{ 
-      width: 180%;
-    }
-    .user{
-      justify-self: right;
-      align-self: center;
-    
-    }
-    .user-icon{
-      font-size: 40px;
-      margin-right: 13px;
-     
-    }
-    .arrow{
-      font-size: 30px;
-    }
-    .user p{
-      font-size: 1em;
-    
-      }
-      .hamburguesa{
-        width: 45px;
-        margin: 20px;
-        padding: 12px;
-        border-radius: 10px;
-    }
-    .hamburguesa i{
-      font-size: 22px;
-    }
-    .linea-proof{
-      width: 870px; 
-    }
-  }
-  
-  @media screen and (min-width:1024px) {
-  
-  .logo-index img{ 
-    width: 140%;
-  }
-  .linea-proof{
-    width: 1060px; 
-  }
-  .items{
-    width: 10vw;
-    height: 10vw;
-  
-  }
-  }
-  
-  @media screen and (min-width:1440px) {
-  .items{
-    width: 8vw;
-    height: 6vw;
-  
-  }
-  .logo-index img{ 
-    width: 80%;
-  }
-  .linea{
-    width: 190%;
-  }
-  .linea-proof{
-    width: 1880px; 
-  }
-  
-  }
+
+
+
+@media screen and (min-width:1024px) {
+
+.logotipo{ 
+  width: 25%;
+  margin: 0;
+}
+
+.items{
+  width: 10vw;
+  height: 10vw;
+
+}
+}
+
+@media screen and (min-width:1340px) {
+.items{
+  width: 8vw;
+  height: 6vw;
+
+}
+.lootipo{ 
+  width: 20%;
+}
+
+
+}

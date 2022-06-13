@@ -23,8 +23,11 @@ function ArteRec(){
         <div className="items-bar">
             <Navbar />
         </div>
-
+        <div className="boton">
+            <h1>Hola</h1>
+        </div>
 </section>
+
         <div className="container">
                 <h1>Recursos</h1>
                 <div className="recursos">
@@ -41,7 +44,7 @@ function ArteRec(){
                 </div>
             </div>
             </div>
-  
+            
             
         <FooterLogin />
         </>

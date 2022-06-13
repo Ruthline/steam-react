@@ -1,12 +1,12 @@
-import ScoreT from "../components/ScoreT/ScoreT"
-import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header";
-import Navbar from "../components/Navbar/Navbar";
+import ScoreT from "../../../Components/scoreT/ScoreT"
+import Navbar from "../../../Components/nav/Nav";
+import HeaderLogin from "../../../Components/headerLogin/HeaderLogin";
+import FooterLogin from "../../../Components/footerLogin/FooterLogin";
 
 function ScoreTeacher(){
     return(
         <section>
-            <Header />
+            <HeaderLogin />
             <div className="dashboard-nav-center">
             <section className="bar-dropdown">
 
@@ -25,7 +25,7 @@ function ScoreTeacher(){
 </section>
             <ScoreT />
             </div>
-            <Footer />
+            <FooterLogin />
 
         </section>
     )
