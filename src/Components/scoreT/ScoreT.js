@@ -5,84 +5,78 @@ import {useState, useEffect} from "react"
 import axios from 'axios';
 import BotonV from '../../Components/login/BotonV/BotonV'
 import BotonI from '../../Components/login/BotonI/BotonI'
-function ScoreT({estudiantesNotas}){
+import TableScoreT from './TableScoreT'
+function ScoreT(){
     const url = "http://localhost:5000/estudiantes";
 
    
-    const getData=async()=>{
-        const response=axios.get(url);
+     /*2. Generar función asíncrona para conentarme a la API*/
+     const getData = async () => {
+        const response = axios.get(url);
         return response;
     }
 
-    const[list,setList]=useState([]);
+    /*3.UseState para guardar la respuesta de la petición y ponerlo a disposión del componente */
 
-    useEffect(()=>{
-        getData().then((response)=>{
+    const [list, setList] = useState([]);
+    /*5.Crear otro estadopara refrescar el listoadi despues de eliminar */
+    const [upList,setUplist] = useState([false]);
+
+    /*4. hook useEffect ejecutar funciones cada vez que renderizamos un componente */
+    useEffect(() => {
+        getData().then((response) => {
             setList(response.data);
-
         })
-    },[])
-    console.log(list)
-    return(
-    <section>
-        <BotonI />
-        <div class="botons">
-           
-            <button class="btn-verde ctr">
-            <Link to="/scoreTeacher/form">
-                    <i class="fa-solid fa-user"></i>
-                   
-                    <h5>Agregar trabajo</h5>
-                </Link>
-            </button>
-          
-        </div>
+    }, [upList])
+    console.log(list);
+return(
+    <div className="students-calificaciones">
+   <section className="botones-score">
+    
+    <BotonI  className="cti"/>
+    <Link to="/scoreTeacher">
+    <button class="btn-verde ctr">
+                <i class="fa-solid fa-user"></i>
+                <h5>Ir a profesores Score</h5>
+    </button>
+    </Link>
+  
 
-        <div id="search">
-        <button class="btn-verde ctr">
-            <Link to="/scoreTeacher/editar">
-                    <i class="fa-solid fa-user"></i>
-                   
-                    <h5>Editar trabajos</h5>
-                </Link>
-            </button>
-        </div>
-        {
-                    list.map((es)=>(
-                        <table className="table">
-                             <tr className="rowprincipal-teacher"> 
-                                <th class="student-teacher"> Estudiante:</th>
-                                <th class="email-teacher">Correo:</th>
-                                <th class="workshop-teacher">Trabajos:</th>
-                                <th class="score-teacher">Puntaje:</th>
-                                <th class="average-teacher">Promedio:</th>
-                            </tr>
-                            <tr className="row-teacher"> 
-                                <td class="student"> 
-                                    <button class="estudiantenombre"><i class="fa-solid fa-pencil"></i></button>{es.estudiante}
-
-                                </td>
-                                <td class="email">{es.correo}</td>
-                                <td class="workshop">
-
-                                <div class="worskhop-two">
-                                <a href="#modal2">
-                                <i class="fa-solid fa-paperclip"></i>{es.trabajo}
-                                </a>
-                                </div>
-                            </td>
-                            <td class="score-students">{es.nota}</td>
-                            <td class="average">{es.promedio}</td>
-                            </tr>
-
-                        </table>
-
-                    ))
-                }
-
-                    
-                
+    <div id="search">
+        <label for="buscar">
+        <input type="search" name="search" class="search" required></input>
+        <a href="mis-cursos.html">
+            <i class="fa-solid fa-magnifying-glass buscador fa-1.5x"></i>
+        </a>
+        </label>
+    </div>
     </section>
+
+        <table className="table">
+        
+        <tr className="rowprincipal-teacher"> 
+                    <th class="student-teacher"> Estudiante:</th>
+                    <th class="email-teacher">Correo:</th>
+                    <th class="workshop-teacher">Trabajos:</th>
+                    <th class="score-teacher">Puntaje:</th>
+                    <th class="average-teacher">Promedio:</th>
+                </tr>
+                    {      
+                list.map((es, index)=>(
+                    <TableScoreT
+                        key={index}
+                        estudiantes={es}
+                        setUplist={setUplist}
+                        upList={upList}
+                    />
+                ))
+}
+        </table>
+  
+   
+    </div>
+                
+   
 )
 }
 export default ScoreT
