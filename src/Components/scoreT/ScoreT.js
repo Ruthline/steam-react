@@ -36,8 +36,10 @@ return(
     <BotonI  className="cti"/>
     <Link to="/scoreTeacher">
     <button class="btn-verde ctr">
+        <Link to="/scoreTeacher/form">
                 <i class="fa-solid fa-user"></i>
-                <h5>Ir a profesores Score</h5>
+                <h5>Añadir trabajo</h5>
+        </Link>
     </button>
     </Link>
   

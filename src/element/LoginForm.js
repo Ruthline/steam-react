@@ -8,9 +8,7 @@ const colores = {
 }
 
 const Formulario = styled.form `
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 20px;
+	
 
 	@media (max-width: 800px){
 		grid-template-columns: 1fr;
@@ -23,6 +21,7 @@ const Label = styled.label`
 	padding: 10px;
 	min-height: 40px;
 	cursor: pointer;
+	color: #fff;
 
 	${props => props.valido === 'false' && css`
 		color: ${colores.error};
@@ -36,13 +35,14 @@ const GrupoInput = styled.div`
 
 const Input = styled.input`
 	width: 100%;
-	background: #fff;
 	border-radius: 3px;
 	height: 45px;
 	line-height: 45px;
 	padding: 0 40px 0 10px;
 	transition: .3s ease all;
 	border: 3px solid transparent;
+	background-color:rgba(191, 174, 236, 0.561) ;
+	color: white;
 
 	&:focus {
 		border: 3px solid ${colores.borde};
@@ -117,9 +117,8 @@ const ContenedorBotonCentrado = styled.div`
 `;
 
 const Boton = styled.button`
-	height: 45px;
 	line-height: 45px;
-	width: 25%;
+	width: 100%;
 	background: white;
 	color: rgb(76,137,42);
 	font-weight: bold;
@@ -127,6 +126,7 @@ const Boton = styled.button`
 	border-radius: 50px;
 	cursor: pointer;
 	transition: .1s ease all;
+	padding: 2px 20px;
 
 	&:hover {
 		box-shadow: 3px 0px 30px rgba(163,163,163, 1);
@@ -138,6 +138,7 @@ const Boton = styled.button`
 const MensajeExito = styled.p`
 	font-size: 14px;
 	color: ${colores.exito};
+	display: block
 `;
 
 const MensajeError = styled.div`
@@ -168,3 +169,4 @@ export {
 	MensajeExito,
 	MensajeError
 };
+

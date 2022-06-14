@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { Container, Form } from 'react-bootstrap';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { useNavigate} from 'react-router-dom';
 import '../modales/modal.css'
@@ -11,7 +12,7 @@ const navigate=useNavigate();
 
 
 /* Inicializando los inputs en el estado, para poder escribir los datros o los valores que el usuario digite en el form y manejarlos o controlarlos*/
-    const [data,setData]=useState({id:"",fecha:"",trabajos:"",materia:"", nota:""});
+    const [data,setData]=useState({id:"",fecha:"",trabajo:"",materia:"", grado:"", descripcion:""});
 
      const handleChange=({target})=>{
 /*[id:2,nombre:"tatiana",apellido:"cabrera"]
@@ -39,7 +40,7 @@ int num=10;*/
                 ha sido guardado exitosamente!`,
                     'success'
             )
-                navigate("/");
+                navigate("/scoreTeacher");
         }else{
             Swal.fire(
                 'Error!',
@@ -78,6 +79,27 @@ return(
                 </select>
                 </div>
                 <div>
+               <label>Grado</label>
+               <select name="select"  type=""
+                        placeholder="Ingrese el Correo"
+                        name="grado"
+                        value={data.grado}
+                        onChange={handleChange}>
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    
+                </select>
+                </div>
+                <div>
                     <label>Fecha:</label>
                     <input
                     type="date"
@@ -89,6 +111,19 @@ return(
                     >
                     
                     </input>
+                </div>
+                <div>
+                    <label>Descripción:</label>
+                    <textarea
+
+                    placeholder="El siguiente trabajo..."
+                    name="descripcion"
+                    value={data.descripcion}
+                    onChange={handleChange}
+                    
+                    >
+                    
+                    </textarea>
                 </div>
                         
                

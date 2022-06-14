@@ -5,24 +5,43 @@
       "trabajo": "Trabajo: Juegos de mátematicas",
       "materia": "Ciencia",
       "fecha": "10/10/2022",
-      "nota": "10",
-      "promedio": "98%"
+      "grado": "5",
+      "descripcion": "Realizar el juego de mátematicas en el aula virtual"
     },
     {
       "id": 2,
       "trabajo": "Laboratorio: Arte en la tencnologia",
       "materia": "Arte",
       "fecha": "10/10/2022",
-      "nota": "8",
-      "promedio": "98%"
+      "grado": "10",
+      "descripcion": "Realizar el juego de mátematicas en el aula virtual"
+    },
+    {
+      "id": 3,
+      "fecha": "2022-06-30",
+      "trabajo": "Actividad: Desarrollo",
+      "materia": "Ciencia",
+      "grado": "6",
+      "descripcion": "dsvdsbvdv"
     }
   ],
   "estudiantes": [
     {
       "id": 1,
       "nombre": "Ruth Velez",
-      "correo": "ruthvelez@colegiosanpatricio.edu.co"
-      
+      "grado": "1",
+      "correo": "ruthvelez@colegiosanpatricio.edu.co",
+      "usuario": "rvelez123",
+      "password": "STEAM2022"
+    }
+  ],
+  "profesores": [
+    {
+      "id": 1,
+      "nombre": "Beatriz Pinzon",
+      "correo": "bpinzon@colegiosanpatricio.edu.co",
+      "usuario": "bpinzonprofe",
+      "password": "STEAM2022"
     }
   ]
 }
