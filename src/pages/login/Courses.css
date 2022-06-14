@@ -25,6 +25,54 @@ h1{
     margin: 20px;
 }
 
+.title{
+    grid-area: title;
+}
+.card-deliver{
+    grid-area: cards;
+    display: grid;
+    grid-template-areas: 
+    "image"
+    "title"
+    "paragraph"
+    "icons"
+    ;
+    gap: 2%;
+    padding: 20px;
+    border: 5px solid var(--violet);
+    border-radius: 20px;
+    justify-content: center;
+    margin: 10%;
+
+}
+
+.card-deliver img{
+    grid-area: image;
+    border-radius: 20px;
+    width: 300px;
+    justify-self: center;
+}
+.card-deliver h2{
+    grid-area: title;
+}
+.card-deliver p{
+    grid-area: paragraph;
+
+}
+.icons-second{
+    grid-area: icons;
+    display: flex;
+    color: var(--violet);
+    justify-self: center;
+
+}
+.icons-second i{
+    margin: 30px;
+    font-size: 1.2em;
+}
+.fa-comment{
+    color: #752995;
+}
 @media screen and (min-width:768px) {
     .c-div{
         margin-bottom:  5rem;
@@ -42,12 +90,31 @@ h1{
 
 
     }
+    .card-deliver{
+        grid-column: 2/5;
+        display: grid;
+        grid-template-areas: 
+        "image title"
+        "image paragraph"
+        "icons icons"
+        ;
+        margin: 5%;
+
+    }
+    .icons{
+        justify-content: space-evenly;
+    }
 
 }
 
 @media screen and (min-width:1024px) {
     .clas{
         margin: 20px;
+    }
+    .card-deliver{
+
+        margin: 2% 25%;
+
     }
 
 }

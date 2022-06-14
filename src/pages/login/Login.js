@@ -1,98 +1,114 @@
+
+
 import { Link } from 'react-router-dom';
 import logotipo from '../../Components/header/logotipo.svg'
-
+import { Formik } from 'formik';
 import './Login.css'
-import React, { useState } from 'react';
-import { Formulario, ContenedorBotonCentrado, Boton, MensajeError, MensajeExito } from '../../element/LoginForm';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
-import Input from '../../Components/inputs/Inputs';
+import Swal from 'sweetalert2';
+import { ContenedorBotonCentrado, Boton, MensajeExito, MensajeError } from '../../element/LoginForm';
+import styled from 'styled-components';
 
-function Login() {
-    const [nombre, cambiarNombre] = useState({ campo: '', valido: null});
-    const [password, cambiarPassword] = useState({ campo: '', valido: null });
-    const [formularioValido, cambiarFormularioValido] = useState(null);
-    const expresiones = {
-        nombre: /^[a-zA-Z0-9_-]{4,16}$/,
-        password: /^.{4,12}$/
-    }
-    const onSubmit = (e) => {
-        e.preventDefault();
-        if (
-            nombre.valido === 'true' &&
-            password.valido === 'true'
-           
-        ) {
-            cambiarFormularioValido(true)
-            cambiarNombre({ campo: '', valido: "bpinzon123"});
-            cambiarPassword({ campo: '', valido: "STEAM2022" });
-        } else {
-            cambiarFormularioValido(false);
-            cambiarNombre({ campo: '', valido: null});
-            cambiarPassword({ campo: '', valido: null });
-        }
-    }
-
+const Login = () => {
 
     return (
-        <section className="fondo-login">
-        <section id="login">
-            <div class="images-login">
-                <img src={logotipo} alt="Logotipo" className="logo"></img>
-            </div>
 
-            <div class="form-login">
-                <h2>Login</h2>
-                <Formulario action="" onSubmit={onSubmit}>
-                    <div className="form-group">
-                        <Input
-                            for="control" 
-                            estado={nombre}
-                            cambiarEstado={cambiarNombre}
-                            tipo="text"
-                            label="Nombre"
-                            placeholder="bpinzon123"
-                            name="usuario"
-                            leyendaError="El usuario solo puede contener letras y espacios."
-                            expresionRegular={expresiones.nombre}
-                            className="form-input"
-                        />
-                    </div>
-                    <div className="form-group">
-                        <Input
-                            id="password" 
-                            estado={password}
-                            cambiarEstado={cambiarPassword}
-                            tipo="password"
-                            label="Contraseña"
-                            name="password1"
-                            leyendaError="La contraseña tiene que ser de 4 a 12 dígitos."
-                            expresionRegular={expresiones.password}
-                           
+        <Formik
+            initialValues={{
+                usario: '',
+                contraseña: ''
+            }}
+            validate={(valores) => {
+                let errores = {}
+                //VALIDACION CORREO Y CONTRASEÑA DEL ADMIN
+                if (valores.usario === 'bpinzon123' && valores.contraseña === 'STEAM2022') {
+                    Swal.fire({
+                        title: 'Credenciales correctas',
+                        showDenyButton: true,
+                        showCancelButton: true,
+                        confirmButtonText: 'Continuar',
+                        denyButtonText: `volver`,
+                    }).then((result) => {
+                        /* Read more about isConfirmed, isDenied below */
+                        if (result.isConfirmed) {
+                            window.location="/dashboard"
+                        } else if (result.isDenied) {
+                            window.location="/estudiantes"
+                        }
+                    })
+                }
+                //VALIDACION USUARIO
+                if (!valores.usario) {
+                    errores.usario = 'Por favor ingrese sus credenciales correctamente';
+                } else if (/^[a-zA-Z0-9_-]{4,16}$/.test(valores.usario)) {
+                    errores.usario = "El Usuario debe contener solo numeros y letras."
+
+                    //VALIDACION CONTRASEÑA
+                } if (!valores.contraseña) {
+                    errores.contraseña = 'Por favor ingrese su contraseña'
+                } else if (!/^.{4,12}$/.test(valores.contraseña)) {
+                    errores.contraseña = 'La contraseña tiene que ser de 4 a 12 dígitos.'
+
+                }
+                return errores;
+            }}
+
+            onSubmit={(valores, { resetForm }) => {
+                resetForm();
+                console.log('Entrar')
+            }}>
 
 
-                        />
-                    </div>
-                    {formularioValido === false && <MensajeError>
-                        <p>
-                            <FontAwesomeIcon icon={faExclamationTriangle} />
-                            <b>Error:</b>Por favor diligenciar las credeciales correctamente</p>
-                    </MensajeError>}
-                    <ContenedorBotonCentrado>
-                       
-                    <Boton type="submit">Enviar</Boton>
-					{formularioValido === true && <Link to="/dashboard"></Link> }
-                    </ContenedorBotonCentrado>
+            {({ values, errors, touched, handleSubmit, handleChange, handleBlur }) => (
+                <div>
+                    <form action='/dashboard' onSubmit={handleSubmit} id="login">
+                        <div class="images-login">
+                            <img src={logotipo} alt="Logotipo" className="logo"></img>
+                        </div>
+                        <div class="form-login">
+                            <h2>Login</h2>
 
-                </Formulario>
+                            <div className="form-group">
+                                <label htmlFor='usario' className="form-label">Usuario</label>
+                                <input
+                                    className="form-input"
+                                    type='text'
+                                    id='usario'
+                                    name='usario'
+                                    placeholder='bpinzon123'
+                                    value={values.usario}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur} />
 
-            </div>
-            <div id="res">
+                                {touched.usario && errors.usario && <div className='error'>{errors.usario}</div>}
+                            </div>
 
-        </div>
+                            <div className="form-group">
+                                <label htmlFor='contraseña' className="form-label">Contraseña</label>
+                                <input
+                                    className="form-input"
+                                    type='text'
+                                    id='contraseña'
+                                    name='contraseña'
+                                    placeholder='Ingrese su contraseña'
+                                    value={values.contraseña}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur} />
+                                {touched.contraseña && errors.contraseña && <div className='error'>{errors.contraseña}</div>}
+                            </div>
 
-        </section>
-        </section>
+                            <ContenedorBotonCentrado>
+                                <Boton type="submit">Entrar</Boton>
+                            </ContenedorBotonCentrado>
+
+                        </div>
+
+
+                    </form>
+                </div>
+            )}
+
+        </Formik>
+
     );
 }
 

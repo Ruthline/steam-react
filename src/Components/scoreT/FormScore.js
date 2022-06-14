@@ -12,7 +12,7 @@ const navigate=useNavigate();
 
 
 /* Inicializando los inputs en el estado, para poder escribir los datros o los valores que el usuario digite en el form y manejarlos o controlarlos*/
-    const [data,setData]=useState({id:"",fecha:"",trabajo:"",materia:"", grado:"", descripcion:""});
+    const [data,setData]=useState({id:"",fecha:"",trabajo:"",materia:"", grado:"", descripcion:"", imagen:""});
 
      const handleChange=({target})=>{
 /*[id:2,nombre:"tatiana",apellido:"cabrera"]
@@ -55,6 +55,16 @@ return(
 
     <Form onSubmit={handleSubmit} >
                 <div>
+                    <label className="trabajo">Imagen</label>
+                        <input
+                        type="text"
+                        placeholder="Ingrese la url de la imagen"
+                        name="imagen"
+                        value={data.imagen}
+                        onChange={handleChange}
+                        />
+                </div>
+                <div>
                     <label className="trabajo">Trabajo</label>
                         <input
                         type="text"
@@ -66,7 +76,7 @@ return(
                 </div>
                 <div>
                <label>Materia</label>
-               <select name="select"  type=""
+               <select type=""
                         placeholder="Ingrese el Correo"
                         name="materia"
                         value={data.materia}
@@ -80,7 +90,7 @@ return(
                 </div>
                 <div>
                <label>Grado</label>
-               <select name="select"  type=""
+               <select type=""
                         placeholder="Ingrese el Correo"
                         name="grado"
                         value={data.grado}

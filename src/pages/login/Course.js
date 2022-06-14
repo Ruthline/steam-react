@@ -2,56 +2,51 @@ import FooterLogin from "../../Components/footerLogin/FooterLogin"
 import HeaderLogin from "../../Components/headerLogin/HeaderLogin"
 import { useParams} from "react-router-dom";
 import {getCourse} from "../../courses";
+import CardCourse from '../../Components/AreaSteam/CardCourse'
+import {useState, useEffect} from "react" 
+import axios from 'axios';
 import '../../Components/modales/modal.css'
-
-
-
 
 function Course(){
     const params=useParams();
     const  course=getCourse(parseInt(params.id));
-    return(
+    const url = "http://localhost:5000/trabajos";
+
+    /*2. Generar función asíncrona para conentarme a la API*/
+    const getData = async () => {
+       const response = axios.get(url);
+       return response;
+   }
+
+   /*3.UseState para guardar la respuesta de la petición y ponerlo a disposión del componente */
+
+   const [list, setList] = useState([]);
+   /*5.Crear otro estadopara refrescar el listoadi despues de eliminar */
+   const [upList,setUplist] = useState([false]);
+
+   /*4. hook useEffect ejecutar funciones cada vez que renderizamos un componente */
+   useEffect(() => {
+       getData().then((response) => {
+           setList(response.data);
+       })
+   }, [upList])
+   console.log(list);
+return(
         <div>
-             {params.id}
-            <HeaderLogin />
-            <div>
-                <img src={course.banner} alt="imagen"></img>
-            </div>
-            <div className="card-deliver">
-                {params.id}
-                <h1>Detalle de </h1>
-                <h3>{course.trabajo}</h3>
-                <p>{course.descripcion}</p>
-                <div className="icons" >
-                    <a href="#modal" class="cta"><i className="fa-solid fa-paperclip" ></i></a>
-                    <a href="#modal" class="cta"><i className="fa-solid fa-comment"></i></a>
-                </div>
-            </div>
-            <section id="modal" className="modal">
-        
-        <div className="modalContainer">
-    
-            <form method="post" enctype="multipart/form-data">
-                <div>
-                  <label for="file">Elige el archivo a cargar</label>
-                  <input type="file" id="file" name="file" multiple></input>
-                </div>
-        
-                <textarea name="textarea" rows="10" cols="50">Hola profesor...
             
-                </textarea>
-                <button className="btn-verde">Enviar</button>
-               </form>
+            <HeaderLogin />
 
-               
-
-
-
-        </div>
-        </section>
-
-        <FooterLogin />
-
+            {
+            list.map((tr, index)=>(
+                    <CardCourse
+                        key={index}
+                        trabajos={tr}
+                        setUplist={setUplist}
+                        upList={upList}
+                    />
+                ))
+}
+            <FooterLogin />
         </div>
     )
 }

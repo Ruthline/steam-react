@@ -3,14 +3,17 @@
     {
       "id": 1,
       "trabajo": "Trabajo: Juegos de mátematicas",
+      "imagen": "https://saposyprincesas.elmundo.es/wp-content/uploads/2021/07/ideas-para-practicar-matematicas.jpg",
       "materia": "Ciencia",
       "fecha": "10/10/2022",
       "grado": "5",
       "descripcion": "Realizar el juego de mátematicas en el aula virtual"
+     
     },
     {
       "id": 2,
       "trabajo": "Laboratorio: Arte en la tencnologia",
+      "imagen": "https://saposyprincesas.elmundo.es/wp-content/uploads/2021/07/ideas-para-practicar-matematicas.jpg",
       "materia": "Arte",
       "fecha": "10/10/2022",
       "grado": "10",
@@ -18,11 +21,50 @@
     },
     {
       "id": 3,
+      "imagen": "https://saposyprincesas.elmundo.es/wp-content/uploads/2021/07/ideas-para-practicar-matematicas.jpg",
       "fecha": "2022-06-30",
       "trabajo": "Actividad: Desarrollo",
       "materia": "Ciencia",
       "grado": "6",
       "descripcion": "dsvdsbvdv"
+      
+    },
+    {
+      "id": 4,
+      "fecha": "2022-06-23",
+      "trabajo": "Actividad: Desarrollo",
+      "materia": "Tecnologia",
+      "grado": "7",
+      "descripcion": "tjjnhbhbfhtfrbh",
+      "imagen": "https://i.pinimg.com/564x/4a/fd/1e/4afd1e0859d7b05c471eb30848fab3ad.jpg"
+    }
+  ],
+  "materias": [
+    {
+      "idmateria":1,
+      "image":"https://media3.giphy.com/media/l0Iy3qmrODEarmfHq/giphy.gif?cid=ecf05e47n4hxxs6u6suhkx28slu5938ro8f5eld1mpkwkzr8&rid=giphy.gif&ct=g",
+      "title": "Arte"
+    },
+    {
+      "idmateria":2,
+      "image":"https://media3.giphy.com/media/o65WgXSDBVY1G/giphy.gif?cid=ecf05e47aq9zgefha69plm6ov7pi2o79am1sh91m21mzknvi&rid=giphy.gif&ct=g",
+      "title": "Ciencia"
+    },
+    {
+      "idmateria":3,
+      "image":"https://media3.giphy.com/media/l0Iy3qmrODEarmfHq/giphy.gif?cid=ecf05e47n4hxxs6u6suhkx28slu5938ro8f5eld1mpkwkzr8&rid=giphy.gif&ct=g",
+      "title": "Arte"
+    },
+    {
+      "idmateria":4,
+      "image":"https://media3.giphy.com/media/l0Iy3qmrODEarmfHq/giphy.gif?cid=ecf05e47n4hxxs6u6suhkx28slu5938ro8f5eld1mpkwkzr8&rid=giphy.gif&ct=g",
+      "title": "Arte"
+    }
+    ,
+    {
+      "idmateria":5,
+      "image":"https://media3.giphy.com/media/l0Iy3qmrODEarmfHq/giphy.gif?cid=ecf05e47n4hxxs6u6suhkx28slu5938ro8f5eld1mpkwkzr8&rid=giphy.gif&ct=g",
+      "title": "Arte"
     }
   ],
   "estudiantes": [
