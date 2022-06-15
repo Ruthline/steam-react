@@ -3,11 +3,11 @@ import HeaderLogin from "../../Components/headerLogin/HeaderLogin"
 import './Courses.css'
 import Navbar from "../../Components/nav/Nav"
 
-import {getAllCourses} from '../../courses'
+import {getCourses} from '../../courses'
 import { Link } from "react-router-dom";
 import BotonI from '../../Components/login/BotonI/BotonI';
 function Courses(){
-    const courses=getAllCourses();
+    const courses=getCourses();
     return(
         <div>
             <HeaderLogin />

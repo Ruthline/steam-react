@@ -1,14 +1,14 @@
 
 
 import { Link } from 'react-router-dom';
-import logotipo from '../../Components/header/logotipo.svg'
+import logotipo from '../../../Components/header/logotipo.svg'
 import { Formik } from 'formik';
 import './Login.css'
 import Swal from 'sweetalert2';
-import { ContenedorBotonCentrado, Boton, MensajeExito, MensajeError } from '../../element/LoginForm';
+import { ContenedorBotonCentrado, Boton, MensajeExito, MensajeError } from '../../../element/LoginForm';
 import styled from 'styled-components';
 
-const Login = () => {
+const LoginS = () => {
 
     return (
 
@@ -112,4 +112,4 @@ const Login = () => {
     );
 }
 
-export default Login;
+export default LoginS;

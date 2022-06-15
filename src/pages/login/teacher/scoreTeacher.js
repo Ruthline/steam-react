@@ -1,5 +1,5 @@
 import ScoreT from "../../../Components/scoreT/ScoreT"
-import Navbar from "../../../Components/nav/Nav";
+import Navbar from "../../../Components/navT/Nav";
 import HeaderLogin from "../../../Components/headerLogin/HeaderLogin";
 import FooterLogin from "../../../Components/footerLogin/FooterLogin";
 

@@ -14,28 +14,28 @@ return(
   <li>
     <Link to="/calendar">
       <span> <i class="fa-solid fa-calendar icons"></i>
-      <h3 className="navtitle">Calendario</h3>
+      <h3>Calendario</h3>
       </span>
     </Link>
   </li>
   <li>
     <Link to="/courses">
       <span> <i class="fa-solid fa-book icons"></i> 
-      <h3 className="navtitle">Cursos</h3>
+      <h3>Cursos</h3>
       </span>
     </Link>
   </li>
   <li>
     <Link to="/scorestudents">
       <span> <i class="fa-solid fa-medal icons" ></i>
-      <h3 className="navtitle">Notas</h3>
+      <h3>Notas</h3>
       </span>
     </Link>
   </li>
   <li>
     <Link to="/resources">
       <span> <i class="fa-solid fa-laptop-file icons"></i>
-      <h3 className="navtitle">Recursos</h3>
+      <h3>Recursos</h3>
       </span>
     </Link>
   </li>

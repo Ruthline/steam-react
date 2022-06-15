@@ -1,6 +1,5 @@
 
-import './HeaderLogin.css'
-import '../nav/Nav'
+import '../headerLogin/HeaderLogin.css'
 import logotipo from '../header/logotipo.svg'
 import {useState} from "react";
 import { Link } from 'react-router-dom'
@@ -47,7 +46,7 @@ function Header() {
                   <div class="items">
                   <Link to="/dashboard/ajustes"class="item">Ajustes</Link>
                   <Link to="/dashboard/perfil"class="item">Perfil</Link>
-                  <Link to="/login" class="item">Log out</Link>
+                  <Link to="/home" class="item">Log out</Link>
                 </div>
                 </div>
                 </section>

@@ -81,11 +81,11 @@ return(
                         name="materia"
                         value={data.materia}
                         onChange={handleChange}>
-                    <option value="Matematicas">Matematicas</option>
-                    <option value="Ciencia" selected>Ciencia</option>
-                    <option value="Ingenieria">Ingenieria</option>
-                    <option value="Arte">Arte</option>
-                    <option value="Tencologia">Tecnologia</option>
+                    <option value="1">Arte</option>
+                    <option value="2" selected>Ciencia</option>
+                    <option value="3">Matematicas</option>
+                    <option value="4">Ingenieria</option>
+                    <option value="5">Tecnologia</option>
                 </select>
                 </div>
                 <div>

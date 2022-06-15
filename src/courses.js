@@ -28,7 +28,7 @@ let courses=[
 ]
 
 
-export function getAllCourses(){
+export function getCourses(){
     return courses;
 }
 

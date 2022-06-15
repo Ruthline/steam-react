@@ -34,12 +34,11 @@ return(
    <section className="botones-score">
     
     <BotonI  className="cti"/>
-    <Link to="/scoreTeacher">
+
     <button class="btn-verde ctr">
                 <i class="fa-solid fa-user"></i>
-                <h5>Ir a profesores Score</h5>
+                <h5>Exportar</h5>
     </button>
-    </Link>
   
 
     <div id="search">
