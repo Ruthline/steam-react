@@ -93,5 +93,12 @@
       "grado": "10",
       "descripcion": "Invetsiga como el arte y la tecnolgia pueden asociarae"
     }
+  ],
+  "trabajosCalificacion" :[
+    {
+      "entrega":"",
+      "comentario":""
+    }
+
   ]
 }

@@ -1,9 +1,9 @@
-import Calendar from "../../Components/calendar/Calendar"
-import FooterLogin from "../../Components/footerLogin/FooterLogin"
-import HeaderLogin from "../../Components/headerLogin/HeaderLogin"
-import Navbar from "../../Components/nav/Nav"
+import Calendar from "../../../Components/calendar/Calendar"
+import FooterLogin from "../../../Components/footerLogin/FooterLogin"
+import HeaderLogin from "../../../Components/headerLogin/HeaderLogin"
+import NavbarT from "../../../Components/navT/NavT"
 
-import '../../index.css'
+import '../../../index.css'
 
 function Calendar2(){
     return(
@@ -21,7 +21,7 @@ function Calendar2(){
 
         </div>
         <div className="items-bar">
-            <Navbar />
+            <NavbarT />
         </div>
 
 </section>

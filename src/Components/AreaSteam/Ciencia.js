@@ -30,10 +30,7 @@ function Ciencia({sci}){
             <h2>{sci.trabajo}</h2>
            
             <p>{sci.descripcion}</p>
-        <div className="icons-second" >
-                <i className="fa-solid fa-paperclip cta"></i>
-                <i className="fa-solid fa-comment cta"></i>
-            </div>
+      
         </div>
         </>
     )

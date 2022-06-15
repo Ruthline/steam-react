@@ -30,7 +30,7 @@ const LoginT = () => {
                     }).then((result) => {
                         /* Read more about isConfirmed, isDenied below */
                         if (result.isConfirmed) {
-                            window.location="/dashboard"
+                            window.location="/dashboardTeacher"
                         } else if (result.isDenied) {
                             window.location="/estudiantes"
                         }

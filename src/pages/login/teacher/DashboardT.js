@@ -1,11 +1,11 @@
-import Dcenter from "../../Components/Dcenter/Dcenter"
-import FooterLogin from "../../Components/footerLogin/FooterLogin"
-import HeaderLogin from "../../Components/headerLogin/HeaderLogin"
-import Navbar from "../../Components/nav/Nav"
+import Dcenter from "../../../Components/Dcenter/Dcenter"
+import FooterLogin from "../../../Components/footerLogin/FooterLogin"
+import HeaderLogin from "../../../Components/headerLogin/HeaderLogin"
+import NavbarT from "../../../Components/navT/NavT"
 
 
 
-function Dashboard(){
+function DashboardT(){
     return(
         <div>
             <HeaderLogin />
@@ -21,7 +21,7 @@ function Dashboard(){
 
         </div>
         <div className="items-bar">
-            <Navbar />
+            <NavbarT />
         </div>
 
 </section> <Dcenter />
@@ -33,4 +33,4 @@ function Dashboard(){
     )
 }
 
-export default Dashboard
+export default DashboardT

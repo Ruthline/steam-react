@@ -1,16 +1,15 @@
-import FooterLogin from "../../Components/footerLogin/FooterLogin"
-import HeaderLogin from "../../Components/headerLogin/HeaderLogin"
-import { useParams} from "react-router-dom";
-import {getCourse} from "../../courses";
-import CardCourse from '../../Components/AreaSteam/CardCourse'
+
+
+import CardMath from '../../../Components/AreaSteam/Mate'
 import {useState, useEffect} from "react" 
 import axios from 'axios';
-import '../../Components/modales/modal.css'
+import FooterLogin from "../../../Components/footerLogin/FooterLogin"
+import HeaderLogin from "../../../Components/headerLogin/HeaderLogin"
+import mathimg from './Math.svg'
+import { Link } from "react-router-dom";
 
-function Course(){
-    const params=useParams();
-    const  course=getCourse(parseInt(params.id));
-    const url = "http://localhost:5000/trabajos";
+function CourseMath(){
+    const url = "http://localhost:5000/matematicas";
 
     /*2. Generar función asíncrona para conentarme a la API*/
     const getData = async () => {
@@ -35,19 +34,21 @@ return(
         <div>
             
             <HeaderLogin />
-
+            <img src={mathimg} alt="bannerArte" width="100%"></img>
+            <h1>Trabajos</h1>
+            <Link to="/courses/"><button className="btn-idiom">Volver</button></Link>
             {
-            list.map((tr, index)=>(
-                    <CardCourse
+            list.map((mt, index)=>(
+                    <CardMath
                         key={index}
-                        trabajos={tr}
+                        math={mt}
                         setUplist={setUplist}
                         upList={upList}
                     />
                 ))
 }
-            <FooterLogin />
+<FooterLogin />
         </div>
     )
 }
-export default Course
+export default CourseMath
