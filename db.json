@@ -7,7 +7,6 @@
       "fecha": "12/09/2022",
       "grado": "5",
       "descripcion": "Traer rollos de papeles(3), cartulina blanca y pinturas para crear sellos"
-     
     },
     {
       "id": 2,
@@ -26,7 +25,6 @@
       "fecha": "10/10/2022",
       "grado": "5",
       "descripcion": "Investiga de tu animal favorito su nombre cietifico, lugar de origen, familia, sistemas internos"
-     
     },
     {
       "id": 2,
@@ -45,7 +43,6 @@
       "fecha": "10/10/2022",
       "grado": "5",
       "descripcion": "Realizar el juego de minimo comun multiplo en el aula virtual"
-     
     },
     {
       "id": 2,
@@ -64,7 +61,6 @@
       "fecha": "10/11/2022",
       "grado": "5",
       "descripcion": "Realizar una montaña rusa durate todo el siguiente periodo"
-     
     },
     {
       "id": 2,
@@ -83,7 +79,6 @@
       "fecha": "19/11/2022",
       "grado": "5",
       "descripcion": "Realizar en clase un robot con Legos, en conpañia con la profe"
-     
     },
     {
       "id": 2,
@@ -94,11 +89,10 @@
       "descripcion": "Invetsiga como el arte y la tecnolgia pueden asociarae"
     }
   ],
-  "trabajosCalificacion" :[
+  "trabajosCalificacion": [
     {
-      "entrega":"",
-      "comentario":""
+      "entrega": "",
+      "comentario": ""
     }
-
   ]
 }

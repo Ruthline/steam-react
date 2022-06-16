@@ -4,15 +4,16 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { useNavigate} from 'react-router-dom';
-import '../modales/modal.css'
+import './FormWork.css'
 
-function FormScore(){
+
+function FormArte(){
 /*una ruta useHistory useNavigate constante para que retorne al listar*/
 const navigate=useNavigate();
 
 
 /* Inicializando los inputs en el estado, para poder escribir los datros o los valores que el usuario digite en el form y manejarlos o controlarlos*/
-    const [data,setData]=useState({id:"",fecha:"",trabajo:"",materia:"", grado:"", descripcion:"", imagen:""});
+    const [data,setData]=useState({id:"",trabajo:"", imagen:"",fecha:"", grado:"", descripcion:"",});
 
      const handleChange=({target})=>{
 /*[id:2,nombre:"tatiana",apellido:"cabrera"]
@@ -52,8 +53,18 @@ int num=10;*/
 
 return(
  
-
-    <Form onSubmit={handleSubmit} >
+<section  className="formcomplete">
+    <Form onSubmit={handleSubmit}  className="formWork">
+            <div className="groupForm">
+                    <label className="trabajo">Trabajo</label>
+                        <input
+                        type="text"
+                        placeholder="Ingrese el trabajo"
+                        name="trabajo"
+                        value={data.trabajo}
+                        onChange={handleChange}
+                        />
+                </div>
                 <div>
                     <label className="trabajo">Imagen</label>
                         <input
@@ -65,29 +76,18 @@ return(
                         />
                 </div>
                 <div>
-                    <label className="trabajo">Trabajo</label>
-                        <input
-                        type="text"
-                        placeholder="Ingrese el trabajo"
-                        name="trabajo"
-                        value={data.trabajo}
-                        onChange={handleChange}
-                        />
-                </div>
-                <div>
-               <label>Materia</label>
-               <select type=""
-                        placeholder="Ingrese el Correo"
-                        name="materia"
-                        value={data.materia}
-                        onChange={handleChange}>
-                    <option value="1">Arte</option>
-                    <option value="2" selected>Ciencia</option>
-                    <option value="3">Matematicas</option>
-                    <option value="4">Ingenieria</option>
-                    <option value="5">Tecnologia</option>
-                </select>
-                </div>
+                    <label className="trabajo">Fecha:</label>
+                    <input
+                    type="date"
+                    placeholder="Ingrese la fecha"
+                    name="fecha"
+                    value={data.fecha}
+                    onChange={handleChange}
+                    
+                    >
+                    
+                    </input>
+                    </div>
                 <div>
                <label>Grado</label>
                <select type=""
@@ -109,19 +109,7 @@ return(
                     
                 </select>
                 </div>
-                <div>
-                    <label>Fecha:</label>
-                    <input
-                    type="date"
-                    placeholder="Ingrese la fecha"
-                    name="fecha"
-                    value={data.fecha}
-                    onChange={handleChange}
-                    
-                    >
-                    
-                    </input>
-                </div>
+               
                 <div>
                     <label>Descripción:</label>
                     <textarea
@@ -144,8 +132,8 @@ return(
     </button>
 
     </Form>
-    
+    </section>
 
 )
 }
-export default FormScore
+export default FormArte

@@ -1,8 +1,12 @@
-import { Link } from 'react-router-dom';
-import {useState, useEffect} from "react" 
-import axios from 'axios';
-function CardCourse({trabajos}){
-    const url = "http://localhost:5000/trabajos";
+
+import {useState, useEffect} from "react"
+import axios from 'axios'; 
+import './AreasSteam.css'
+
+
+
+function ArteT({art}){
+    const url = "http://localhost:5000/arte";
 
     /*2. Generar función asíncrona para conentarme a la API*/
     const getData = async () => {
@@ -25,20 +29,15 @@ function CardCourse({trabajos}){
    console.log(list);
     return(
         <>
-        <h1>{trabajos.materia}</h1>
+      
         <div className="card-deliver">
-            <img src={trabajos.imagen} alt="imagen trabajos"></img>
-            <h2>{trabajos.trabajo}</h2>
+            <img src={art.imagen} alt="imagen trabajos"></img>
+            <h2>{art.trabajo}</h2>
            
-            <p>{trabajos.descripcion}</p>
-            <div className="icons-second" >
-                <a href="#modal" class="cta"><i className="fa-solid fa-paperclip" ></i></a>
-                <a href="#modal" class="cta"><i className="fa-solid fa-comment"></i></a>
-            </div>
+            <p>{art.descripcion}</p>
+      
         </div>
         </>
-      
-
     )
 }
-export default CardCourse
+export default ArteT

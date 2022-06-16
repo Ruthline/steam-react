@@ -1,12 +1,12 @@
 
 
-import CardTech from '../../../Components/AreaSteam/Tech'
+import CardTech from '../../../../Components/AreaSteam/Tech'
 import {useState, useEffect} from "react" 
 import axios from 'axios';
 import '../../../Components/modales/modal.css'
 import techimg from './Tech.svg'
-import FooterLogin from "../../../Components/footerLogin/FooterLogin"
-import HeaderLogin from "../../../Components/headerLogin/HeaderLogin"
+import FooterLogin from "../../../../Components/footerLogin/FooterLogin"
+import HeaderLogin from "../../../../Components/headerLogin/HeaderLogin"
 import { Link } from "react-router-dom";
 
 function CourseTech(){

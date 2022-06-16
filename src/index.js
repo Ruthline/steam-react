@@ -23,10 +23,11 @@ import Tecnologia from './pages/login/courses/CourseTech';
 import ScoreS from './pages/login/students/ScoreStudents';
 import ArteRec from './pages/login/resources/ArteRec';
 import ScoreT from './pages/login/teacher/scoreTeacher'
-import FormScore from './Components/scoreT/FormScore'
 import ListaWork from './Components/scoreT/ListaWork'
-import CoursesT from './pages/login/teacher/CoursesT';
+import CoursesT from './pages/login/teacher/coursesTe/CoursesT';
 import DashboardT from './pages/login/teacher/DashboardT';
+import ArteT from './pages/login/teacher/coursesTe/CourseArtT';
+import FormArte from './pages/login/teacher/coursesTe/FormArte';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -58,14 +59,14 @@ root.render(
     <Route path='/dashboardTeacher' element={<DashboardT />}></Route>
     <Route path='/calendarTeacher' element={<CalendarT />}></Route>
     <Route path='/scoreTeacher/' element={<ScoreT />}></Route>
-    <Route path='/scoreTeacher/form' element={<FormScore />}></Route>
     <Route path='/scoreTeacher/editar' element={<ListaWork />}></Route>
-    <Route path='/coursesTeacher' element={<CoursesT />}></Route>
-    <Route path='/courses/1' element={<Arte />}></Route>
-    <Route path='/courses/2' element={<Ciencia />}></Route>
-    <Route path='/courses/3' element={<Matematicas />}></Route>
-    <Route path='/courses/4' element={<Ingenieria />}></Route>
-    <Route path='/courses/5' element={<Tecnologia />}></Route>
+    <Route path='/coursesTeacher/' element={<CoursesT />}></Route>
+    <Route path='/coursesTeacher/1/' element={<ArteT />}></Route>
+    <Route path='/scoreTeacher/1/form' element={<FormArte/>}></Route>
+    <Route path='/coursesTeacher/2' element={<Ciencia />}></Route>
+    <Route path='/coursesTeacher/3' element={<Matematicas />}></Route>
+    <Route path='/coursesTeacher/4' element={<Ingenieria />}></Route>
+    <Route path='/coursesTeacher/5' element={<Tecnologia />}></Route>
     <Route path='/scorestudents' element={<ScoreS />}></Route>
     
 

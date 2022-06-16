@@ -1,0 +1,14 @@
+.formcomplete{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.formWork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.groupForm{
+    display: flex;
+}

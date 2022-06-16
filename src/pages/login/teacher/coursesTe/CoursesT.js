@@ -1,11 +1,11 @@
-import FooterLogin from "../../../Components/footerLogin/FooterLogin"
-import HeaderLogin from "../../../Components/headerLogin/HeaderLogin"
-import '../Courses.css'
-import NavbarT from "../../../Components/navT/NavT"
+import FooterLogin from "../../../../Components/footerLogin/FooterLogin"
+import HeaderLogin from "../../../../Components/headerLogin/HeaderLogin"
+import '../../Courses.css'
+import NavbarT from "../../../../Components/navT/NavT"
 
-import {getCourses} from '../../../courses'
+import {getCourses} from '../../../../courses'
 import { Link } from "react-router-dom";
-import BotonI from '../../../Components/login/BotonI/BotonI';
+import BotonI from '../../../../Components/login/BotonI/BotonI';
 function CoursesT(){
     const courses=getCourses();
     return(
