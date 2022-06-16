@@ -156,6 +156,112 @@ const MensajeError = styled.div`
 	}
 `;
 
+const ContenedorBotones = styled.div`
+	padding: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+`;
+
+const Contenido = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	h1 {
+		font-size: 42px;
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+	input{
+		margin: 10px;
+		padding: 5px 20px;
+		border: 2px solid purple;
+		border-radius:20px;
+	
+	
+	}
+	select{
+		margin: 10px;
+		padding: 2px 10px
+		border: 2px solid purple;
+		border-radius:20px;
+	}
+	textarea{
+		margin: 10px;
+		padding: 2px 10px
+		border: 2px solid purple;
+		border-radius:20px;
+	}
+	`;
+	
+const Overlay = styled.div`
+	width: 100vw;	
+	height:100vh;
+	position: fixed;
+	top:0;
+	left:0;
+	background-color:rgba(117, 41, 149, 0.674);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+`;
+const ContenedorModal= styled.div`
+	width: 500px;	
+	min-height:100px;
+	position: relative;
+	border-radius:20px;
+	box-shadow: rgba(100,100,111,0.2)0px 7px 29px 0px;
+	padding: 20px;
+	background-color:#fff;
+`;
+const EncabezadoModal= styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom:20px;
+	padding: 20px;
+	border-bottom:1px solid #E8E8E8;
+
+	h3{
+		font-weight:500;
+		font-size: 16px;
+		color: purple;
+	}
+
+`;
+const BotonCerrar= styled.div`
+	position: absolute;
+	top:40px;
+	right: 40px;
+	color: purple;
+
+	width: 30px;
+	height: 30px;
+	border: none;
+	background: none;
+	cursor: pointer;
+	trasnsition:.3s ease all;
+	border-radius:5px;
+
+	&:hover{
+		background: #f2f2f2
+	}
+
+`;
+
+
+
+
+
+
 export {
 	Formulario,
 	Label,
@@ -167,6 +273,11 @@ export {
 	ContenedorBotonCentrado,
 	Boton,
 	MensajeExito,
-	MensajeError
-};
-
+	MensajeError,
+	Contenido,
+	ContenedorBotones,
+	Overlay,
+	ContenedorModal,
+	EncabezadoModal,
+	BotonCerrar
+}

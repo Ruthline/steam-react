@@ -1,21 +1,17 @@
 
-
-
-
-import { useState} from "react"
+import {useState, useEffect} from "react" 
 import axios from 'axios';
+import cienciaimg from './Ciencia.svg'
 import FooterLogin from "../../../../Components/footerLogin/FooterLogin"
 import HeaderLogin from "../../../../Components/headerLogin/HeaderLogin"
-import arteimg from './Arte.svg'
 import { Link } from "react-router-dom";
 import Swal from 'sweetalert2';
 import Modal from '../../../../Components/modales/Modal'
 import { Boton,Contenido } from "../../../../element/LoginForm";
 import { useNavigate } from 'react-router-dom';
-import { Container, Form } from 'react-bootstrap';
 
-function CourseArtT() {
-    const [estadoModal1, cambiarEstadoModal1]=useState(false);
+function CourseSciT(){
+     const [estadoModal1, cambiarEstadoModal1]=useState(false);
     const navigate = useNavigate();
     /* Inicializando los inputs en el estado, para poder escribir los datros o los valores que el usuario digite en el form y manejarlos o controlarlos*/
     const [data, setData] = useState({ id: "", trabajo: "", imagen: "", fecha: "", grado: "", descripcion: "", });
@@ -29,10 +25,9 @@ function CourseArtT() {
             [target.name]: target.value
         })
     }
+    const url = "http://localhost:5000/ciencia";
 
-    /*Peticiones asincronas conectar con bd*/
-    const url = "http://localhost:5000/arte";
-    /* crear una funcion para procesar el envio de datos del formulario*/
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         const response = await axios.post(url, data);
@@ -55,22 +50,23 @@ function CourseArtT() {
             )
         }
     }
-    return (
+return(
         <div>
-
+            
             <HeaderLogin />
-            <img src={arteimg} alt="bannerArte" width="100%"></img>
+            <img src={cienciaimg} alt="bannerArte" width="100%"></img>
             <h1>Trabajos</h1>
             <button onClick={()=> cambiarEstadoModal1(!estadoModal1)}>Añadir trabajo</button>
             <button>Notas de Materia</button>
 
             <FooterLogin />
             <div>
-                <Modal estado={estadoModal1}
-                        cambiarEstado={cambiarEstadoModal1}
+                <Modal 
+                estado={estadoModal1}
+                cambiarEstado={cambiarEstadoModal1}
                 >
                     <Contenido>
-                        <Form onSubmit={handleSubmit} className="formWork">
+                        <form onSubmit={handleSubmit} className="formWork">
                             <div className="groupForm">
                                 <label className="trabajo">Trabajo</label>
                                 <input
@@ -147,11 +143,11 @@ function CourseArtT() {
                                 Guardar
                             </Boton>
 
-                        </Form>
+                        </form>
                     </Contenido>
                 </Modal>
             </div>
         </div>
     )
 }
-export default CourseArtT
+export default CourseSciT

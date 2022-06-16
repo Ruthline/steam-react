@@ -27,7 +27,11 @@ import ListaWork from './Components/scoreT/ListaWork'
 import CoursesT from './pages/login/teacher/coursesTe/CoursesT';
 import DashboardT from './pages/login/teacher/DashboardT';
 import ArteT from './pages/login/teacher/coursesTe/CourseArtT';
-import FormArte from './pages/login/teacher/coursesTe/FormArte';
+import CienciaT from './pages/login/teacher/coursesTe/CourseSciT'
+import MatematicasT from './pages/login/teacher/coursesTe/CourseMathT'
+import TechT from './pages/login/teacher/coursesTe/CourseTechT'
+import IngenieriaT from './pages/login/teacher/coursesTe/CourseIngeT'
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -61,12 +65,11 @@ root.render(
     <Route path='/scoreTeacher/' element={<ScoreT />}></Route>
     <Route path='/scoreTeacher/editar' element={<ListaWork />}></Route>
     <Route path='/coursesTeacher/' element={<CoursesT />}></Route>
-    <Route path='/coursesTeacher/1/' element={<ArteT />}></Route>
-    <Route path='/scoreTeacher/1/form' element={<FormArte/>}></Route>
-    <Route path='/coursesTeacher/2' element={<Ciencia />}></Route>
-    <Route path='/coursesTeacher/3' element={<Matematicas />}></Route>
-    <Route path='/coursesTeacher/4' element={<Ingenieria />}></Route>
-    <Route path='/coursesTeacher/5' element={<Tecnologia />}></Route>
+    <Route path='/coursesTeacher/1' element={<ArteT />}></Route>
+    <Route path='/coursesTeacher/2' element={<CienciaT />}></Route>
+    <Route path='/coursesTeacher/3' element={<MatematicasT />}></Route>
+    <Route path='/coursesTeacher/4' element={<IngenieriaT />}></Route>
+    <Route path='/coursesTeacher/5' element={<TechT />}></Route>
     <Route path='/scorestudents' element={<ScoreS />}></Route>
     
 
