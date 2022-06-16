@@ -11,6 +11,7 @@ import Swal from 'sweetalert2';
 import Modal from '../../../../Components/modales/Modal'
 import { Boton,Contenido } from "../../../../element/LoginForm";
 import { useNavigate } from 'react-router-dom';
+import './FormWork.css'
 
 function CourseTech(){
     const [estadoModal1, cambiarEstadoModal1]=useState(false);
@@ -58,8 +59,9 @@ return(
          <HeaderLogin />
             <img src={techimg} alt="bannerArte" width="100%"></img>
             <h1>Trabajos</h1>
-            <button onClick={()=> cambiarEstadoModal1(!estadoModal1)}>Añadir trabajo</button>
-            <button>Notas de Materia</button>
+            <button onClick={()=> cambiarEstadoModal1(!estadoModal1)} className="btn btn-three">Añadir trabajo</button>
+            <button className="btn btn-one">Notas Tech</button>
+
 
             <FooterLogin />
             <div>

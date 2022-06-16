@@ -13,6 +13,7 @@ import Modal from '../../../../Components/modales/Modal'
 import { Boton,Contenido } from "../../../../element/LoginForm";
 import { useNavigate } from 'react-router-dom';
 import { Container, Form } from 'react-bootstrap';
+import './FormWork.css'
 
 function CourseArtT() {
     const [estadoModal1, cambiarEstadoModal1]=useState(false);
@@ -61,8 +62,8 @@ function CourseArtT() {
             <HeaderLogin />
             <img src={arteimg} alt="bannerArte" width="100%"></img>
             <h1>Trabajos</h1>
-            <button onClick={()=> cambiarEstadoModal1(!estadoModal1)}>Añadir trabajo</button>
-            <button>Notas de Materia</button>
+            <button onClick={()=> cambiarEstadoModal1(!estadoModal1)} className="btn btn-three">Añadir trabajo</button>
+            <button className="btn btn-one">Notas de Arte</button>
 
             <FooterLogin />
             <div>
