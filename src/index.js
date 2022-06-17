@@ -23,7 +23,6 @@ import Tecnologia from './pages/login/courses/CourseTech';
 import ScoreS from './pages/login/students/ScoreStudents';
 import ArteRec from './pages/login/resources/ArteRec';
 import ScoreT from './pages/login/teacher/scoreTeacher'
-import ListaWork from './Components/scoreT/ListaWork'
 import CoursesT from './pages/login/teacher/coursesTe/CoursesT';
 import DashboardT from './pages/login/teacher/DashboardT';
 import ArteT from './pages/login/teacher/coursesTe/CourseArtT';
@@ -33,7 +32,6 @@ import TechT from './pages/login/teacher/coursesTe/CourseTechT'
 import IngenieriaT from './pages/login/teacher/coursesTe/CourseIngeT'
 import Notas5 from './pages/login/teacher/scoreCrud/notas5'
 import Notas10 from './pages/login/teacher/scoreCrud/notas10'
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -64,7 +62,6 @@ root.render(
     <Route path='/dashboardTeacher' element={<DashboardT />}></Route>
     <Route path='/calendarTeacher' element={<CalendarT />}></Route>
     <Route path='/scoreTeacher/' element={<ScoreT />}></Route>
-    <Route path='/scoreTeacher/editar' element={<ListaWork />}></Route>
     <Route path='/coursesTeacher/' element={<CoursesT />}></Route>
     <Route path='/coursesTeacher/1' element={<ArteT />}></Route>
     <Route path='/coursesTeacher/2' element={<CienciaT />}></Route>

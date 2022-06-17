@@ -2,9 +2,9 @@ import './ScoreT.css'
 import { Link } from 'react-router-dom';
 import {useState, useEffect} from "react" 
 import axios from 'axios';
-import BotonV from '../../Components/login/BotonV/BotonV'
-import BotonI from '../../Components/login/BotonI/BotonI'
-import TableScoreT from '../../Components/scoreT/TableScoreArte'
+import BotonV from '../login/BotonV/BotonV'
+import BotonI from '../login/BotonI/BotonI'
+import TableScoreT from '../../pages/login/teacher/scoreCrud/TableScoreArte'
 function ScoreT(){
     const url = "http://localhost:5000/quintoArte";
 

@@ -1,14 +1,13 @@
-import axios from 'axios';
+
+import '../../../../Components/scoreT/ScoreT.css';
 import Swal from 'sweetalert2';
-import { Link } from 'react-router-dom';
-import TableScoreArte from './TableScoreArte'
+import axios from 'axios';
 import { useState, useEffect } from 'react';
-import HeaderLogin from '../../../../Components/headerLogin/HeaderLogin';
-import ModalEdit from '../../../../Components/modales/ModalEdit'
+import ModalEdit from '../../../../Components/modales/ModalEdit';
 import { Boton, Contenido } from "../../../../element/LoginForm";
 
-function Notas5() {
-      
+function TableScoreArte({trabajos}){
+        
     const url = "http://localhost:5000/quintoArte";
 
     const getData = async () => {
@@ -69,62 +68,45 @@ function Notas5() {
     }, [upList])
     console.log(list);
 
-    
-    return (
-        <>
-            <HeaderLogin />
-            <h1>Notas de Arte Grado 5</h1>
-            <button onClick={() => cambiarEstadoModal1(!estadoModal1)} id="btn btn-three"><i class="fa-solid fa-pencil"></i> Aqui</button>
-            <div className="students-calificaciones">
+    const handleEdit=()=>{
+        handleOpen();
+        setDataModal(trabajos);
 
-                <section className="botones-score">
+    }
+    return(
+                <div>
+            
               
-                
-                    <button class="btn-verde ctr">
-                        <Link to="/coursesTeacher/1">
-                            <i class="fa-solid fa-user"></i>
-                            <h5>Volver</h5>
-                        </Link>
-                    </button>
+                <tr className="row-teacher"> 
+                <td class="student"> 
+                   <button onClick={handleEdit} id="btn btn-three"><i class="fa-solid fa-pencil"></i> {trabajos.estudiante}</button>
+                   
+                   
+                </td>
 
+                   
+                <td class="email">{trabajos.correo}</td>
+                <td class="workshop">
 
-
-                    <div id="search">
-                        <label for="buscar">
-                            <input type="search" name="search" class="search" required></input>
-
-                            <i class="fa-solid fa-magnifying-glass buscador fa-1.5x"></i>
-
-                        </label>
+                    <div class="worskhop-two">
+                    <a href="#modal2" className="work">
+                    <i class="fa-solid fa-paperclip"></i><h5> {trabajos.trabajo} </h5>
+                    </a>
                     </div>
-                </section>
-
-                <table className="table">
-
-                    <tr className="rowprincipal-teacher">
-                        <th class="student-teacher"> Estudiante:</th>
-                        <th class="email-teacher">Correo:</th>
-                        <th class="workshop-teacher">Trabajos:</th>
-                        <th class="score-teacher">Calificacion:</th>
-                        <th class="average-teacher">Promedio:</th>
-                    </tr>
-                    {
-                        list.map((tr, index) => (
-                            <TableScoreArte
-                                key={index}
-                                trabajos={tr}
-                                setUplist={setUplist}
-                                upList={upList}
-                                handleClose={handleClose}
-                                handleOpen={handleOpen}
-                                setDataModal={setDataModal}
-                            />
-                        ))
-                    }
-                  
-                </table>
- 
-                <ModalEdit  estado={estadoModal1}
+                   
+                </td>
+                
+                    <td class="score-students">
+                        <div>
+                        {trabajos.nota}
+                        </div>
+                 
+                        
+                        </td>
+                    <td class="average"><button onClick={handleEdit} id="btn btn-three"><i class="fa-solid fa-pencil"></i></button></td>
+               
+               </tr> 
+               <ModalEdit  estado={estadoModal1}
                     cambiarEstado={cambiarEstadoModal1} onHide={handleClose}>
                 <Contenido>
                   <h2>{dataModal.estudiante}</h2>  
@@ -149,9 +131,9 @@ function Notas5() {
                 </form>
                 </Contenido>
                 </ModalEdit>
-            </div>
-        </>
+             
+               </div>
 
-    )
-}
-export default Notas5;
+            );
+        }
+export default TableScoreArte
