@@ -31,7 +31,8 @@ import CienciaT from './pages/login/teacher/coursesTe/CourseSciT'
 import MatematicasT from './pages/login/teacher/coursesTe/CourseMathT'
 import TechT from './pages/login/teacher/coursesTe/CourseTechT'
 import IngenieriaT from './pages/login/teacher/coursesTe/CourseIngeT'
-
+import Notas5 from './pages/login/teacher/scoreCrud/notas5'
+import Notas10 from './pages/login/teacher/scoreCrud/notas10'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -70,7 +71,8 @@ root.render(
     <Route path='/coursesTeacher/3' element={<MatematicasT />}></Route>
     <Route path='/coursesTeacher/4' element={<IngenieriaT />}></Route>
     <Route path='/coursesTeacher/5' element={<TechT />}></Route>
-    <Route path='/scorestudents' element={<ScoreS />}></Route>
+    <Route path='/coursesTeacher/1/notas5' element={<Notas5 />}></Route>
+    <Route path='/coursesTeacher/1/notas10' element={<Notas5 />}></Route>
     
 
     <Route path='/resources' element={<ArteRec/>}></Route>

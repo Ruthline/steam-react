@@ -2,7 +2,7 @@
 
 
 
-import { useState} from "react"
+import { useState } from "react"
 import axios from 'axios';
 import FooterLogin from "../../../../Components/footerLogin/FooterLogin"
 import HeaderLogin from "../../../../Components/headerLogin/HeaderLogin"
@@ -10,13 +10,13 @@ import arteimg from './Arte.svg'
 import { Link } from "react-router-dom";
 import Swal from 'sweetalert2';
 import Modal from '../../../../Components/modales/Modal'
-import { Boton,Contenido } from "../../../../element/LoginForm";
+import { Boton, Contenido } from "../../../../element/LoginForm";
 import { useNavigate } from 'react-router-dom';
 import { Container, Form } from 'react-bootstrap';
 import './FormWork.css'
 
 function CourseArtT() {
-    const [estadoModal1, cambiarEstadoModal1]=useState(false);
+    const [estadoModal1, cambiarEstadoModal1] = useState(false);
     const navigate = useNavigate();
     /* Inicializando los inputs en el estado, para poder escribir los datros o los valores que el usuario digite en el form y manejarlos o controlarlos*/
     const [data, setData] = useState({ id: "", trabajo: "", imagen: "", fecha: "", grado: "", descripcion: "", });
@@ -62,13 +62,30 @@ function CourseArtT() {
             <HeaderLogin />
             <img src={arteimg} alt="bannerArte" width="100%"></img>
             <h1>Trabajos</h1>
-            <button onClick={()=> cambiarEstadoModal1(!estadoModal1)} className="btn btn-three">Añadir trabajo</button>
-            <button className="btn btn-one">Notas de Arte</button>
+            <button class="btn-verde ctr">
+                <Link to="/coursesTeacher">
+                    <i class="fa-solid fa-user"></i>
+                    <h5>Volver</h5>
+                </Link>
+            </button>
+            <div className="">
+                <button onClick={() => cambiarEstadoModal1(!estadoModal1)} className="btn btn-three">Añadir trabajo</button>
 
+                <ul class="btn-submenu">
+                    <li><button className="btn btn-one item-art">Notas de Arte</button>
+                        <ul>
+                            <li><Link to="/coursesTeacher/1/notas5">5</Link></li>
+                            <li><Link to="/coursesTeacher/1/notas10">10</Link></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
             <FooterLogin />
             <div>
                 <Modal estado={estadoModal1}
-                        cambiarEstado={cambiarEstadoModal1}
+                    cambiarEstado={cambiarEstadoModal1}
                 >
                     <Contenido>
                         <Form onSubmit={handleSubmit} className="formWork">

@@ -89,10 +89,46 @@
       "descripcion": "Invetsiga como el arte y la tecnolgia pueden asociarae"
     }
   ],
-  "trabajosCalificacion": [
+  "quintoArte": [
     {
-      "entrega": "",
-      "comentario": ""
+      "estudiante": "Laura Perez",
+      "correo":"lauraperez@colegiosanpatricio@edu.co",
+      "trabajo":"Sellos: magicos" ,
+      "nota":"9"
+      
+    },
+    {
+      "estudiante": "Sofia Laurel",
+      "correo":"sofialaurel@colegiosanpatricio@edu.co",
+      "trabajo":"Sellos: magicos" ,
+      "nota":"4"
+    },
+    {
+      "estudiante": "Monica Suarez",
+      "correo":"monicasuarez@colegiosanpatricio@edu.co",
+      "trabajo":"Sellos: magicos" ,
+      "nota":"7"
+    }
+  ],
+  "decimoArte": [
+    {
+      "estudiante": "Paola Sanchez",
+      "correo":"paolasanchez@colegiosanpatricio@edu.co",
+      "trabajo":"Actividad: Traer pinturas" ,
+      "nota":"5"
+    },
+    {
+      "estudiante": "Sofia Laurel",
+      "correo":"sofialaurel@colegiosanpatricio@edu.co",
+      "trabajo":"Actividad: Traer pinturas",
+      "nota":"8"
+    },
+    {
+      "estudiante": "Monica Suarez",
+      "correo":"monicasuarez@colegiosanpatricio@edu.co",
+      "trabajo":"Actividad: Traer pinturas",
+      "nota":"8"
+      
     }
   ]
 }

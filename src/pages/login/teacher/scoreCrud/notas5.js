@@ -1,11 +1,10 @@
-import './ScoreT.css'
-import { Link } from 'react-router-dom';
-import {useState, useEffect} from "react" 
+
 import axios from 'axios';
-import BotonV from '../../Components/login/BotonV/BotonV'
-import BotonI from '../../Components/login/BotonI/BotonI'
-import TableScoreT from '../../Components/scoreT/TableScoreArte'
-function ScoreT(){
+import { Link } from 'react-router-dom';
+import TableScoreArte from '../../../../Components/scoreT/TableScoreArte'
+import { useState, useEffect} from 'react';
+import HeaderLogin from '../../../../Components/headerLogin/HeaderLogin';
+function Notas5(){
     const url = "http://localhost:5000/quintoArte";
 
    
@@ -23,33 +22,36 @@ function ScoreT(){
 
     /*4. hook useEffect ejecutar funciones cada vez que renderizamos un componente */
     useEffect(() => {
-        getData().then((response) => {
+        getData().then((response, response2) => {
             setList(response.data);
+            setList(response2.data);
         })
     }, [upList])
     console.log(list);
 return(
+    <>
+    <HeaderLogin />
     <div className="students-calificaciones">
-       
+         
+          <h1>Notas de Arte Grado 5</h1>
    <section className="botones-score">
     
-    <BotonI  className="cti"/>
-    <Link to="/scoreTeacher">
+
     <button class="btn-verde ctr">
-        <Link to="/scoreTeacher/form">
+        <Link to="/coursesTeacher/1">
                 <i class="fa-solid fa-user"></i>
-                <h5>Añadir trabajo</h5>
+                <h5>Volver</h5>
         </Link>
     </button>
-    </Link>
+   
   
 
     <div id="search">
         <label for="buscar">
         <input type="search" name="search" class="search" required></input>
-        <a href="mis-cursos.html">
+       
             <i class="fa-solid fa-magnifying-glass buscador fa-1.5x"></i>
-        </a>
+        
         </label>
     </div>
     </section>
@@ -65,9 +67,9 @@ return(
                 </tr>
                     {      
                 list.map((es, index)=>(
-                    <TableScoreT
+                    <TableScoreArte
                         key={index}
-                        estudiantes={es}
+                        trabajos={es}
                         setUplist={setUplist}
                         upList={upList}
                     />
@@ -77,8 +79,8 @@ return(
   
    
     </div>
-                
+    </>       
    
 )
 }
-export default ScoreT
+export default Notas5;
