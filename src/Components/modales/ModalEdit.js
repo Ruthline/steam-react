@@ -6,7 +6,8 @@ const ModalEdit =({children, estado, cambiarEstado})=>{
 
     return(
         <>
-        {estado && 
+          
+        {estado &&
             <Overlay>
                 <ContenedorModal>
                     <EncabezadoModal>
@@ -17,7 +18,7 @@ const ModalEdit =({children, estado, cambiarEstado})=>{
                 </ContenedorModal>
 
             </Overlay>
-    }
+}
         </>
     )
 }

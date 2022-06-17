@@ -91,44 +91,45 @@
   ],
   "quintoArte": [
     {
+      "id:": 1,
       "estudiante": "Laura Perez",
-      "correo":"lauraperez@colegiosanpatricio@edu.co",
-      "trabajo":"Sellos: magicos" ,
-      "nota":"9"
-      
+      "correo": "lauraperez@colegiosanpatricio@edu.co",
+      "trabajo": "Sellos: magicos",
+      "nota": "9"
     },
     {
+      "id:": 2,
       "estudiante": "Sofia Laurel",
-      "correo":"sofialaurel@colegiosanpatricio@edu.co",
-      "trabajo":"Sellos: magicos" ,
-      "nota":"4"
+      "correo": "sofialaurel@colegiosanpatricio@edu.co",
+      "trabajo": "Sellos: magicos",
+      "nota": "4"
     },
     {
+      "id:": 3,
       "estudiante": "Monica Suarez",
-      "correo":"monicasuarez@colegiosanpatricio@edu.co",
-      "trabajo":"Sellos: magicos" ,
-      "nota":"7"
+      "correo": "monicasuarez@colegiosanpatricio@edu.co",
+      "trabajo": "Sellos: magicos",
+      "nota": "7"
     }
   ],
   "decimoArte": [
     {
       "estudiante": "Paola Sanchez",
-      "correo":"paolasanchez@colegiosanpatricio@edu.co",
-      "trabajo":"Actividad: Traer pinturas" ,
-      "nota":"5"
+      "correo": "paolasanchez@colegiosanpatricio@edu.co",
+      "trabajo": "Actividad: Traer pinturas",
+      "nota": "5"
     },
     {
       "estudiante": "Sofia Laurel",
-      "correo":"sofialaurel@colegiosanpatricio@edu.co",
-      "trabajo":"Actividad: Traer pinturas",
-      "nota":"8"
+      "correo": "sofialaurel@colegiosanpatricio@edu.co",
+      "trabajo": "Actividad: Traer pinturas",
+      "nota": "8"
     },
     {
       "estudiante": "Monica Suarez",
-      "correo":"monicasuarez@colegiosanpatricio@edu.co",
-      "trabajo":"Actividad: Traer pinturas",
-      "nota":"8"
-      
+      "correo": "monicasuarez@colegiosanpatricio@edu.co",
+      "trabajo": "Actividad: Traer pinturas",
+      "nota": "8"
     }
   ]
 }

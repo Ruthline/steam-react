@@ -2,15 +2,17 @@
 import './ScoreT.css';
 import Swal from 'sweetalert2';
 import axios from 'axios';
-
-function TableScoreArte({trabajos,setUplist,upList,handleOpen,setDataModal}){
+import { useState, useEffect } from 'react';
+import ModalEdit from '../modales/ModalEdit';
+function TableScoreArte({trabajos,setUplist,upList,estado,setDataModal}){
+    const [estadoModal1, cambiarEstadoModal1] = useState(false);
     const url = "http://localhost:5000/quintoArte";
 
     
     /*2.Función asíncrona para borrar a partir del listener del boton eliminar */
     const handleDelete = async () => {
         Swal.fire({
-            title: '¿Esta seguro que desea eliminar el personaje?',
+            title: '¿Esta seguro que desea eliminar el trabajo?',
             text: "¡No puede revertir esta acción!",
             icon: 'warning',
             showCancelButton: true,
@@ -42,16 +44,17 @@ function TableScoreArte({trabajos,setUplist,upList,handleOpen,setDataModal}){
         })
     }
     const handleEdit=()=>{
-        handleOpen();
+        estado(true);
         setDataModal(trabajos);
 
     }
     return(
                 <div>
+                    <button id="botonEditar" onClick={() => cambiarEstadoModal1(!estadoModal1)} >Editar</button>
                <button onClick={handleDelete}><i class="fa-solid fa-pencil"></i> Eliminar</button>
                 <tr className="row-teacher"> 
                 <td class="student"> 
-                   <button onClick={handleEdit}><i class="fa-solid fa-pencil"></i> {trabajos.estudiante}</button>
+                   <button onClick={() => cambiarEstadoModal1(!estadoModal1)} id="btn btn-three"><i class="fa-solid fa-pencil"></i> {trabajos.id}</button>
                    
                    
                 </td>
@@ -78,7 +81,7 @@ function TableScoreArte({trabajos,setUplist,upList,handleOpen,setDataModal}){
                     <td class="average">98% </td>
                
                </tr> 
-              
+              <ModalEdit />
                </div>
 
             );
