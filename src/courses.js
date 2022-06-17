@@ -1,28 +1,28 @@
 let courses=[
     {
         id:1,
-        image:"https://media3.giphy.com/media/l0Iy3qmrODEarmfHq/giphy.gif?cid=ecf05e47n4hxxs6u6suhkx28slu5938ro8f5eld1mpkwkzr8&rid=giphy.gif&ct=g",
+        image:"https://images.unsplash.com/photo-1466784828399-9a9921e8bdfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXwxNTIyNDI3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60",
         title: "Arte"
        
     },
     {
         id:2,
-        image:"https://media3.giphy.com/media/o65WgXSDBVY1G/giphy.gif?cid=ecf05e47aq9zgefha69plm6ov7pi2o79am1sh91m21mzknvi&rid=giphy.gif&ct=g",
+        image:"https://images.unsplash.com/photo-1651980802497-2ad4b4adbb5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
         title: "Ciencia"
     },
     {
         id:3,
-        image:"https://media2.giphy.com/media/l4FGm96DtL5NhI0nu/giphy.gif?cid=ecf05e47ccxknqo9vyzn2l02twg6s9mj7yv14ab8x3ly59bq&rid=giphy.gif&ct=g",
+        image:"https://images.unsplash.com/photo-1632571401005-458e9d244591?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
         title: "Matemáticas"
     },
     {
         id:4,
-        image:"https://media3.giphy.com/media/l3vRhrALMlMRzABXO/giphy.gif?cid=ecf05e47e7u2tdekg1962grci4wkatsgppsla23ihshwbbsl&rid=giphy.gif&ct=g",
+        image:"https://images.unsplash.com/photo-1643307957348-134d9ed7ac71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
         title: "Ingenieria"
     },
     {
         id:5,
-        image:"https://media3.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif?cid=ecf05e47fhg5nliwhnsrshay196oxreao3h22geml6oh6w72&rid=giphy.gif&ct=g",
+        image:"https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
         title: "Tecnología"
     }
 ]
