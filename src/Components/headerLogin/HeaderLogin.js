@@ -46,7 +46,7 @@ function Header() {
                   <div class="items">
                   <Link to="/dashboard/ajustes"class="item">Ajustes</Link>
                   <Link to="/dashboard/perfil"class="item">Perfil</Link>
-                  <Link to="/home" class="item">Log out</Link>
+                  <Link to="/steam-react" class="item">Log out</Link>
                 </div>
                 </div>
                 </section>
