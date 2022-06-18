@@ -1,0 +1,138 @@
+.container-index{
+    width:100% ;
+    display: grid;
+    grid-template-areas: 
+    "headerindex"
+    "banner-index"
+    "slider-index"
+    "social-networking"
+    "footer";
+  }
+.footer{
+    background-color: var(--purple-color);
+    grid-area: footer;
+    padding-top: 15px;
+    display: grid;
+    grid-template-areas: 
+    "redicon"
+    "bla"
+    "numeral";
+}
+.icons-footer{
+    padding: 20px;
+    grid-area: redicon;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    font-size: 30px;
+}
+.icons-footer i:hover{
+    color: var(--amarillo);
+}
+
+h6{
+    font-weight: 550;
+    color: white;
+}
+.texts-footer{
+    padding: 1rem;
+    grid-area: bla;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.info-two, .info-one{
+    width: 160px;
+    height: 300px;
+    margin-bottom:2rem ;
+}
+.info-two{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-one {
+    padding:1rem;
+    line-height: 30px;
+}
+.text-footer{
+    margin:1rem;
+    line-height: 28px;
+    text-align: left;
+}
+
+.text-footer a,.info-one a{
+    text-decoration: none;
+    color: white;
+}
+
+.img-footer{
+    grid-area: numeral;
+    text-align: center;
+}
+.img-footer img{
+    width: 250px;
+}
+
+
+@media screen and (min-width:768px){
+    .icons-footer{
+            justify-content: center;
+            padding: 10px;
+        }
+        .icons-footer i{
+            margin: 10px;
+        }
+        .texts-footer{
+            flex-direction: row;
+        }
+        .text-footer{
+            justify-content: center;
+            align-items: center;
+        }
+        .texts-footer{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            color: white;
+        }
+        .info-two, .info-one{
+            margin-bottom:0rem ;
+            height: 100%;
+        }
+        .info-two{
+            width: 50%;
+            
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .info-one {
+            width: 33%;
+            padding:1rem;
+            line-height: 30px;
+        }
+        .text-footer{
+            margin:1rem;
+            line-height: 28px;
+            text-align: left;
+        }
+        
+        .footer{
+            grid-template-areas: 
+            "bla"
+            "redicon"
+            "numeral";
+        }
+    }
+
+    @media screen and (min-width:1024px){
+    
+        .text-footer p{
+                text-align: justify;
+                width: 200px;
+                padding: 10px;
+            }
+        }
