@@ -1,4 +1,209 @@
 {
+  "arte": [
+    {
+      "id": 1,
+      "trabajo": "Sellos: magicos",
+      "imagen": "https://i.pinimg.com/originals/b0/84/92/b08492a2f1a32204b8aac26b9b2de12a.jpg",
+      "fecha": "12/09/2022",
+      "grado": "5",
+      "descripcion": "Traer rollos de papeles(3), cartulina blanca y pinturas para crear sellos"
+    },
+    {
+      "id": 2,
+      "trabajo": "Actividad: Traer pinturas",
+      "imagen": "https://objetivoarte.com/wp-content/uploads/2019/10/paleta-pintor.jpg",
+      "fecha": "11/06/2022",
+      "grado": "11",
+      "descripcion": "Pintate a ti mismo con carbonzillo, y busca colores para pintarlo en clase"
+    }
+  ],
+  "ciencia": [
+    {
+      "id": 1,
+      "trabajo": "Trabajo: Juegos de Ciencia",
+      "imagen": "https://i0.wp.com/hipertextual.com/wp-content/uploads/2019/10/hipertextual-que-ningun-animal-tiene-tres-patas-2019533984.jpg?fit=1920%2C1280&ssl=1",
+      "fecha": "10/10/2022",
+      "grado": "5",
+      "descripcion": "Investiga de tu animal favorito su nombre cietifico, lugar de origen, familia, sistemas internos"
+    },
+    {
+      "id": 2,
+      "trabajo": "Laboratorio: Colores",
+      "imagen": "https://lechepascual.es/wp-content/uploads/2020/03/DSC_1617.jpg",
+      "fecha": "10/05/2022",
+      "grado": "11",
+      "descripcion": "Realizar un documento con lo que se visualiza al realizar experimiento en casa, se ncecesita: pintura, lehche, jabon liquido, copitos"
+    }
+  ],
+  "matematicas": [
+    {
+      "id": 1,
+      "trabajo": "Trabajo: Minimo común multiplo",
+      "imagen": "https://i.pinimg.com/originals/04/7e/56/047e5621a6f9f4aece2cf32a40acb16e.jpg",
+      "fecha": "10/10/2022",
+      "grado": "5",
+      "descripcion": "Realizar el juego de minimo comun multiplo en el aula virtual"
+    },
+    {
+      "id": 2,
+      "trabajo": "Laboratorio: Volumen 3D",
+      "imagen": "https://i.ytimg.com/vi/ddhErh4dN40/maxresdefault.jpg",
+      "fecha": "10/10/2022",
+      "grado": "10",
+      "descripcion": "Hacer las figuras de piramide(cuadrada, circular), cubo y cilindro y halla en un papel el perimetro y area "
+    }
+  ],
+  "ingenieria": [
+    {
+      "id": 1,
+      "trabajo": "Trabajo: Montaña rusa ",
+      "imagen": "https://static.turbosquid.com/Preview/2019/04/22__20_34_31/01.jpg0D95FAD3-7A31-48F9-B34B-E7E0312A8BD7Large.jpg",
+      "fecha": "10/11/2022",
+      "grado": "5",
+      "descripcion": "Realizar una montaña rusa durate todo el siguiente periodo"
+    },
+    {
+      "id": 2,
+      "trabajo": "Laboratorio: Analisis Trabajo, fuerzas, aceleracion",
+      "imagen": "https://thumbs.dreamstime.com/b/estudiantes-adolescentes-en-clase-de-la-ciencia-usando-el-microscopio-62882044.jpg",
+      "fecha": "10/10/2022",
+      "grado": "11",
+      "descripcion": "Invsestiga y escribe un ensayo de menos de una página para investigar y leer más a fondo su cualidad"
+    }
+  ],
+  "tecnologia": [
+    {
+      "id": 1,
+      "trabajo": "Trabajo: robot",
+      "imagen": "https://educacion30.b-cdn.net/wp-content/uploads/2021/12/Depositphotos_318549710_L-min-978x652.jpg",
+      "fecha": "19/11/2022",
+      "grado": "5",
+      "descripcion": "Realizar en clase un robot con Legos, en conpañia con la profe"
+    },
+    {
+      "id": 2,
+      "trabajo": "Laboratorio: Arte en la tencnologia",
+      "imagen": "https://www.tomasmoro.ec/wp-content/uploads/2020/09/1-1.jpg",
+      "fecha": "10/10/2022",
+      "grado": "10",
+      "descripcion": "Invetsiga como el arte y la tecnolgia pueden asociarae"
+    }
+  ],
+  "quintoarte": [
+    {
+      "id": 1,
+      "estudiante": "Laura Perez",
+      "correo": "lauraperez@colegiosanpatricio@edu.co",
+      "trabajo": "Sellos: magicos",
+      "nota": "7"
+    },
+    {
+      "id": 2,
+      "estudiante": "Sofia Laurel",
+      "correo": "sofialaurel@colegiosanpatricio@edu.co",
+      "trabajo": "Sellos: magicos",
+      "nota": "4"
+    },
+    {
+      "id": 3,
+      "estudiante": "Monica Suarez",
+      "correo": "monicasuarez@colegiosanpatricio@edu.co",
+      "trabajo": "Laboratorio: Analisis Trabajo, fuerzas, aceleracion",
+      "nota": "7"
+    }
+  ],
+  "quintociencia": [
+    {
+      "id": 1,
+      "estudiante": "Laura Perez",
+      "correo": "lauraperez@colegiosanpatricio@edu.co",
+      "trabajo": "Laboratorio: Analisis Trabajo, fuerzas, aceleracion",
+      "nota": "4"
+    },
+    {
+      "id": 2,
+      "estudiante": "Sofia Laurel",
+      "correo": "sofialaurel@colegiosanpatricio@edu.co",
+      "trabajo": "Laboratorio: Analisis Trabajo, fuerzas, aceleracion",
+      "nota": "4"
+    },
+    {
+      "id": 3,
+      "estudiante": "Monica Suarez",
+      "correo": "monicasuarez@colegiosanpatricio@edu.co",
+      "trabajo": "Sellos: magicos",
+      "nota": "7"
+    }
+  ],
+  "quintomates": [
+    {
+      "id": 1,
+      "estudiante": "Laura Perez",
+      "correo": "lauraperez@colegiosanpatricio@edu.co",
+      "trabajo": "Laboratorio: Volumen 3D",
+      "nota": "9"
+    },
+    {
+      "id": 2,
+      "estudiante": "Sofia Laurel",
+      "correo": "sofialaurel@colegiosanpatricio@edu.co",
+      "trabajo": "Laboratorio: Volumen 3D",
+      "nota": "4"
+    },
+    {
+      "id": 3,
+      "estudiante": "Monica Suarez",
+      "correo": "monicasuarez@colegiosanpatricio@edu.co",
+      "trabajo": "Laboratorio: Volumen 3D",
+      "nota": "7"
+    }
+  ],
+  "quintoinge": [
+    {
+      "id": 1,
+      "estudiante": "Laura Perez",
+      "correo": "lauraperez@colegiosanpatricio@edu.co",
+      "trabajo": "Realizar una montaña rusa durate todo el siguiente periodo",
+      "nota": "4"
+    },
+    {
+      "id": 2,
+      "estudiante": "Sofia Laurel",
+      "correo": "sofialaurel@colegiosanpatricio@edu.co",
+      "trabajo": "Realizar una montaña rusa durate todo el siguiente periodo",
+      "nota": "8"
+    },
+    {
+      "id": 3,
+      "estudiante": "Monica Suarez",
+      "correo": "monicasuarez@colegiosanpatricio@edu.co",
+      "trabajo": "Realizar una montaña rusa durate todo el siguiente periodo",
+      "nota": "7"
+    }
+  ],
+  "quintotech": [
+    {
+      "id": 1,
+      "estudiante": "Laura Perez",
+      "correo": "lauraperez@colegiosanpatricio@edu.co",
+      "trabajo": "Investiga como el arte y la tecnolgia pueden asociarae",
+      "nota": "4"
+    },
+    {
+      "id": 2,
+      "estudiante": "Sofia Laurel",
+      "correo": "sofialaurel@colegiosanpatricio@edu.co",
+      "trabajo": "Investiga como el arte y la tecnolgia pueden asociarae",
+      "nota": "4"
+    },
+    {
+      "id": 3,
+      "estudiante": "Monica Suarez",
+      "correo": "monicasuarez@colegiosanpatricio@edu.co",
+      "trabajo": "Investiga como el arte y la tecnolgia pueden asociarae",
+      "nota": "7"
+    }
+  ],
   "notificaciones": [
     {
       "id": 1,

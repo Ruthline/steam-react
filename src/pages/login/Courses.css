@@ -1,0 +1,120 @@
+body{
+    text-align: center;
+}
+.cursos{
+    align-items: center;
+    justify-content: center;
+}
+.clas{
+    border: 6px solid rgb(146,204,2);
+    width: 300px;
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+}
+  
+.clas:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+h2{
+    margin-bottom: 30px;
+}
+h1{
+    margin: 20px;
+}
+
+.title{
+    grid-area: title;
+}
+.card-deliver{
+    grid-area: cards;
+    display: grid;
+    grid-template-areas: 
+    "image"
+    "title"
+    "paragraph"
+    "icons"
+    ;
+    gap: 2%;
+    padding: 20px;
+    border: 5px solid var(--violet);
+    border-radius: 20px;
+    justify-content: center;
+    margin: 10%;
+
+}
+
+.card-deliver img{
+    grid-area: image;
+    border-radius: 20px;
+    width: 300px;
+    justify-self: center;
+}
+.card-deliver h2{
+    grid-area: title;
+}
+.card-deliver p{
+    grid-area: paragraph;
+
+}
+.icons-second{
+    grid-area: icons;
+    display: flex;
+    color: var(--violet);
+    justify-self: center;
+
+}
+.icons-second i{
+    margin: 30px;
+    font-size: 1.2em;
+}
+.fa-comment{
+    color: #752995;
+}
+@media screen and (min-width:768px) {
+    .c-div{
+        margin-bottom:  5rem;
+    }
+    .courses{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content:space-evenly;
+       align-items: center;
+      
+    }
+    .clas{
+        align-items: center;
+
+
+    }
+    .card-deliver{
+        grid-column: 2/5;
+        display: grid;
+        grid-template-areas: 
+        "image title"
+        "image paragraph"
+        "icons icons"
+        ;
+        margin: 5%;
+
+    }
+    .icons{
+        justify-content: space-evenly;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .clas{
+        margin: 20px;
+    }
+    .card-deliver{
+
+        margin: 2% 25%;
+
+    }
+
+}

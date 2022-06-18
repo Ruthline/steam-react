@@ -1,0 +1,84 @@
+.flex-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+    margin: 40px;
+  }
+
+  .btn-one{
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+    background-color: #752995;
+    border: none;
+    font-weight: 700;
+   
+  }
+
+  .btn-three {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+    background-color: rgb(146,204,2);
+    border: none;
+    font-weight: 700;
+   
+  }
+
+
+  ul, ol {
+    list-style:none;
+}
+
+.btn-submenu > li {
+    position: relative;
+  
+}
+
+.btn-submenu li a {
+    background-color:rgb(69,45,128);
+    color:#fff;
+    text-decoration:none;
+    padding:5px 6px;
+    display:block;
+    margin-bottom: 20px;
+}
+
+.btn-submenu li a:hover {
+    background-color:#7529958e;
+}
+
+.btn-submenu li ul {
+    display:none;
+   
+}
+
+.btn-submenu li:hover > ul {
+    display:block;
+}
+
+.btn-submenu li ul li {
+    position:relative;
+}
+
+.btn-submenu li ul li ul {
+    right:-140px;
+    top:0px;
+}
+@media screen and (min-width:728px) {
+    .flex-btn{
+        flex-direction: row;
+    }
+    .btn-three {
+        margin-bottom: 50px;
+        margin-left: 60px;
+      }
+}

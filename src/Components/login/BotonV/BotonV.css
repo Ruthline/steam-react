@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  :root{
+      --dark-color:black;
+      --white-color:white;
+      --violet: rgb(69,45,128);
+      --green-principal:rgb(76,137,42);
+      --green-secundario: rgb(146,204,2);
+      --yellow: rgb(255,185,0);
+      --blue-dark: rgb(38,39,59);
+      --grey-color: rgb(196,196,196); 
+     
+      
+  }
+  
+.btn-verde{
+    display: flex;
+    background-color: var(--green-principal);
+    border-radius: 10px;
+    border-width: 0px;
+    padding: 10px;
+    margin-bottom: 25px;
+    animation: jumping 0.9s ease;
+  }
+  .btn-verde h5{
+      margin-left: 10px;
+      color: white;
+  }
+  .btn-verde i{
+    color: white;
+  }
+
+  
+  @keyframes jumping {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(0.85, 1.15, 1);
+              transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  
