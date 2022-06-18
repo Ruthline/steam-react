@@ -52,45 +52,45 @@ root.render(
     <Route path='/steam-react/home' element={<Navigate replace to={"/steam-react"}/>}></Route>
     <Route path='/steam-react/haz-parte' element={<Hazparte />}></Route>
     <Route path='/steam-react/ferias' element={<Ferias />}></Route>
-    <Route path='/steam-react/steam' element={<Steam />}></Route>
-    <Route path='/steam-react/mas-info' element={<MasInfo />}></Route>
+    <Route path='/steam' element={<Steam />}></Route>
+    <Route path='/mas-info' element={<MasInfo />}></Route>
     <Route path='*' element={<Error404 />}></Route>
-    <Route path='/steam-react/dashboard/perfil' element={<Perfil/>}></Route>
-    <Route path='/steam-react/dashboard/ajustes' element={<Ajustes/>}></Route>
-steam-react/
-    <Route path='/steam-react/estudiantes' element={<LoginS />}></Route>
-    <Route path='/steam-react/dashboard' element={<Dashboard />}></Route>
-    <Route path='/steam-react/calendar' element={<Calendar2 />}></Route>
-    <Route path='/steam-react/courses' element={<Courses />}></Route>
-    <Route path='/steam-react/courses/1' element={<Arte />}></Route>
-    <Route path='/steam-react/courses/1/notasarte' element={<ArteScoreT />}></Route>
-    <Route path='/steam-react/courses/2' element={<Ciencia />}></Route>
-    <Route path='/steam-react/courses/2/notasciencia' element={<CienciaScoreT />}></Route>
-    <Route path='/steam-react/courses/3' element={<Matematicas />}></Route>
-    <Route path='/steam-react/courses/3/notasmates' element={<MatesScoreT />}></Route>
-    <Route path='/steam-react/courses/4' element={<Ingenieria />}></Route>
-    <Route path='/steam-react/courses/4/notasinge' element={<IngeScoreT />}></Route>
-    <Route path='/steam-react/courses/5' element={<Tecnologia />}></Route>
-    <Route path='/steam-react/courses/5/notastech' element={<TechScoreT />}></Route>
-steam-react
+    <Route path='/dashboard/perfil' element={<Perfil/>}></Route>
+    <Route path='/dashboard/ajustes' element={<Ajustes/>}></Route>
 
-    <Route path='/steam-react/profesores' element={<LoginT />}></Route>
-    <Route path='/steam-react/dashboardTeacher' element={<DashboardT />}></Route>
-    <Route path='/steam-react/calendarTeacher' element={<CalendarT />}></Route>
-/steam-react
-    <Route path='/steam-react/coursesTeacher/' element={<CoursesT />}></Route>
-    <Route path='/steam-react/coursesTeacher/1' element={<ArteT />}></Route>
-    <Route path='/steam-react/coursesTeacher/2' element={<CienciaT />}></Route>
-    <Route path='/steam-react/coursesTeacher/3' element={<MatematicasT />}></Route>
-    <Route path='/steam-react/coursesTeacher/4' element={<IngenieriaT />}></Route>
-    <Route path='/steam-react/coursesTeacher/5' element={<TechT />}></Route>
-    <Route path='/steam-react/coursesTeacher/1/notas5' element={<Notas5 />}></Route>
-    <Route path='/steam-react/coursesTeacher/2/notas5' element={<Notas5C />}></Route>
-    <Route path='/steam-react/coursesTeacher/3/notas5' element={<Notas5M />}></Route>
-    <Route path='/steam-react/coursesTeacher/4/notas5' element={<Notas5I />}></Route>
-    <Route path='/steam-react/coursesTeacher/5/notas5' element={<Notas5T />}></Route>
-    /steam-react
-/steam-react
+    <Route path='/estudiantes' element={<LoginS />}></Route>
+    <Route path='/dashboard' element={<Dashboard />}></Route>
+    <Route path='/calendar' element={<Calendar2 />}></Route>
+    <Route path='/courses' element={<Courses />}></Route>
+    <Route path='/courses/1' element={<Arte />}></Route>
+    <Route path='/courses/1/notasarte' element={<ArteScoreT />}></Route>
+    <Route path='/courses/2' element={<Ciencia />}></Route>
+    <Route path='/courses/2/notasciencia' element={<CienciaScoreT />}></Route>
+    <Route path='/courses/3' element={<Matematicas />}></Route>
+    <Route path='/courses/3/notasmates' element={<MatesScoreT />}></Route>
+    <Route path='/courses/4' element={<Ingenieria />}></Route>
+    <Route path='/courses/4/notasinge' element={<IngeScoreT />}></Route>
+    <Route path='/courses/5' element={<Tecnologia />}></Route>
+    <Route path='/courses/5/notastech' element={<TechScoreT />}></Route>
+
+
+    <Route path='/profesores' element={<LoginT />}></Route>
+    <Route path='/dashboardTeacher' element={<DashboardT />}></Route>
+    <Route path='/calendarTeacher' element={<CalendarT />}></Route>
+
+    <Route path='/coursesTeacher/' element={<CoursesT />}></Route>
+    <Route path='/coursesTeacher/1' element={<ArteT />}></Route>
+    <Route path='/coursesTeacher/2' element={<CienciaT />}></Route>
+    <Route path='/coursesTeacher/3' element={<MatematicasT />}></Route>
+    <Route path='/coursesTeacher/4' element={<IngenieriaT />}></Route>
+    <Route path='/coursesTeacher/5' element={<TechT />}></Route>
+    <Route path='/coursesTeacher/1/notas5' element={<Notas5 />}></Route>
+    <Route path='/coursesTeacher/2/notas5' element={<Notas5C />}></Route>
+    <Route path='/coursesTeacher/3/notas5' element={<Notas5M />}></Route>
+    <Route path='/coursesTeacher/4/notas5' element={<Notas5I />}></Route>
+    <Route path='/coursesTeacher/5/notas5' element={<Notas5T />}></Route>
+    
+
     <Route path='/resources' element={<ArteRec/>}></Route>
   </Routes>
   </BrowserRouter>

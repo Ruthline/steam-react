@@ -18,8 +18,8 @@ function Header(){
                     <div className="dropdown ">
                         <div className="dropbtn two-nav item sin-login2"><FontAwesomeIcon icon={faCircleUser} /></div>
                         <div className="dropdown-content">
-                        <Link to="/profesores">Profesores</Link>
-                        <Link to="/estudiantes">Estudiantes</Link>
+                        <Link to="/steam-react/profesores">Profesores</Link>
+                        <Link to="/steam-react/estudiantes">Estudiantes</Link>
                         </div>
                     </div>
                     
