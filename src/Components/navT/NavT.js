@@ -14,7 +14,7 @@ return(
   <li>
     <Link to="/calendarTeacher">
       <span> <i class="fa-solid fa-calendar icons"></i>
-      <h3>Calendario</h3>
+      <h3 className="navtitle">Calendario</h3>
       </span>
     </Link>
   </li>
@@ -25,13 +25,7 @@ return(
       </span>
     </Link>
   </li>
-  <li>
-    <Link to="/scoreTeacher">
-      <span> <i class="fa-solid fa-medal icons" ></i>
-      <h3>Notas</h3>
-      </span>
-    </Link>
-  </li>
+
   <li>
     <Link to="/resources">
       <span> <i class="fa-solid fa-laptop-file icons"></i>

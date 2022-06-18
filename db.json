@@ -89,47 +89,133 @@
       "descripcion": "Invetsiga como el arte y la tecnolgia pueden asociarae"
     }
   ],
-  "quintoArte": [
+  "quintoarte": [
     {
-      "id:": 1,
+      "id": 1,
       "estudiante": "Laura Perez",
       "correo": "lauraperez@colegiosanpatricio@edu.co",
       "trabajo": "Sellos: magicos",
-      "nota": "9"
+      "nota": "7"
     },
     {
-      "id:": 2,
+      "id": 2,
       "estudiante": "Sofia Laurel",
       "correo": "sofialaurel@colegiosanpatricio@edu.co",
       "trabajo": "Sellos: magicos",
       "nota": "4"
     },
     {
-      "id:": 3,
+      "id": 3,
+      "estudiante": "Monica Suarez",
+      "correo": "monicasuarez@colegiosanpatricio@edu.co",
+      "trabajo": "Laboratorio: Analisis Trabajo, fuerzas, aceleracion",
+      "nota": "7"
+    }
+  ],
+  "quintociencia": [
+    {
+      "id": 1,
+      "estudiante": "Laura Perez",
+      "correo": "lauraperez@colegiosanpatricio@edu.co",
+      "trabajo": "Laboratorio: Analisis Trabajo, fuerzas, aceleracion",
+      "nota": "4"
+    },
+    {
+      "id": 2,
+      "estudiante": "Sofia Laurel",
+      "correo": "sofialaurel@colegiosanpatricio@edu.co",
+      "trabajo": "Laboratorio: Analisis Trabajo, fuerzas, aceleracion",
+      "nota": "4"
+    },
+    {
+      "id": 3,
       "estudiante": "Monica Suarez",
       "correo": "monicasuarez@colegiosanpatricio@edu.co",
       "trabajo": "Sellos: magicos",
       "nota": "7"
     }
   ],
-  "decimoArte": [
+  "quintomates": [
     {
-      "estudiante": "Paola Sanchez",
-      "correo": "paolasanchez@colegiosanpatricio@edu.co",
-      "trabajo": "Actividad: Traer pinturas",
-      "nota": "5"
+      "id": 1,
+      "estudiante": "Laura Perez",
+      "correo": "lauraperez@colegiosanpatricio@edu.co",
+      "trabajo": "Laboratorio: Volumen 3D",
+      "nota": "9"
     },
     {
+      "id": 2,
       "estudiante": "Sofia Laurel",
       "correo": "sofialaurel@colegiosanpatricio@edu.co",
-      "trabajo": "Actividad: Traer pinturas",
+      "trabajo": "Laboratorio: Volumen 3D",
+      "nota": "4"
+    },
+    {
+      "id": 3,
+      "estudiante": "Monica Suarez",
+      "correo": "monicasuarez@colegiosanpatricio@edu.co",
+      "trabajo": "Laboratorio: Volumen 3D",
+      "nota": "7"
+    }
+  ],
+  "quintoinge": [
+    {
+      "id": 1,
+      "estudiante": "Laura Perez",
+      "correo": "lauraperez@colegiosanpatricio@edu.co",
+      "trabajo": "Realizar una montaña rusa durate todo el siguiente periodo",
+      "nota": "4"
+    },
+    {
+      "id": 2,
+      "estudiante": "Sofia Laurel",
+      "correo": "sofialaurel@colegiosanpatricio@edu.co",
+      "trabajo": "Realizar una montaña rusa durate todo el siguiente periodo",
       "nota": "8"
     },
     {
+      "id": 3,
       "estudiante": "Monica Suarez",
       "correo": "monicasuarez@colegiosanpatricio@edu.co",
-      "trabajo": "Actividad: Traer pinturas",
-      "nota": "8"
+      "trabajo": "Realizar una montaña rusa durate todo el siguiente periodo",
+      "nota": "7"
+    }
+  ],
+  "quintotech": [
+    {
+      "id": 1,
+      "estudiante": "Laura Perez",
+      "correo": "lauraperez@colegiosanpatricio@edu.co",
+      "trabajo": "Investiga como el arte y la tecnolgia pueden asociarae",
+      "nota": "4"
+    },
+    {
+      "id": 2,
+      "estudiante": "Sofia Laurel",
+      "correo": "sofialaurel@colegiosanpatricio@edu.co",
+      "trabajo": "Investiga como el arte y la tecnolgia pueden asociarae",
+      "nota": "4"
+    },
+    {
+      "id": 3,
+      "estudiante": "Monica Suarez",
+      "correo": "monicasuarez@colegiosanpatricio@edu.co",
+      "trabajo": "Investiga como el arte y la tecnolgia pueden asociarae",
+      "nota": "7"
+    }
+  ],
+  "notificaciones": [
+    {
+      "id": 1,
+      "nombre": "Ana",
+      "correo": "ana@correo.com",
+      "telefono": "1234567"
+    },
+    {
+      "id": 2,
+      "nombre": "Peppa",
+      "correo": "pepa@correo.com",
+      "telefono": "1233214"
     }
   ]
 }

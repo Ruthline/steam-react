@@ -6,9 +6,9 @@ import { useState, useEffect } from 'react';
 import ModalEdit from '../../../../Components/modales/ModalEdit';
 import { Boton, Contenido } from "../../../../element/LoginForm";
 
-function TableScoreArte({trabajos,setUplist,upList,handleOpen,setDataModal}){
+function TableScoreTech({trabajos,setUplist,upList,handleOpen,setDataModal}){
         
-    const url = "http://localhost:5000/quintoarte";
+    const url = "http://localhost:5000/quintotech";
  /*2.Función asíncrona para borrar a partir del listener del boton eliminar */
  const handleEdit=()=>{
     handleOpen();
@@ -88,4 +88,4 @@ function TableScoreArte({trabajos,setUplist,upList,handleOpen,setDataModal}){
 
             );
         }
-export default TableScoreArte
+export default TableScoreTech

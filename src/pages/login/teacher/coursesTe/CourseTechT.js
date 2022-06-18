@@ -59,8 +59,14 @@ return(
          <HeaderLogin />
             <img src={techimg} alt="bannerArte" width="100%"></img>
             <h1>Trabajos</h1>
+            <button class="btn-verde ctr">
+                <Link to="/coursesTeacher">
+                    <i class="fa-solid fa-user"></i>
+                    <h5>Volver</h5>
+                </Link>
+            </button>
             <button onClick={()=> cambiarEstadoModal1(!estadoModal1)} className="btn btn-three">Añadir trabajo</button>
-            <button className="btn btn-one">Notas Tech</button>
+            <Link to="notas5"><button className="btn btn-one">Notas Tech</button></Link>
 
 
             <FooterLogin />

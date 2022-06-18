@@ -6,10 +6,10 @@ import { useState, useEffect } from 'react';
 import HeaderLogin from '../../../../Components/headerLogin/HeaderLogin';
 import ModalEdit from '../../../../Components/modales/ModalEdit'
 import { Boton, Contenido } from "../../../../element/LoginForm";
+import '../coursesTe/FormWork.css'
 
-function Notas5() {
-      
-    const url = "http://localhost:5000/quintoArte";
+function Notas5C() {
+    const url = "http://localhost:5000/quintociencia";
 
     const getData = async () => {
         const response = axios.get(url);
@@ -35,18 +35,17 @@ function Notas5() {
 
     const handleSubmit=async(e)=>{
         e.preventDefault();
-        const response=await axios.put(`${url}/${dataModal.nota}`,dataModal);
-        
+        const response=await axios.put(`${url}/${dataModal.id}`,dataModal);
+        console.log(response); 
         if(response.status===200){
             Swal.fire(
                 'Guardado!',
                 `La nota del estudiante es de <strong>
-                ${response.data.trabajo}
+                ${response.data.nota}
                 </strong>
                 ha sido guardado exitosamente!`,
                     'success'
             )
-               cambiarEstadoModal1();
                handleClose();
                setUplist(!upList)
         }else{
@@ -61,27 +60,28 @@ function Notas5() {
     }
    
  
-   
-    useEffect(() => {
-        getData().then((response) => {
+    useEffect(()=>{
+        getData().then((response)=>{
             setList(response.data);
+    
         })
-    }, [upList])
-    console.log(list);
+    },[upList])
+    console.log(list)
 
+ 
     
     return (
         <>
             <HeaderLogin />
-            <h1>Notas de Arte Grado 5</h1>
-            <button onClick={() => cambiarEstadoModal1(!estadoModal1)} id="btn btn-three"><i class="fa-solid fa-pencil"></i> Aqui</button>
+            <h1>Notas de Ciencia Grado 5</h1>
+           
             <div className="students-calificaciones">
 
                 <section className="botones-score">
               
                 
                     <button class="btn-verde ctr">
-                        <Link to="/coursesTeacher/1">
+                        <Link to="/coursesTeacher/2">
                             <i class="fa-solid fa-user"></i>
                             <h5>Volver</h5>
                         </Link>
@@ -125,14 +125,14 @@ function Notas5() {
                 </table>
  
                 <ModalEdit  estado={estadoModal1}
-                    cambiarEstado={cambiarEstadoModal1} onHide={handleClose}>
+                    cambiarEstado={cambiarEstadoModal1}>
                 <Contenido>
                   <h2>{dataModal.estudiante}</h2>  
                   <h4>{dataModal.trabajo}</h4>
 
                 <form onSubmit={handleSubmit}>
                  
-                 <label>Nota:  </label>
+                 <label>Nota: </label>
                   <input  
                   type="text" 
                   name="nota"
@@ -140,11 +140,12 @@ function Notas5() {
                 onChange={handleChangeModal} />
                 
                   <br></br>
+            
+                    <boton onClick={handleClose}>
+                        Cerrar
+                    </boton>
                     <Boton type="submit">
                         Guardar
-                    </Boton>
-                    <Boton onClick={handleClose}>
-                        Cerrar
                     </Boton>
                 </form>
                 </Contenido>
@@ -154,4 +155,4 @@ function Notas5() {
 
     )
 }
-export default Notas5;
+export default Notas5C;

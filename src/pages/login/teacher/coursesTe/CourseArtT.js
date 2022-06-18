@@ -71,16 +71,10 @@ function CourseArtT() {
             <div className="">
                 <button onClick={() => cambiarEstadoModal1(!estadoModal1)} className="btn btn-three">Añadir trabajo</button>
 
-                <ul class="btn-submenu">
-                    <li><button className="btn btn-one item-art">Notas de Arte</button>
-                        <ul>
-                            <li><Link to="/coursesTeacher/1/notas5">5</Link></li>
-                            <li><Link to="/coursesTeacher/1/notas10">10</Link></li>
+                <Link to="notas5"><button className="btn btn-one item-art">Notas de Arte</button></Link>
+                        
 
-                        </ul>
-                    </li>
-
-                </ul>
+               
             </div>
             <FooterLogin />
             <div>

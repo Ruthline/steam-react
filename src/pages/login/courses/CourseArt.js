@@ -39,7 +39,8 @@ return(
             <HeaderLogin />
             <img src={arteimg} alt="bannerArte" width="100%"></img>
             <h1>Trabajos</h1>
-            <Link to="/courses/"><button className="btn-idiom">Volver</button></Link>
+            <Link to="/courses/"><button className="btn btn-one">Volver</button></Link>
+            <Link to="/courses/1/notasarte"><button className="btn btn-three">Ir a notas</button></Link>
             
             {
             list.map((ar, index)=>(

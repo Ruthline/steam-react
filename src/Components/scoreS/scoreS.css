@@ -288,6 +288,9 @@ table{
         grid-area: header;
         grid-column: 1/3;
     }
+    .date-students{
+        display: block;
+    }
     .btn-green{
         grid-row: 5;
         grid-column: 2;
@@ -296,9 +299,9 @@ table{
         justify-self: right;
         margin-right: 20px;
     }
-    .rowprincipal{
+  .rowprincipal{
         grid-template-areas: 
-        "activity1 score1 de1"
+        "activity1 date1 score1"
         ;
     }
     .de-students{
@@ -313,10 +316,10 @@ table{
 
     .row{
         grid-template-areas:
-        "activity score de"
-        "date score de"
+        "activity date score"
+        
         ;
-        grid-template-columns: 36% 31% 35%;
+        grid-template-columns: 36% 31%;
     }
     .table{
         grid-column: 1/3;
@@ -328,17 +331,15 @@ table{
 @media screen and (min-width:1024px) {
     .rowprincipal{
         grid-template-areas: 
-        "activity1 date1 score1 de1"
+        "activity1 date1 score1"
         ;
     }
-    .date1{
-        display: block;
-    }
+
     .row{
         grid-template-areas:
-        "activity date score de"
+        "activity date score"
         ;
-        grid-template-columns: 28% 23% 31% 14%;
+        grid-template-columns: 34% 32% 37%;
     }
     .btn-idiom{
         justify-self: baseline;
@@ -354,8 +355,8 @@ table{
 @media screen and (min-width:1440px) {
     .fila{
         grid-template-areas:
-        "actividad fecha puntaje de"
+        "actividad fecha puntaje"
         ;
-        grid-template-columns: 24% 32% 23% 21%;
+        grid-template-columns: 20% 32% 23%;
     }
 }

@@ -9,6 +9,7 @@ import Modal from '../../../../Components/modales/Modal'
 import { Boton,Contenido } from "../../../../element/LoginForm";
 import { useNavigate } from 'react-router-dom';
 import './FormWork.css'
+import { Link } from "react-router-dom";
 
 function CourseIngeT(){
     const [estadoModal1, cambiarEstadoModal1]=useState(false);
@@ -56,8 +57,20 @@ return(
          <HeaderLogin />
             <img src={ingimg} alt="bannerArte" width="100%"></img>
             <h1>Trabajos</h1>
-            <button onClick={()=> cambiarEstadoModal1(!estadoModal1)} className="btn btn-three">Añadir trabajo</button>
-            <button className="btn btn-one">Notas de Inge</button>
+            <button class="btn-verde ctr">
+                <Link to="/coursesTeacher">
+                    <i class="fa-solid fa-user"></i>
+                    <h5>Volver</h5>
+                </Link>
+            </button>
+            <div className="">
+                <button onClick={() => cambiarEstadoModal1(!estadoModal1)} className="btn btn-three">Añadir trabajo</button>
+
+                <Link to="notas5"><button className="btn btn-one item-art">Notas de Ingenieria</button></Link>
+                        
+
+               
+            </div>
 
 
             <FooterLogin />

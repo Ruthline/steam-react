@@ -2,9 +2,10 @@ import axios from 'axios';
 import Swal from 'sweetalert2';
 import './scoreS.css'
 import {useState, useEffect} from "react" 
-function TableScore({trabajos}) {
+function TableScoreI({trabajos}) {
 
-    const url = "http://localhost:5000/trabajos";
+    const url = "http://localhost:5000/ingenieria";
+    
 
     /*2. Generar función asíncrona para conentarme a la API*/
     const getData = async () => {
@@ -31,10 +32,10 @@ function TableScore({trabajos}) {
                 <tr class="row"> 
                 <td class="activity">{trabajos.trabajo}</td>
                 <td class="date">{trabajos.fecha}</td>
-                <td class="puntaje">{trabajos.nota}</td>
-                <td class="de">{trabajos.materia}</td>
+                <td class="puntaje">10</td>
+                
             </tr>
             );
         }
 
-export default TableScore;
+export default TableScoreI;

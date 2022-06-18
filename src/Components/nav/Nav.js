@@ -25,13 +25,7 @@ return(
       </span>
     </Link>
   </li>
-  <li>
-    <Link to="/scorestudents">
-      <span> <i class="fa-solid fa-medal icons" ></i>
-      <h3 className="navtitle">Notas</h3>
-      </span>
-    </Link>
-  </li>
+
   <li>
     <Link to="/resources">
       <span> <i class="fa-solid fa-laptop-file icons"></i>

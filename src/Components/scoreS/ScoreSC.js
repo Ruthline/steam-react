@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom';
 import {useState, useEffect} from "react" 
 import axios from 'axios';
 import BotonI from '../botonI/BotonI';
-import TableScore from './TableScore';
-function ScoreS(){
-    const url = "http://localhost:5000/trabajos";
+import TableScoreC from './TableScoreA';
+function ScoreSC(){
+    const url = "http://localhost:5000/ciencia";
 
      /*2. Generar función asíncrona para conentarme a la API*/
      const getData = async () => {
@@ -36,8 +36,10 @@ return(
     <BotonI  className="cti"/>
 
     <button class="btn-verde ctr">
+        <Link to="/courses/2/">
                 <i class="fa-solid fa-user"></i>
-                <h5>Exportar</h5>
+                <h5>Volver</h5>
+                </Link>
     </button>
   
 
@@ -57,11 +59,10 @@ return(
                 <th class="activity-students"> Actividad:</th>
                 <th class="date-students">Fecha de entrega:</th>
                 <th class="score-student">Puntaje:</th>
-                <th class="de-students">Materia:</th>
             </tr>
                     {      
                 list.map((tr, index)=>(
-                    <TableScore
+                    <TableScoreC
                         key={index}
                         trabajos={tr}
                         setUplist={setUplist}
@@ -77,4 +78,4 @@ return(
 
 )}
 
-export default ScoreS;
+export default ScoreSC;
