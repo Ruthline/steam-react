@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/steam-react/static/css/main.0a7de58e.css",
-    "main.js": "/steam-react/static/js/main.b207f2a0.js",
+    "main.css": "/steam-react/static/css/main.ebf89cc2.css",
+    "main.js": "/steam-react/static/js/main.c7c38135.js",
     "static/media/bannerhome.png": "/steam-react/static/media/bannerhome.611515e15d9acf67525c.png",
     "static/media/fotof.jpg": "/steam-react/static/media/fotof.6d2a7b839fb133c846d9.jpg",
     "static/media/Arte.svg": "/steam-react/static/media/Arte.7fcd5778729222515f9b823ea607fa05.svg",
@@ -25,11 +25,11 @@
     "static/media/V-computer.png": "/steam-react/static/media/V-computer.d526db8899100defad35.png",
     "static/media/lema.png": "/steam-react/static/media/lema.301f886c6a25bfcb2c14.png",
     "index.html": "/steam-react/index.html",
-    "main.0a7de58e.css.map": "/steam-react/static/css/main.0a7de58e.css.map",
-    "main.b207f2a0.js.map": "/steam-react/static/js/main.b207f2a0.js.map"
+    "main.ebf89cc2.css.map": "/steam-react/static/css/main.ebf89cc2.css.map",
+    "main.c7c38135.js.map": "/steam-react/static/js/main.c7c38135.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a7de58e.css",
-    "static/js/main.b207f2a0.js"
+    "static/css/main.ebf89cc2.css",
+    "static/js/main.c7c38135.js"
   ]
 }
