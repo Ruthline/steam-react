@@ -37,7 +37,7 @@ function Dcenter(){
             <div class="class-four">
                 <div class="class">
                 <Link to="/courses/3">
-                    <img src={"https://media1.giphy.com/media/3o72EXSWcDayDDGP60/giphy.gif?cid=ecf05e47f8e353x8podx05gmq5kvjzngkzd1kvdk0t3qgx7l&rid=giphy.gif&ct=g"} alt="matematicas"/>
+                    <img src={"https://images.unsplash.com/photo-1632571401005-458e9d244591?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"} alt="matematicas"/>
                     <h3>Mátematica</h3>
                 </Link>
                 </div>
@@ -46,7 +46,7 @@ function Dcenter(){
             <div class="class-one">
                 <div class="class">
                 <Link to="/courses/2">
-                    <img src={"https://media3.giphy.com/media/o65WgXSDBVY1G/giphy.gif?cid=ecf05e47aq9zgefha69plm6ov7pi2o79am1sh91m21mzknvi&rid=giphy.gif&ct=g"} alt="imagenestrabajohoy"></img> 
+                    <img src={"https://images.unsplash.com/photo-1651980802497-2ad4b4adbb5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"} alt="imagenestrabajohoy"></img> 
                     <h3>Ciencia</h3>
                 </Link>
                 </div>
