@@ -32,7 +32,7 @@ const LoginT = () => {
                         if (result.isConfirmed) {
                             window.location="/dashboardTeacher"
                         } else if (result.isDenied) {
-                            window.location="/estudiantes"
+                            window.location="/profesores"
                         }
                     })
                 }
