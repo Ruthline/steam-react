@@ -1,8 +1,0 @@
-.banner-index {
-    display: flex;
-    z-index: 1;
-    align-items: flex-end;
-    height: 200px;
-    min-width: 320px;
-    background-image: url(./bannerhome.png);
-}

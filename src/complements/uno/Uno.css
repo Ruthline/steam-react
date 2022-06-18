@@ -1,0 +1,148 @@
+.slideFeria{
+    margin:0;
+    min-height: 300px;
+   /* background-image: url();*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.slideFeria h1{
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    
+}
+/*titulo*/
+.tituloFeria h1{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    padding-top: 5%;
+}
+
+.tituloFeria h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 40px;
+    padding: 0px;
+    margin-top: 0%;
+    border: 0;
+    color: var(--purple-color);
+}
+.tituloFeria hr{
+
+    margin-left: 10%;
+  margin-right: 10%;
+    height: 10px;
+  background-color: var(--purple-color);
+  border-radius: 5px;
+
+}
+.tituloFeria h3{
+ font-weight: bold;
+ margin-left: 10%;
+}
+.tituloFeria p{
+    margin-left: 10%;
+  margin-right: 10%;
+}
+/*galeria de fotos en la descripcion de la feria*/
+.row img{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    padding: 5% 10% 5% 10% ;
+    flex-wrap:wrap;
+}
+
+.column{
+    flex: 15%;
+    padding: 5px;
+}
+.column img{
+    margin-top: 5px;
+}
+/*zoom de fotos*/
+.zoom {
+    transition: transform .2s; 
+}
+ 
+.zoom:hover {
+    transform: scale(1.5); 
+}
+
+
+/*boton de galeria*/
+.galeriaBoton {
+   
+    padding: 0% 10% 5% 10%;
+        
+    }
+.boton.cinco span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 40%;
+}
+
+.boton.cinco .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.boton.cinco svg {
+	color: #fff;
+	width: 35px;
+	height: 35px;
+}
+
+.boton.cinco:hover {
+	background: #2f9b05;
+    opacity: 85%;
+}
+
+.boton.cinco:hover .icono {
+	left: calc(100% - 50px);
+	opacity: 1;
+}
+
+.boton.cinco:hover span {
+	left: 20px;
+}
+.videoferia {
+  display: flex;
+  justify-items: center;
+}
+@media (max-width: 800px){
+    .column{
+        flex:50%;
+    }
+}
+@media (max-width: 600px){
+    .column{
+        flex:100%;
+    }
+}
+/*back bottom*/
+#back{
+    color: white;
+    background-color: var(--purple-color);
+    border-radius: 1rem;
+    border-color: var(--purple-color);
+    margin: 2% 10% 0%;
+}
+
+#back:hover{
+    color: var(--amarillo);
+    border-color: var(--amarillo);
+}

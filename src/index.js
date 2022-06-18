@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+<<<<<<< HEAD
 import {BrowserRouter,Navigate,Route, Routes} from 'react-router-dom';
 import Home from './pages/home/Home';
 import Hazparte from './pages/hazparte/Hazparte';
@@ -44,9 +45,23 @@ import Notas5I from './pages/login/teacher/scoreCrud/notas5I'
 import Notas5T from './pages/login/teacher/scoreCrud/notas5T'
 import Ajustes from './pages/login/Ajustes';
 
+=======
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import CuartaFeria from './pages/CuartaFeria';
+import Ferias from './pages/Ferias';
+import PrimeraFeria from './pages/PrimeraFeria';
+import QuintaFeria from './pages/QuintaFeria';
+import SegundaFeria from './pages/SegundaFeria';
+import SextaFeria from './pages/SextaFeria';
+import TerceraFeria from './pages/TerceraFeria';
+
+
+>>>>>>> Alejandra
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <>
   <BrowserRouter>
+<<<<<<< HEAD
   <Routes>
     <Route path='/steam-react/' element={<Home/>}></Route>
     <Route path='/steam-react/home' element={<Navigate replace to={"/steam-react"}/>}></Route>
@@ -92,8 +107,23 @@ root.render(
     
 
     <Route path='/resources' element={<ArteRec/>}></Route>
+=======
+  <Routes> 
+    <Route path='/feriasale' element={<Ferias/>}></Route>
+    <Route path='/ferias' element={<Navigate replace to={"/feriasale"}/>}></Route>
+    <Route path='primera' element={<PrimeraFeria/>}></Route>
+    <Route path='/segunda' element={<SegundaFeria/>}></Route>
+    <Route path='/tercera' element={<TerceraFeria/>}></Route>
+    <Route path='/cuarta' element={<CuartaFeria/>}></Route>
+    <Route path='/quinta' element={<QuintaFeria/>}></Route>
+    <Route path='/sexta' element={<SextaFeria/>}></Route>
+>>>>>>> Alejandra
   </Routes>
   </BrowserRouter>
+  </>
 );
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> Alejandra

@@ -1,7 +1,0 @@
-.banner-mas-info{
-    grid-area:banner-mas-info ;
-    display: flex;
-    align-items: flex-end;
-    height: 200px;
-    background-image: url(../bannerMasinfo/bannermasinfo.png);
-}

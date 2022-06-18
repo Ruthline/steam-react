@@ -1,0 +1,55 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    display: flex;
+    --opacity: 0;
+    --pointer: none;
+
+    opacity: var(--opacity);
+    pointer-events: var(--pointer);
+    transition: opacity 0.5s;
+}
+
+.modal:target{
+    --opacity: var(--opacity);
+    --pointer: unset;
+}
+
+.modalContainer{
+    margin: auto;
+    background-color: var(--light-green);
+ 
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    overflow: hidden;
+    text-align: center;
+    padding: 2.5em 1.5em;
+    border-radius: 1em;
+}
+
+
+
+.modal:target .modalContainer{
+    animation: show 1s 0.5s backwards;
+}
+.btn-volver{
+    background-color: var(--purple-color);
+    color: white;
+    border-radius: 5px;
+    box-shadow: #333;
+}
+
+.nomb{
+color: var(--purple-color);
+font-weight: bold;
+}
+
+.modalContainer img{
+    width: 100px;
+    height: 100ps;
+}
