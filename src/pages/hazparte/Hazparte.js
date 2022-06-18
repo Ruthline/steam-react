@@ -7,17 +7,44 @@ import '../hazparte/Hazparte.css'
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell} from '@fortawesome/free-solid-svg-icons';
+<<<<<<< HEAD
+=======
+import {getAll} from '../../Components/sectionOpinion/Opinion';
+>>>>>>> ruth
 function Hazparte(){
+    const opinion=getAll();
     return(
         <body>
         <Header/>
         <BannerHazParte/>
             <div>
+<<<<<<< HEAD
             <div class="bell">
                 <Link to="/mas-info"><FontAwesomeIcon icon={faBell}/></Link>
             </div>
             <SectionOpinion/>
             <GaleryHazParte/>
+=======
+                <div class="bell">
+                    <Link to="/mas-info"><FontAwesomeIcon icon={faBell}/></Link>
+                </div>
+                <div className="dates-container">
+                    <h1 class="title-opinions">Experiencias Felices</h1>
+                   <div  className="dates" >
+                        {
+                            opinion.map(p=>(
+                                <SectionOpinion
+                                p1={p.id}
+                                p2={p.fotouser}
+                                p3={p.description}
+                                />
+                            ))
+                        }
+                    </div>
+                 </div>
+                
+                <GaleryHazParte/>
+>>>>>>> ruth
             </div>
             
         <Footer/>

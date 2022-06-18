@@ -5,6 +5,7 @@
     color: var(--amarillo);
 }
 .bell{
+	z-index: 3;
     cursor: pointer;
     left: 85%;
     top: 51%;
@@ -13,6 +14,13 @@
     color: var(--amarillo);
     animation: ring 20s linear infinite;
 }
+<<<<<<< HEAD
+=======
+.dates{
+	display: flex;
+	flex-direction: column;
+}
+>>>>>>> ruth
 @keyframes ring {
 
 	0% {
@@ -57,4 +65,7 @@
     .bell{
         left: 95%;
     }
+	.dates{
+		flex-direction: row;
+	}
 }

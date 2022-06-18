@@ -1,18 +1,18 @@
 .title-opinions{
-    font-size: 20px;
-    grid-area: title-opiniones;
-    margin: 1rem;
     text-align: center;
+    font-size: 25px;
+    margin: 2rem;
+    padding-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px var(--dark-green);
 }
 .container-opinion{
-    grid-area: container-opiniones;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
 }
 
 .big-opinion{
-    width: 200px;
+    width: 80%;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     margin: 1rem;
@@ -20,15 +20,16 @@
 }
 
 .middle-opinion{
-    text-align: center;
-    padding: 10px;
+    line-height: 25px;
+    padding: 1rem 1.5rem 0rem 1.5rem ;
     border:2px solid rgba(128, 128, 128, 0.445);
 }
 .quotes{
     position: relative;
     left: 45%;
-    top:20px;
-    border: 2px solid black;
+    top:15px;
+    border: 2px solid var(--dark-blue);
+    color: var(--dark-blue);
     border-radius: 50%;
     width: 25px;
     height: 25px;
@@ -45,9 +46,25 @@
     background-color: var(--purple-color);
     box-shadow: 0px 2px 4px var(--dark-blue);
 }
+.small-opinion img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
 @media screen and (min-width:1024px){
     .container-opinion{
-            flex-direction: row;
-            justify-content: space-around;
-        }
+        margin: 0.5rem;
+    }
+    .big-opinion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .middle-opinion{
+        width: 80%;
+    }
+    .small-opinion{
+        width: 90%;
+    }
     }

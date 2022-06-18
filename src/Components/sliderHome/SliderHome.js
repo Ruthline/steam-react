@@ -1,11 +1,8 @@
-import Slide1 from '../sliderHome/slide1.png';
-import Slide2 from '../sliderHome/slide2.png';
-import Slide3 from '../sliderHome/slide3.png';
-import Slide4 from '../sliderHome/slide4.png';
-import Slide5 from '../sliderHome/slide5.png';
-import '../sliderHome/SliderHome.css'
+
+import '../sliderHome/SliderHome.css';
 import {Link} from 'react-router-dom';
-function SliderHome(){
+import ContainSHome from '../containSHome/ContainSHome';
+function SliderHome(props){
     return(
         <div className="slider-index">
         <section id="slider">
@@ -16,41 +13,37 @@ function SliderHome(){
             <input type="radio" name="slider" id="slide5"></input>
 
             <div id="slides">
-                <h1>PROYECTOS</h1>
+                <h1>Proyectos</h1>
                 <div className="inner">
-                    <div className="slide_1">
-                        <div className="slide-content">
-                            <img src={Slide1}></img>
-                            <p>Lorem ipsum dolor sit amet <br></br> adipisicing elit. Perferendis <br></br> blanditiis dolores?</p>
-                            <Link to="/steam"><button className="read-more">leer más</button></Link>
-                        </div> 
-                    </div>
+                    <ContainSHome  s1={props.s1}
+                        s2={props.s2}
+                        s3={props.s3}/>
 
-                    <div className="slide_2">
+                    <div className="slide_2" key={`#id${props.s1}`}>
                         <div className="slide-content">
-                            <img src={Slide2}></img>
-                            <p>Lorem ipsum dolor sit amet <br></br> adipisicing elit. Perferendis <br></br> blanditiis dolores?</p>
+                        <img src={props.s2} alt={props.s1}></img>
+                            <p>{props.s3}</p>
                             <Link to="/steam"><button className="read-more">leer más</button></Link>
                         </div>
                     </div>
-                    <div className="slide_3">
+                    <div className="slide_3" key={`#id${props.s1}`}>
                         <div className="slide-content">
-                            <img src={Slide3}></img>
-                            <p>Lorem ipsum dolor sit amet <br></br> adipisicing elit. Perferendis <br></br> blanditiis dolores?</p>
+                        <img src={props.s2} alt={props.s1}></img>
+                            <p>{props.s3}</p>
                             <Link to="/steam"><button className="read-more">leer más</button></Link>
                         </div>
                     </div>
-                    <div className="slide_4">
+                    <div className="slide_4" key={`#id${props.s1}`}>
                         <div className="slide-content">
-                           <img src={Slide4}></img>
-                            <p>Lorem ipsum dolor sit amet <br></br> adipisicing elit. Perferendis <br></br> blanditiis dolores?</p>
+                        <img src={props.s2} alt={props.s1}></img>
+                            <p>{props.s3}</p>
                             <Link to="/steam"><button className="read-more">leer más</button></Link>
                         </div>
                     </div>
-                    <div className="slide_5">
+                    <div className="slide_5" key={`#id${props.s1}`}>
                         <div className="slide-content">
-                            <img src={Slide5}></img>
-                            <p>Lorem ipsum dolor sit amet <br></br> adipisicing elit. Perferendis <br></br> blanditiis dolores?</p>
+                        <img src={props.s2} alt={props.s1}></img>
+                            <p>{props.s3}</p>
                             <Link to="/steam"><button className="read-more">leer más</button></Link>
                         </div>
                     </div>

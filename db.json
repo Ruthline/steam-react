@@ -1,0 +1,16 @@
+{
+  "notificaciones": [
+    {
+      "id": 1,
+      "nombre": "Ana",
+      "correo": "ana@correo.com",
+      "telefono": "1234567"
+    },
+    {
+      "id": 2,
+      "nombre": "Peppa",
+      "correo": "pepa@correo.com",
+      "telefono": "1233214"
+    }
+  ]
+}
