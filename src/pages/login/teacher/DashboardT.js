@@ -1,4 +1,5 @@
-import Dcenter from "../../../Components/Dcenter/Dcenter"
+
+import DcenterT from "../../../Components/DcenterT/DcenterT"
 import FooterLogin from "../../../Components/footerLogin/FooterLogin"
 import HeaderLogin from "../../../Components/headerLogin/HeaderLogin"
 import NavbarT from "../../../Components/navT/NavT"
@@ -24,7 +25,7 @@ function DashboardT(){
             <NavbarT />
         </div>
 
-</section> <Dcenter />
+</section> <DcenterT />
             </div>
             <FooterLogin />
 

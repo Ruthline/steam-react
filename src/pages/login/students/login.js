@@ -1,19 +1,20 @@
 import { Link } from 'react-router-dom';
-import logotipo from '../../../Components/header/logotipo.svg'
+import logotipo from '../components/Header/logotipo.svg'
 
+import '../components/User/user.css'
 import React, { useState } from 'react';
-import { Formulario, ContenedorBotonCentrado, Boton, MensajeExito, MensajeError } from '../../../element/LoginForm';
+import { Formulario, ContenedorBotonCentrado, Boton, MensajeExito, MensajeError } from '../element/LoginForm';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
-import Input from '../../../Components/input/InputLogin';
+import Input from '../components/input/Input';
+import './LoginS.css'
 
-
-function LoginT() {
+function LoginS() {
     const [nombre, cambiarNombre] = useState({ campo: '', valido: null });
     const [password, cambiarPassword] = useState({ campo: '', valido: null });
     const [formularioValido, cambiarFormularioValido] = useState(null);
     const expresiones = {
-        nombre: /^[a-zA-Z0-9_-]{4,16}$/,
+        usuario: /^[a-zA-Z0-9_-]{4,16}$/,
         password: /^.{4,12}$/
     }
     const onSubmit = (e) => {
@@ -28,7 +29,26 @@ function LoginT() {
             cambiarFormularioValido(false);
         }
     }
- 
+    let button=document.getElementById("ingresar");
+let res=document.getElementById('res');
+
+button.onclick=function login(e){
+    e.preventDefault()
+    let user=document.getElementById("nombre").value;
+    let password=document.getElementById("password").value; 
+
+    if(user==="Admin" &&  password==="Kuepa2022"){
+    window.location="dashboard.html"
+    }else{
+        res.textContent="Por favor ingrese correactemente password y Usuario"
+        res.style.setProperty("visibility", "visible");
+        res.style.textAlign="center";
+        res.style.color="#A40101";
+        res.style.fontWeight="800";
+        res.style.setProperty("opacity", "1");
+    }
+}
+
     return (
         <section className="fondo-login">
         <section id="login">
@@ -72,7 +92,7 @@ function LoginT() {
                             <b>Error:</b>Por favor diligenciar el formulario correctamente</p>
                     </MensajeError>}
                     <ContenedorBotonCentrado>
-                        <Link to="/dashboardTeacher">
+                        <Link to="/login-STEAM">
                         <Boton type="submit">Entrar</Boton>
                         </Link>
                     </ContenedorBotonCentrado>
@@ -89,4 +109,4 @@ function LoginT() {
     );
 }
 
-export default LoginT;
+export default LoginS;
