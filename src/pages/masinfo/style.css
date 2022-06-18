@@ -1,0 +1,31 @@
+:root{
+    --dark-green:rgb(76,137,42);
+    --light-green:rgb(146,204,2);
+    --amarillo:rgb(255,185,0);
+    --dark-blue:rgb(38,39,59);
+    --purple-color:rgb(69,45,128);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+form{
+    max-width: 800px;
+    width: 90%;
+    
+}
+.t-form{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px var(--dark-green);
+    border-bottom:3px solid var(--dark-green)  ;
+}
+
