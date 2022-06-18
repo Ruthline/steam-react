@@ -61,13 +61,13 @@ h1{
     display: none;
 }
 
-.item-home{
+.item{
     padding: 0.5rem;
     
     text-decoration: none;
     color: white;
 }
-.item-home:hover{
+.item:hover{
     color: rgba(241, 18, 241, 0.5);
 }
 
@@ -85,18 +85,15 @@ h1{
     "one-nav two-nav three-nav"
     "items items items";
 }
-
 .search-o{
     display: flex;
-    justify-content: flex-start;
 }
+
 .search-o input{
-    position: relative;
-    left: 20px;
-    width: 150%;
+    width: 100%;
     padding: 0.5rem 1.3rem;
-    border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.377);
+    border-radius: 20px 0px 0px 20px;
+    border: none;
 }
 .search-o input[placeholder]{
     font-weight: 600;
@@ -190,7 +187,9 @@ h1{
     border: none;
     cursor: pointer;
   }
-  
+.dropbtn svg{
+    color: var(--purple-color);
+}
   .dropdown {
     width: 80px;
     position: relative;
@@ -228,6 +227,9 @@ h1{
   
       
 @media screen and (min-width:768px){
+    .dropbtn svg{
+        color: white;
+    }
     .contenedor-index{
         display: grid;
         grid-template-areas: 
@@ -252,7 +254,6 @@ h1{
     }
     .sin-login{
         color: white;
-        padding: 5px;
         display: unset;
     }
     .sin-login2{
@@ -278,6 +279,7 @@ h1{
         border-bottom: 2px solid white;
         color: white;
         width: 100px;
+        height: 40px;
         text-decoration: none;
         font-weight: bold;
         margin-bottom: 3px;
@@ -287,36 +289,31 @@ h1{
     }
     .dropbtn{
         position: relative;
-        top: 7.5px;
-        padding: 7px 1rem;
-        font-size: 18px;
+        width: 60px;
+        top: 10px;
+        right: 2px;
+        font-size: 14.5px;
     }
     .dropdown {
-        width: 50px;
+        width:40px;
     }
     .dropdown:hover .dropdown-content {
         margin-top: 0.8rem;
     }
     .search-o{
-        padding: 2px;
         display: none;
     }
     .search-o input{
-        margin-top: 5px;
         width: 60%;
         padding: 0.13rem 1rem;
     }
     .search-o button{
-        padding: 0.1rem 0.5rem;
+        padding: 0.13rem 0.5rem;
         height: 19px;
+        border: none;
     }
     .s-s{
         display: unset;
-    }
-    .s-s label{
-        color: black;
-        
-        background-color:rgba(69, 45, 128, 0.11);
     }
 
 }

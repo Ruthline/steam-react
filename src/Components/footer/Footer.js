@@ -17,11 +17,11 @@ function Footer(){
             <div className="texts-footer">
                     <div class="info-one">
                         <h4>CONTACTO</h4>
-                        <p>Colegio San Patricio</p>
-                        <p>Carrera 80# 197-02</p>
-                        <p>PBX(601) 683-8640</p>
-                        <p>Whatsapp:318-355-2832</p>
-                        <p>Bogotá, Colombia</p>
+                        <Link to="">Colegio San Patricio</Link><br></br>
+                        <Link to="">Carrera 80# 197-02</Link><br></br>
+                        <Link to="">PBX(601) 683-8640</Link><br></br>
+                        <Link to="">Whatsapp:318-355-2832</Link><br></br>
+                        <Link to="">Bogotá, Colombia</Link><br></br>
                     </div>
                 <div className="info-two">
                     <div className="text-footer">
