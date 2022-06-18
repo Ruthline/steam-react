@@ -7,10 +7,7 @@ import '../hazparte/Hazparte.css'
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell} from '@fortawesome/free-solid-svg-icons';
-<<<<<<< HEAD
-=======
 import {getAll} from '../../Components/sectionOpinion/Opinion';
->>>>>>> ruth
 function Hazparte(){
     const opinion=getAll();
     return(
@@ -18,13 +15,6 @@ function Hazparte(){
         <Header/>
         <BannerHazParte/>
             <div>
-<<<<<<< HEAD
-            <div class="bell">
-                <Link to="/mas-info"><FontAwesomeIcon icon={faBell}/></Link>
-            </div>
-            <SectionOpinion/>
-            <GaleryHazParte/>
-=======
                 <div class="bell">
                     <Link to="/mas-info"><FontAwesomeIcon icon={faBell}/></Link>
                 </div>
@@ -44,7 +34,6 @@ function Hazparte(){
                  </div>
                 
                 <GaleryHazParte/>
->>>>>>> ruth
             </div>
             
         <Footer/>

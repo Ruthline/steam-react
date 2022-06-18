@@ -12,7 +12,6 @@ import Swal from 'sweetalert2';
 import Modal from '../../../../Components/modales/Modal'
 import { Boton, Contenido } from "../../../../element/LoginForm";
 import { useNavigate } from 'react-router-dom';
-import { Container, Form } from 'react-bootstrap';
 import './FormWork.css'
 
 function CourseArtT() {
@@ -82,7 +81,7 @@ function CourseArtT() {
                     cambiarEstado={cambiarEstadoModal1}
                 >
                     <Contenido>
-                        <Form onSubmit={handleSubmit} className="formWork">
+                        <form onSubmit={handleSubmit} className="formWork">
                             <div className="groupForm">
                                 <label className="trabajo">Trabajo</label>
                                 <input
@@ -159,7 +158,7 @@ function CourseArtT() {
                                 Guardar
                             </Boton>
 
-                        </Form>
+                        </form>
                     </Contenido>
                 </Modal>
             </div>

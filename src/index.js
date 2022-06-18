@@ -7,7 +7,7 @@ import Ferias from './pages/ferias/Ferias';
 import Steam from './pages/steam/Steam';
 import LoginS from './pages/login/students/LoginS';
 import LoginT from './pages/login/teacher/LoginT';
-import MasInfo from './pages/masinfo/MasInfo';
+import MasInfo from './pages/masInfo/MasInfo'
 import Error404 from './pages/login/Error404';
 import Perfil from './pages/login/Perfil';
 
