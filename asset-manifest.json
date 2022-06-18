@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/steam-react/static/css/main.0c6a6c38.css",
-    "main.js": "/steam-react/static/js/main.862d56f0.js",
+    "main.js": "/steam-react/static/js/main.7adc121f.js",
     "static/media/bannerhome.png": "/steam-react/static/media/bannerhome.611515e15d9acf67525c.png",
     "static/media/Arte.svg": "/steam-react/static/media/Arte.7fcd5778729222515f9b823ea607fa05.svg",
     "static/media/bannermasinfo.png": "/steam-react/static/media/bannermasinfo.0614c2f109e7ed5a5f63.png",
@@ -30,10 +30,10 @@
     "static/media/lema.png": "/steam-react/static/media/lema.301f886c6a25bfcb2c14.png",
     "index.html": "/steam-react/index.html",
     "main.0c6a6c38.css.map": "/steam-react/static/css/main.0c6a6c38.css.map",
-    "main.862d56f0.js.map": "/steam-react/static/js/main.862d56f0.js.map"
+    "main.7adc121f.js.map": "/steam-react/static/js/main.7adc121f.js.map"
   },
   "entrypoints": [
     "static/css/main.0c6a6c38.css",
-    "static/js/main.862d56f0.js"
+    "static/js/main.7adc121f.js"
   ]
 }
