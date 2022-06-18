@@ -1,12 +1,12 @@
+import AjustesEdit from "../../Components/Ajustes/Ajustes"
 import HeaderLogin from "../../Components/headerLogin/HeaderLogin"
-import PerfilEdit from "../../Components/perfil/Perfil-edit"
 
-function Perfil(){
+function Ajustes(){
     return(
         <>
         <HeaderLogin />
-        <PerfilEdit />
+        <AjustesEdit />
         </>
     )
 }
-export default Perfil
+export default Ajustes

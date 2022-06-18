@@ -9,6 +9,7 @@ import LoginS from './pages/login/students/LoginS';
 import LoginT from './pages/login/teacher/LoginT';
 import MasInfo from './pages/masinfo/MasInfo';
 import Error404 from './pages/login/Error404';
+import Perfil from './pages/login/Perfil';
 
 import Dashboard from './pages/login/students/Dashboard';
 import Calendar2 from './pages/login/students/Calen';
@@ -41,6 +42,7 @@ import Notas5C from './pages/login/teacher/scoreCrud/notas5C'
 import Notas5M from './pages/login/teacher/scoreCrud/notas5M'
 import Notas5I from './pages/login/teacher/scoreCrud/notas5I'
 import Notas5T from './pages/login/teacher/scoreCrud/notas5T'
+import Ajustes from './pages/login/Ajustes';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -53,6 +55,8 @@ root.render(
     <Route path='/steam' element={<Steam />}></Route>
     <Route path='/mas-info' element={<MasInfo />}></Route>
     <Route path='*' element={<Error404 />}></Route>
+    <Route path='/dashboard/perfil' element={<Perfil/>}></Route>
+    <Route path='/dashboard/ajustes' element={<Ajustes/>}></Route>
 
     <Route path='/estudiantes' element={<LoginS />}></Route>
     <Route path='/dashboard' element={<Dashboard />}></Route>
