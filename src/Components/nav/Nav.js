@@ -5,21 +5,21 @@ return(
     <nav>
     <ul id="desplegable">
     <li>
-    <Link to="/steam-react/estudiantes/dashboard/">
+    <Link to="/dashboard">
       <span><i class="fa-solid fa-house icons"></i>
       <h3>Home</h3>
       </span>
     </Link>
   </li>
   <li>
-    <Link to="/steam-react/estudiantes/calendar">
+    <Link to="/calendar">
       <span> <i class="fa-solid fa-calendar icons"></i>
       <h3 className="navtitle">Calendario</h3>
       </span>
     </Link>
   </li>
   <li>
-    <Link to="/steam-react/estudiantes/courses">
+    <Link to="/courses">
       <span> <i class="fa-solid fa-book icons"></i> 
       <h3 className="navtitle">Cursos</h3>
       </span>
@@ -27,7 +27,7 @@ return(
   </li>
 
   <li>
-    <Link to="/steam-react/estudiantes/resources">
+    <Link to="/resources">
       <span> <i class="fa-solid fa-laptop-file icons"></i>
       <h3 className="navtitle">Recursos</h3>
       </span>

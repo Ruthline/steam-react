@@ -5,21 +5,21 @@ return(
     <nav>
     <ul id="desplegable">
     <li>
-    <Link to="/profesores/dashboardTeacher">
+    <Link to="/dashboardTeacher">
       <span><i class="fa-solid fa-house icons"></i>
       <h3>Home</h3>
       </span>
     </Link>
   </li>
   <li>
-    <Link to="/profesores/calendarTeacher">
+    <Link to="/calendarTeacher">
       <span> <i class="fa-solid fa-calendar icons"></i>
       <h3 className="navtitle">Calendario</h3>
       </span>
     </Link>
   </li>
   <li>
-    <Link to="/profesores/coursesTeacher">
+    <Link to="/coursesTeacher">
       <span> <i class="fa-solid fa-book icons"></i> 
       <h3>Cursos</h3>
       </span>
