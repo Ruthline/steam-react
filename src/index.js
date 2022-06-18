@@ -6,7 +6,7 @@ import Hazparte from './pages/hazparte/Hazparte';
 import Ferias from './pages/ferias/Ferias';
 import Steam from './pages/steam/Steam';
 import Login from './pages/login/Login';
-import MasInfo from './pages/masinfo/MasInfo';
+import MasInfo from './pages/masInfo/MasInfo';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>

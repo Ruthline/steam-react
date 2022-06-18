@@ -7,6 +7,7 @@
     "slider-index"
     "social-networking"
     "footer";
+    
   }
 .footer{
     background-color: var(--purple-color);
@@ -28,8 +29,12 @@
     color: white;
     font-size: 40px;
 }
-.icons-footer i:hover{
+.icons-footer a:hover{
     color: var(--amarillo);
+}
+.icons-footer a{
+    color: white;
+    text-decoration: none;
 }
 
 h6{
@@ -37,7 +42,7 @@ h6{
     color: white;
 }
 .texts-footer{
-    padding: 1rem;
+    padding:1rem 1rem 2rem 1rem;
     grid-area: bla;
     display: flex;
     align-items: center;
@@ -59,6 +64,7 @@ h6{
     line-height: 30px;
 }
 .text-footer{
+    
     margin:1rem;
     line-height: 28px;
     text-align: left;
@@ -88,6 +94,9 @@ h6{
             margin: 10px;
         }
         .texts-footer{
+            position: relative;
+            top: 2rem;
+            padding: 0;
             flex-direction: row;
         }
         .text-footer{
